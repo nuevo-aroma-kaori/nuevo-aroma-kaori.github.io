@@ -199,16 +199,21 @@ div.option_page {
 	left: 0;
 	top: 0;
 	overflow-y: scroll;
-	padding: 20px;
+	z-index: 140;
 }
 
-div.option_page span.opt_top {
+div.option_page div.option_page_container {
+	display: block;
+	margin: 20px;
+}
+
+div.option_page div.option_page_container span.opt_top {
 	font-size: 48px;
 	color: #D51B19;
 	display: block;
 }
 
-div.option_page span.opt_title {
+div.option_page div.option_page_container span.opt_title {
 	font-size: 2em;
 	font-weight: 600;
 	display: block;
@@ -217,7 +222,7 @@ div.option_page span.opt_title {
 	color: #D51B19;
 }
 
-div.option_page span.opt_desc {
+div.option_page div.option_page_container span.opt_desc {
 	font-size: 1em;
 	font-weight: 400;
 	display: block;
