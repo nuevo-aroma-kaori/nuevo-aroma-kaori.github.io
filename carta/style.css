@@ -191,6 +191,41 @@ div#selection_table_fixed div#selection_table_container_fixed table tr td.chosen
 	font-weight: 600;
 }
 
+div.option_page {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	overflow-y: scroll;
+	padding: 20px;
+}
+
+div.option_page span.opt_top {
+	font-size: 48px;
+	color: #D51B19;
+	display: block;
+}
+
+div.option_page span.opt_title {
+	font-size: 2em;
+	font-weight: 600;
+	display: block;
+	user-select: none;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
+	color: #D51B19;
+}
+
+div.option_page span.opt_desc {
+	font-size: 1em;
+	font-weight: 400;
+	display: block;
+	user-select: none;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
+	color: #000000;
+}
+
 div#main_container {}
 
 div#main_container span.main_title {
