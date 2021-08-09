@@ -1,0 +1,1794 @@
+/* 
+Allergen
+ * gl gluten
+ * cr crustaceos
+ * hv huevos
+ * ps pescado
+ * cc cacahuete
+ * sj soja
+ * lt lacteo
+ * fc frutos de cascara
+ * ap apio
+ * mo mostaza
+ * gs granos de sesamo
+ * da dioxido de azufre y sultafos
+ * ml moluscos
+ * al altramuz
+*/
+{
+	"drink_info" : {
+		"all_drinks" : [
+			{
+				"type_name" : {
+					"es" : "Vino blanco",
+					"ca" : "Vi blanc"
+				},
+
+				"type_notes" : ["age_18"],
+
+				"child_list" : [
+					{
+						"name" : "Sumarroca Nostrat (Pened\u00e9s)",
+						"price" : 10.95,
+						"desc" : {
+							"capacity" : {
+								"number" : 75,
+								"unit" : "cL"
+							},
+
+							"grade" : 11
+						}
+					},
+
+					{
+						"name" : "El Perro Verde (Verdejo)",
+						"price" : 17.95,
+						"desc" : {
+							"capacity" : {
+								"number" : 75,
+								"unit" : "cL"
+							},
+
+							"grade" : 13
+						}
+					},
+
+					{
+						"name" : "Blanc Pescador",
+						"price" : 10.95,
+						"desc" : {
+							"capacity" : {
+								"number" : 75,
+								"unit" : "cL"
+							},
+
+							"grade" : 11.5
+						}
+					},
+
+					{
+						"name" : "Viña Sol",
+						"price" : 14.95,
+						"desc" : {
+							"capacity" : {
+								"number" : 75,
+								"unit" : "cL"
+							},
+
+							"grade" : 12
+						}
+					},
+
+					{
+						"name" : "Viña Esmeralda (Pened\u00e9s)",
+						"price" : 15.95,
+						"desc" : {
+							"capacity" : {
+								"number" : 75,
+								"unit" : "cL"
+							},
+
+							"grade" : 11.5
+						}
+					},
+
+					{
+						"name" : "Vino de la casa (Rama Corta: Verdejo)",
+						"price" : 8.95,
+						"desc" : {
+							"capacity" : {
+								"number" : 75,
+								"unit" : "cL"
+							},
+
+							"grade" : 12
+						}
+					}
+				]
+			},
+
+			{
+				"type_name" : {
+					"es" : "Vino tinto",
+					"ca" : "Vi negre"
+				},
+
+				"type_notes" : ["age_18"],
+
+				"child_list" : [
+					{
+						"name" : "Sumarroca Cl\u00e0ssic (Pened\u00e9s)",
+						"price" : 10.95,
+						"desc" : {
+							"capacity" : {
+								"number" : 75,
+								"unit" : "cL"
+							},
+
+							"grade" : 13.5
+						}
+					},
+
+					{
+						"name" : "Finca Resalso (Rivera Del Duero)",
+						"price" : 14.95,
+						"desc" : {
+							"capacity" : {
+								"number" : 75,
+								"unit" : "cL"
+							},
+
+							"grade" : 14
+						}
+					},
+
+					{
+						"name" : "El Coto Crianza (Rioja)",
+						"price" : 13.5,
+						"desc" : {
+							"capacity" : {
+								"number" : 75,
+								"unit" : "cL"
+							},
+
+							"grade" : 13.5
+						}
+					},
+
+					{
+						"name" : "Marqu\u00e9s De C\u00e1ceres Crianza (Rioja)",
+						"price" : 15.95,
+						"desc" : {
+							"capacity" : {
+								"number" : 75,
+								"unit" : "cL"
+							},
+
+							"grade" : 14
+						}
+					},
+
+					{
+						"name" : "Ram\u00f3n Bilbao Crianza (Rioja)",
+						"price" : 14.5,
+						"desc" : {
+							"capacity" : {
+								"number" : 75,
+								"unit" : "cL"
+							},
+
+							"grade" : 14
+						}
+					},
+
+					{
+						"name" : "Vino de la casa (Rama Corta: Tempranillo)",
+						"price" : 8.95,
+						"desc" : {
+							"capacity" : {
+								"number" : 75,
+								"unit" : "cL"
+							},
+
+							"grade" : 13.5
+						}
+					}
+				]
+			},
+
+			{
+				"type_name" : {
+					"es" : "Vino rosado",
+					"ca" : "Vi rosat"
+				},
+
+				"type_notes" : ["age_18"],
+
+				"child_list" : [
+					{
+						"name" : "Sumarroca Cl\u00e0ssic (Pened\u00e9s)",
+						"price" : 9.95,
+						"desc" : {
+							"capacity" : {
+								"number" : 75,
+								"unit" : "cL"
+							},
+
+							"grade" : 12.5
+						}
+					},
+
+					{
+						"name" : "Lambrusco Dell'Emilia (Casa Bell'Albero)",
+						"price" : 9.95,
+						"desc" : {
+							"capacity" : {
+								"number" : 75,
+								"unit" : "cL"
+							},
+
+							"grade" : 8
+						}
+					},
+
+					{
+						"name" : "Mateu Ros\u00e9 The Original",
+						"price" : 10.95,
+						"desc" : {
+							"capacity" : {
+								"number" : 75,
+								"unit" : "cL"
+							},
+
+							"grade" : 11
+						}
+					},
+
+					{
+						"name" : "Cresta Rosa Aguja",
+						"price" : 10.95,
+						"desc" : {
+							"capacity" : {
+								"number" : 75,
+								"unit" : "cL"
+							},
+
+							"grade" : 12
+						}
+					},
+				]
+			},
+
+			{
+				"type_name" : {
+					"es" : "Cava",
+					"ca" : "Cava"
+				},
+
+				"type_notes" : ["age_18"],
+
+				"child_list" : [
+					{
+						"name" : "Verma Brut Natural",
+						"price" : 10.9,
+						"desc" : {
+							"capacity" : {
+								"number" : 0,
+								"unit" : "cL"
+							},
+
+							"grade" : 0
+						}
+					},
+
+					{
+						"name" : "Sumarroca Brut",
+						"price" : 12.9,
+						"desc" : {
+							"capacity" : {
+								"number" : 75,
+								"unit" : "cL"
+							},
+
+							"grade" : 12
+						}
+					},
+
+					{
+						"name" : "Anna de Codorniu",
+						"price" : 14.95,
+						"desc" : {
+							"capacity" : {
+								"number" : 75,
+								"unit" : "cL"
+							},
+
+							"grade" : 11.5
+						}
+					},
+
+					{
+						"name" : "Bach Semi Seco",
+						"price" : 0,
+						"desc" : {
+							"capacity" : {
+								"number" : 75,
+								"unit" : "cL"
+							},
+
+							"grade" : 11.5
+						}
+					},
+
+					{
+						"name" : "Visiega Semi Seco",
+						"price" : 0,
+						"desc" : {
+							"capacity" : {
+								"number" : 75,
+								"unit" : "cL"
+							},
+
+							"grade" : 11.5
+						}
+					},
+
+					{
+						"name" : "Visiega Brut",
+						"price" : 0,
+						"desc" : {
+							"capacity" : {
+								"number" : 75,
+								"unit" : "cL"
+							},
+
+							"grade" : 11.5
+						}
+					},
+
+					{
+						"name" : "Mo\u00ebt & Chandon Imp\u00e9rial Brut",
+						"price" : 0,
+						"desc" : {
+							"capacity" : {
+								"number" : 75,
+								"unit" : "cL"
+							},
+
+							"grade" : 12
+						}
+					}
+				]
+			},
+
+			{
+				"type_name" : {
+					"es" : "Sangr\u00eda",
+					"ca" : "Sangria"
+				},
+
+				"type_notes" : ["age_18"],
+
+				"child_list" : [
+					{
+						"name" : "Sangr\u00eda de Vino",
+						"price" : 12.95,
+						"desc" : {
+							"capacity" : {
+								"number" : 1,
+								"unit" : "L"
+							}
+						}
+					},
+
+					{
+						"name" : "Sangr\u00eda de Cava",
+						"price" : 14.95,
+						"desc" : {
+							"capacity" : {
+								"number" : 1,
+								"unit" : "L"
+							}
+						}
+					}
+				]
+			},
+
+			{
+				"type_name" : {
+					"es" : "Otras bebidas",
+					"ca" : "Altres begudes"
+				},
+
+				"type_notes" : [],
+
+				"child_list" : [
+					{
+						"name" : "Estrella Damm Mediana",
+						"price" : 2.8,
+						"notes" : ["age_18"],
+						"desc" : {
+							"capacity" : {
+								"number" : 33,
+								"unit" : "cL"
+							},
+
+							"grade" : 5.4
+						}
+					},
+
+					{
+						"name" : "Sapporo 札幌 (Cerveza Japonesa)",
+						"price" : 3.1,
+						"notes" : ["age_18"],
+						"desc" : {
+							"capacity" : {
+								"number" : 33,
+								"unit" : "cL"
+							},
+
+							"grade" : 4.7
+						}
+					},
+
+					{
+						"name" : "Asahi 辛口旭 (Cerveza Japonesa)",
+						"price" : 3.1,
+						"notes" : ["age_18"],
+						"desc" : {
+							"capacity" : {
+								"number" : 33,
+								"unit" : "cL"
+							},
+
+							"grade" : 4.7
+						}
+					},
+
+					{
+						"name" : "Free Damm (Cerveza sin alc.)",
+						"price" : 2.8,
+						"notes" : [],
+						"desc" : {
+							"capacity" : {
+								"number" : 33,
+								"unit" : "cL"
+							}
+						}
+					},
+
+					{
+						"name" : "Moritz Radler (Clara)",
+						"price" : 2.8,
+						"notes" : [],
+						"desc" : {
+							"capacity" : {
+								"number" : 33,
+								"unit" : "cL"
+							}
+						}
+					},
+
+					{
+						"name" : "Agua - Solan De Cabras",
+						"price" : 2.5,
+						"notes" : [],
+						"desc" : {
+							"capacity" : {
+								"number" : 500,
+								"unit" : "mL"
+							}
+						}
+					},
+
+					{
+						"name" : "Agua con gas - Vichy Catal\u00e1n",
+						"price" : 2.5,
+						"notes" : [],
+						"desc" : {
+							"capacity" : {
+								"number" : 250,
+								"unit" : "mL"
+							}
+						}
+					},
+
+					{
+						"name" : "Zumo de naranja/melocotón/piña",
+						"price" : 2.5,
+						"notes" : [],
+						"desc" : {
+							"capacity" : {
+								"number" : 200,
+								"unit" : "mL"
+							}
+						}
+					},
+
+					{
+						"name" : "CocaCola",
+						"price" : 2.8,
+						"notes" : [],
+						"desc" : {
+							"capacity" : {
+								"number" : 330,
+								"unit" : "mL"
+							}
+						}
+					},
+
+					{
+						"name" : "CocaCola Zero Az\u00facar",
+						"price" : 2.8,
+						"notes" : [],
+						"desc" : {
+							"capacity" : {
+								"number" : 330,
+								"unit" : "mL"
+							}
+						}
+					},
+
+					{
+						"name" : "Nestea Lim\u00f3n",
+						"price" : 2.8,
+						"notes" : [],
+						"desc" : {
+							"capacity" : {
+								"number" : 330,
+								"unit" : "mL"
+							}
+						}
+					},
+
+					{
+						"name" : "Fanta Naranja",
+						"price" : 2.8,
+						"notes" : [],
+						"desc" : {
+							"capacity" : {
+								"number" : 330,
+								"unit" : "mL"
+							}
+						}
+					},
+
+					{
+						"name" : "Fanta Lim\u00f3n",
+						"price" : 2.8,
+						"notes" : [],
+						"desc" : {
+							"capacity" : {
+								"number" : 330,
+								"unit" : "mL"
+							}
+						}
+					},
+
+					{
+						"name" : "Aquarius Naranja",
+						"price" : 2.8,
+						"notes" : [],
+						"desc" : {
+							"capacity" : {
+								"number" : 330,
+								"unit" : "mL"
+							}
+						}
+					},
+
+					{
+						"name" : "Aquarius Lim\u00f3n",
+						"price" : 2.8,
+						"notes" : [],
+						"desc" : {
+							"capacity" : {
+								"number" : 330,
+								"unit" : "mL"
+							}
+						}
+					},
+
+					{
+						"name" : "Copa de Vino blanco",
+						"price" : 2.8,
+						"notes" : [],
+						"desc" : {
+							"capacity" : {
+								"number" : 0,
+								"unit" : "mL"
+							}
+						}
+					},
+
+					{
+						"name" : "Copa de Vino tinto",
+						"price" : 2.8,
+						"notes" : [],
+						"desc" : {
+							"capacity" : {
+								"number" : 0,
+								"unit" : "mL"
+							}
+						}
+					},
+
+					{
+						"name" : "Chupito",
+						"price" : 1.8,
+						"notes" : [],
+						"desc" : {
+							"capacity" : {
+								"number" : 0,
+								"unit" : "mL"
+							}
+						}
+					},
+
+					{
+						"name" : "T\u00e9 japon\u00e9s",
+						"price" : 2.5,
+						"notes" : [],
+						"desc" : {
+							"capacity" : {
+								"number" : 0,
+								"unit" : "mL"
+							}
+						}
+					}
+				]
+			}
+		]
+	},
+
+	"dish_info" : {
+		"all_dishes" : [
+			{
+				"number" : 1,
+				"name" : {
+					"es" : "Ensalada de la casa",
+					"ca" : "Amanida de la casa"
+				},
+				"allergen" : ["gs", "lt", "cr", "hv"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 2,
+				"name" : {
+					"es" : "Ensalada de alga",
+					"ca" : "Amanida d'alga"
+				},
+				"allergen" : ["gs"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 3,
+				"name" : {
+					"es" : "Ensalada de Wakame",
+					"ca" : "Amanida de Wakame"
+				},
+				"allergen" : ["gs"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 5,
+				"name" : {
+					"es" : "Edamame",
+					"ca" : "Edamame"
+				},
+				"allergen" : ["sj"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 6,
+				"name" : {
+					"es" : "Sopa de miso",
+					"ca" : "Sopa de miso"
+				},
+				"allergen" : ["sj", "hv"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 7,
+				"name" : {
+					"es" : "Arroz",
+					"ca" : "Arr\u00f2s"
+				},
+				"allergen" : ["gs"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 8,
+				"name" : {
+					"es" : "Yakimeshi de la casa",
+					"ca" : "Yakimeshi de la casa"
+				},
+				"allergen" : ["hv", "da"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 9,
+				"name" : {
+					"es" : "Yakimeshi Ebi",
+					"ca" : "Yakimeshi Ebi"
+				},
+				"allergen" : ["hv", "cr"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 10,
+				"name" : {
+					"es" : "Yakimeshi curry",
+					"ca" : "Yakimeshi curri"
+				},
+				"allergen" : ["gl", "hv"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 11,
+				"name" : {
+					"es" : "Yakisoba vegetal",
+					"ca" : "Yakisoba vegetal"
+				},
+				"allergen" : ["gl", "gs"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 12,
+				"name" : {
+					"es" : "Yakisoba Ebi",
+					"ca" : "Yakisoba Ebi"
+				},
+				"allergen" : ["gl", "cr", "hv"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 13,
+				"name" : {
+					"es" : "Ramen",
+					"ca" : "Ramen"
+				},
+				"allergen" : ["gl", "sj", "hv", "lt"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 14,
+				"name" : {
+					"es" : "Raisu - Lomo picante",
+					"ca" : "Raisu - Llom picant"
+				},
+				"allergen" : ["gl", "gs", "sj"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 15,
+				"name" : {
+					"es" : "Raisu - Pollo curry",
+					"ca" : "Raisu - Pollastre curri"
+				},
+				"allergen" : ["gl", "gs", "sj"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 16,
+				"name" : {
+					"es" : "Ternera con cebolla",
+					"ca" : "Vedella amb ceba"
+				},
+				"allergen" : ["gl", "gs", "sj"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 17,
+				"name" : {
+					"es" : "Alitas de pollo",
+					"ca" : "Aletes de pollastre"
+				},
+				"allergen" : [],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 18,
+				"name" : {
+					"es" : "Pan",
+					"ca" : "Pa"
+				},
+				"allergen" : ["gl"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 19,
+				"name" : {
+					"es" : "Pan frito relleno",
+					"ca" : "Pan fregit farcit"
+				},
+				"allergen" : ["gl"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 20,
+				"name" : {
+					"es" : "Harumaki",
+					"ca" : "Harumaki"
+				},
+				"allergen" : ["gl"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 21,
+				"name" : {
+					"es" : "Langostino en kimono",
+					"ca" : "Llagost\u00ed en quimono"
+				},
+				"allergen" : ["gl", "cr", "hv", "gs"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 22,
+				"name" : {
+					"es" : "Pollo rebozado",
+					"ca" : "Pollastre arrebossat"
+				},
+				"allergen" : ["gl", "hv"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 23,
+				"name" : {
+					"es" : "Tempura de verduras",
+					"ca" : "Tempura de verdures"
+				},
+				"allergen" : ["gl", "hv"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 24,
+				"name" : {
+					"es" : "Champi\u00f1ones",
+					"ca" : "Xampinyons"
+				},
+				"allergen" : ["gs", "sj"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 25,
+				"name" : {
+					"es" : "Pollo con Teriyaki",
+					"ca" : "Pollastre amb Teriyaki"
+				},
+				"allergen" : ["gs", "sj"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 26,
+				"name" : {
+					"es" : "Setas a la plancha",
+					"ca" : "Bolets a la planxa"
+				},
+				"allergen" : [],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 27,
+				"name" : {
+					"es" : "Gyoza",
+					"ca" : "Gyoza"
+				},
+				"allergen" : ["gl", "gs"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 28,
+				"name" : {
+					"es" : "Yaki pollo",
+					"ca" : "Yaki pollastre"
+				},
+				"allergen" : ["gs", "sj"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 29,
+				"name" : {
+					"es" : "Yaki gambas",
+					"ca" : "Yaki gambes"
+				},
+				"allergen" : [""],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 30,
+				"name" : {
+					"es" : "Yaki ternera con queso",
+					"ca" : "Yaki vedella amb formatge"
+				},
+				"allergen" : ["lt", "gs", "sj"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 31,
+				"name" : {
+					"es" : "Maki Salm\u00f3n",
+					"ca" : "Maki Salm\u00f3"
+				},
+				"allergen" : ["ps"],
+				"desc" : {
+					"es" : "Sushi de tipo Maki. Rodeado por la alga seca para Sushi a la parte exterior, luego el arroz rellenado dentro y al mismo tiempo rodeando una pieza de salmón crudo procesado (Salmón sashimi).",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 32,
+				"name" : {
+					"es" : "Maki At\u00fan",
+					"ca" : "Maki Tonyina"
+				},
+				"allergen" : ["ps"],
+				"desc" : {
+					"es" : "Sushi de tipo Maki. Rodeado por la alga seca para Sushi a la parte exterior, luego el arroz rellenado dentro y al mismo tiempo rodeando una pieza de atún crudo procesado (Atún sashimi).",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 33,
+				"name" : {
+					"es" : "Maki Aguacate",
+					"ca" : "Maki Alvocat"
+				},
+				"allergen" : [],
+				"desc" : {
+					"es" : "Sushi de tipo Maki. Rodeado por la alga seca para Sushi a la parte exterior, luego el arroz rellenado dentro y al mismo tiempo rodeando una pieza de aguacate procesado.",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 34,
+				"name" : {
+					"es" : "Maki Langostino",
+					"ca" : "Maki Llagost\u00ed"
+				},
+				"allergen" : ["cr"],
+				"desc" : {
+					"es" : "Sushi de tipo Maki. Rodeado por la alga seca para Sushi a la parte exterior, luego el arroz rellenado dentro y al mismo tiempo rodeando una pieza de langostino cocido procesado.",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 35,
+				"name" : {
+					"es" : "Maki Mango",
+					"ca" : "Maki Mango"
+				},
+				"allergen" : [],
+				"desc" : {
+					"es" : "Sushi de tipo Maki. Rodeado por la alga seca para Sushi a la parte exterior, luego el arroz rellenado dentro y al mismo tiempo rodeando una pieza de mango crudo procesado.",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 36,
+				"name" : {
+					"es" : "Maki Cangrejo",
+					"ca" : "Maki Cranc"
+				},
+				"allergen" : ["cr"],
+				"desc" : {
+					"es" : "Sushi de tipo Maki. Rodeado por la alga seca para Sushi a la parte exterior, luego el arroz rellenado dentro y al mismo tiempo rodeando una pieza cortado de palo de cangrejo.",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 37,
+				"name" : {
+					"es" : "Maki Pepino",
+					"ca" : "Maki Cogombre"
+				},
+				"allergen" : [],
+				"desc" : {
+					"es" : "Sushi de tipo Maki. Rodeado por la alga seca para Sushi a la parte exterior, luego el arroz rellenado dentro y al mismo tiempo rodeando una pieza cortado del pepino fresco, crudo y procesado.",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 38,
+				"name" : {
+					"es" : "Futomaki",
+					"ca" : "Futomaki"
+				},
+				"allergen" : ["ml", "hv"],
+				"desc" : {
+					"es" : "Sushi de tipo Maki. Rodeado por la alga seca para Sushi a la parte exterior, luego el arroz rellenado dentro y al mismo tiempo rodeando una combinación de alimentos: pepino crudo fresco, aguacate fresco, palo de cangrejo, y salsa de anguila (no contiene huevo).",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 39,
+				"name" : {
+					"es" : "Uramaki Tempura de langostino",
+					"ca" : "Uramaki Tempura de llagost\u00ed"
+				},
+				"allergen" : ["gl", "hv", "cr", "gs"],
+				"desc" : {
+					"es" : "Sushi de tipo Uramaki. Usa simplemente el arroz como la parte exterior del Sushi, y por dentro una hoja de alga seca para Sushi para rodear el relleno y estabilizar la estructura. Contiene langostino frito con harina de tempura en el centro, y unos pocos sésamos encima para decorar la vista y el gusto.",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 40,
+				"name" : {
+					"es" : "Uramaki Salm\u00f3n aguacate",
+					"ca" : "Uramaki Salm\u00f3 alvocat"
+				},
+				"allergen" : ["gs", "ps"],
+				"desc" : {
+					"es" : "Sushi de tipo Uramaki. Usa simplemente el arroz como la parte exterior del Sushi, y por dentro una hoja de alga seca para Sushi para rodear el relleno y estabilizar la estructura. Contiene salmón crudo procesado y aguacate fresco en el centro, y unos pocos sésamos encima para decorar la vista y el gusto.",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 41,
+				"name" : {
+					"es" : "Uramaki At\u00fan aguacate",
+					"ca" : "Uramaki Tonyina alvocat"
+				},
+				"allergen" : ["ps", "gs", "da", "hv"],
+				"desc" : {
+					"es" : "Sushi de tipo Uramaki. Usa simplemente el arroz como la parte exterior del Sushi, y por dentro una hoja de alga seca para Sushi para rodear el relleno y estabilizar la estructura. Contiene atún crudo procesado y aguacate fresco en el centro, y unos pocos sésamos encima para decorar la vista y el gusto.",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 42,
+				"name" : {
+					"es" : "Uramaki California cebolla",
+					"ca" : "Uramaki Calif\u00f2rnia ceba"
+				},
+				"allergen" : ["gl", "hv", "lt", "cc"],
+				"desc" : {
+					"es" : "Sushi de tipo Uramaki. Usa simplemente el arroz como la parte exterior del Sushi, y por dentro una hoja de alga seca para Sushi para rodear el relleno y estabilizar la estructura. Contiene palo de cangrejo y aguacate fresco en el centro, y un poco de salsa de cacahuete y cebolla frita encima para decorar la vista y el gusto.",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 43,
+				"name" : {
+					"es" : "Uramaki California masago",
+					"ca" : "Uramaki Calif\u00f2rnia masago"
+				},
+				"allergen" : ["ps"],
+				"desc" : {
+					"es" : "Sushi de tipo Uramaki. Usa simplemente el arroz como la parte exterior del Sushi, y por dentro una hoja de alga seca para Sushi para rodear el relleno y estabilizar la estructura. Contiene salmón crudo procesado y aguacate fresco en el centro, y unos pocos masagos encima para decorar la vista y el gusto.",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 44,
+				"name" : {
+					"es" : "Uramaki California flameado",
+					"ca" : "Uramaki Calif\u00f2rnia flamejat"
+				},
+				"allergen" : ["ps", "cr", "gs", "lt", "sj"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 45,
+				"name" : {
+					"es" : "Uramaki California queso",
+					"ca" : "Uramaki Calif\u00f2rnia formatge"
+				},
+				"allergen" : ["ps", "gs", "lt"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 46,
+				"name" : {
+					"es" : "Uramaki Cangrejo aguacate",
+					"ca" : "Uramaki Cranc alvocat"
+				},
+				"allergen" : ["cr", "gs"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 47,
+				"name" : {
+					"es" : "Nigiri Salm\u00f3n",
+					"ca" : "Nigiri Salm\u00f3"
+				},
+				"allergen" : ["ps"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 48,
+				"name" : {
+					"es" : "Nigiri At\u00fan",
+					"ca" : "Nigiri Tonyina"
+				},
+				"allergen" : ["ps"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 49,
+				"name" : {
+					"es" : "Nigiri Langostino",
+					"ca" : "Nigiri Llagost\u00ed"
+				},
+				"allergen" : ["cr"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 50,
+				"name" : {
+					"es" : "Nigiri Salm\u00f3n flameado",
+					"ca" : "Nigiri Salm\u00f3 flamejat"
+				},
+				"allergen" : ["ps", "lt", "hv"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 51,
+				"name" : {
+					"es" : "Gunkan Wakame",
+					"ca" : "Gunkan Wakame"
+				},
+				"allergen" : ["gs"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 52,
+				"name" : {
+					"es" : "Gunkan Salm\u00f3n y aguacate",
+					"ca" : "Gunkan Salm\u00f3 i alvocat"
+				},
+				"allergen" : ["ps", "gs", "sj"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 53,
+				"name" : {
+					"es" : "Samosa de curry",
+					"ca" : "Samosa de curri"
+				},
+				"allergen" : ["ps", "gs", "sj"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 54,
+				"name" : {
+					"es" : "Tarta de Sushi",
+					"ca" : "Tarta de Sushi"
+				},
+				"allergen" : ["gs", "ps", "sj", "lt"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 55,
+				"name" : {
+					"es" : "Temaki Salm\u00f3n",
+					"ca" : "Temaki Salm\u00f3"
+				},
+				"allergen" : ["hv", "gs", "ps", "sj", "lt"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 56,
+				"name" : {
+					"es" : "Gyoza de langostinos",
+					"ca" : "Gyoza de llagostins"
+				},
+				"allergen" : ["gl", "cr"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 57,
+				"name" : {
+					"es" : "Yaki Udon marisco",
+					"ca" : "Yaki Udon marisc"
+				},
+				"allergen" : ["gl", "cr", "ml"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 58,
+				"name" : {
+					"es" : "Orange Chicken",
+					"ca" : "Orange Chicken"
+				},
+				"allergen" : ["gl", "sj"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 59,
+				"name" : {
+					"es" : "Pato",
+					"ca" : "\u00c0nec"
+				},
+				"allergen" : ["gl", "sj", "gs"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 60,
+				"name" : {
+					"es" : "At\u00fan a la plancha",
+					"ca" : "Tonyina a la planxa"
+				},
+				"allergen" : ["gs", "ps"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 61,
+				"name" : {
+					"es" : "Shumai",
+					"ca" : "Shumai"
+				},
+				"allergen" : [],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 62,
+				"name" : {
+					"es" : "Ternera con Teriyaki",
+					"ca" : "Vedella amb Teriyaki"
+				},
+				"allergen" : ["gs"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 63,
+				"name" : {
+					"es" : "Pollo con almendras",
+					"ca" : "Pollastre amb ametlles"
+				},
+				"allergen" : ["fc", "gs"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 64,
+				"name" : {
+					"es" : "Langostino con almendras",
+					"ca" : "Llagost\u00ed amb ametlles"
+				},
+				"allergen" : ["cr", "fc", "gs"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 66,
+				"name" : {
+					"es" : "Takoyayi",
+					"ca" : "Takoyaki"
+				},
+				"allergen" : ["gl", "sj", "lt"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 67,
+				"name" : {
+					"es" : "Churrasco",
+					"ca" : "Xurrasco"
+				},
+				"allergen" : ["sj"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 68,
+				"name" : {
+					"es" : "Salm\u00f3n a la plancha",
+					"ca" : "Salm\u00f3 a la planxa"
+				},
+				"allergen" : ["ps", "gs"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 69,
+				"name" : {
+					"es" : "Almejas a la plancha",
+					"ca" : "Clo\u00efsses a la planxa"
+				},
+				"allergen" : ["ml", "sj"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 70,
+				"name" : {
+					"es" : "Gambas con verduras",
+					"ca" : "Gambes amb verdures"
+				},
+				"allergen" : ["cr", "sj"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 71,
+				"name" : {
+					"es" : "Ensalada de marisco",
+					"ca" : "Amanida de marisc"
+				},
+				"allergen" : ["cr", "sj"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 72,
+				"name" : {
+					"es" : "Sepia",
+					"ca" : "S\u00edpia"
+				},
+				"allergen" : ["gs"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 73,
+				"name" : {
+					"es" : "Navaja",
+					"ca" : "Navalla"
+				},
+				"allergen" : ["sj", "ml"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 74,
+				"name" : {
+					"es" : "Entrecot",
+					"ca" : "Entrecot"
+				},
+				"allergen" : ["gs", "sj"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 75,
+				"name" : {
+					"es" : "Uramaki Tempura pl\u00e1tano",
+					"ca" : "Uramaki Tempura pl\u00e0tan"
+				},
+				"allergen" : ["gl", "hv", "lt"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 76,
+				"name" : {
+					"es" : "Uramaki California aguacate",
+					"ca" : "Uramaki Calif\u00f2rnia alvocat"
+				},
+				"allergen" : ["ps"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 77,
+				"name" : {
+					"es" : "Uramaki At\u00fan con aguacate picante",
+					"ca" : "Uramaki Tonyina amb alvocat picant"
+				},
+				"allergen" : ["ps", "gs"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 78,
+				"name" : {
+					"es" : "Uramaki California Tempura pollo",
+					"ca" : "Uramaki Calif\u00f2rnia Tempura pollastre"
+				},
+				"allergen" : ["gl", "gs", "hv", "lt"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 81,
+				"name" : {
+					"es" : "Cigala",
+					"ca" : "Escamarl\u00e0"
+				},
+				"allergen" : ["cr"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 82,
+				"name" : {
+					"es" : "Langostinos a la plancha",
+					"ca" : "Llagostins a la planxa"
+				},
+				"allergen" : ["cr", "sj"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 83,
+				"name" : {
+					"es" : "Vieiras",
+					"ca" : "Vieires"
+				},
+				"allergen" : ["ml"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 91,
+				"name" : {
+					"es" : "Gunkan Masago",
+					"ca" : "Gunkan Masago"
+				},
+				"allergen" : ["ps"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 92,
+				"name" : {
+					"es" : "Gunkan At\u00fan y aguacate",
+					"ca" : "Gunkan Tonyina i alvocat"
+				},
+				"allergen" : ["ps"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 93,
+				"name" : {
+					"es" : "Gunkan Anguila y aguacate",
+					"ca" : "Gunkan Anguila i alvocat"
+				},
+				"allergen" : ["ps"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 94,
+				"name" : {
+					"es" : "Gunkan Cangrejo y aguacate",
+					"ca" : "Gunkan Cranc i alvocat"
+				},
+				"allergen" : ["gs", "cr"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 95,
+				"name" : {
+					"es" : "Nigiri Anguila",
+					"ca" : "Nigiri Anguila"
+				},
+				"allergen" : ["gs", "ps", "sj"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 96,
+				"name" : {
+					"es" : "Sashimi Salm\u00f3n",
+					"ca" : "Sashimi Salm\u00f3"
+				},
+				"allergen" : ["ps"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 98,
+				"name" : {
+					"es" : "Sashimi At\u00fan",
+					"ca" : "Sashimi Tonyina"
+				},
+				"allergen" : ["ps"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 99,
+				"name" : {
+					"es" : "Nigiri Arroz frito y aguacate",
+					"ca" : "Nigiri Arr\u00f2s fregit i alvocat"
+				},
+				"allergen" : ["gs", "sj"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			},
+
+			{
+				"number" : 100,
+				"name" : {
+					"es" : "Nigiri Salm\u00f3n, queso y arroz frito",
+					"ca" : "Nigiri Salm\u00f3, formatge i arr\u00f2s fregit"
+				},
+				"allergen" : ["ps", "lt", "gs", "sj"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				}
+			}
+		]
+	},
+	"dessert_info" : {
+
+	}
+}

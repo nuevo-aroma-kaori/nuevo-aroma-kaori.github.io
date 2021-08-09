@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width">
+    	<title>Nuevo Aroma Kaori - Sitio Web Oficial</title>
+    	<link href="https://nuevoaromakaori.com/style.css" rel="stylesheet" type="text/css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&family=Work+Sans:wght@100;200;300;400;500;600;700;800&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+		<link href="//fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  	</head>
+  	<body>
+		<div id="nav_bar">
+			<div id="show_nav_menu" onclick="page_menu_FX(true);">
+				<span class="material-icons">menu</span>
+			</div>
+			<div id="nav_bar_logo">
+				<img id="nav_bar_logo_img" src="https://nuevoaromakaori.com/resources/logo_character.png" />
+			</div>
+			<div id="nav_search">
+				<span class="material-icons">search</span>
+			</div>
+		</div>
+ 
+		<div style="height: 80px; width: 100%;"></div>
+
+		<div id="nav_menu">
+			<div id="close_nav_menu" onclick="page_menu_FX(false);">
+				<span class="material-icons">close</span>
+			</div>
+			<div id="nav_menu_cnt">
+				<div id="nav_menu_lang_select">
+					<div id="nav_menu_lang_select_container">
+						<span class="material-icons">language</span>
+						<span class="others">简体中文</span>
+					</div>
+				</div>
+
+				<span class="title">目录</span>
+				<div id="nav_menu_cnt_options">
+					<button class="nav_menu_cnt_option" onclick="new_page('https://nuevoaromakaori.com/order/');">主页面</button>
+					<button class="nav_menu_cnt_option" onclick="new_page('https://nuevoaromakaori.com/order/');">我们</button>
+					<button class="nav_menu_cnt_option" onclick="new_page('https://nuevoaromakaori.com/order/');">菜单</button>
+					<button class="nav_menu_cnt_option" onclick="new_page('https://nuevoaromakaori.com/order/');">联系方式</button>
+					<button class="nav_menu_cnt_option" onclick="new_page('https://nuevoaromakaori.com/order/');">如何……？</button>
+				</div>
+			</div>
+		</div>
+
+		<div id="cover">
+			<div id="coverbg">
+				<div id="cover_container">
+					<div id="logo">
+						<img src="https://nuevoaromakaori.com/resources/logo_main.png" />
+						<img style="max-width: 60%; margin-top: 40px;" src="https://nuevoaromakaori.com/resources/logo_character.png" />
+					</div>
+					<div id="cover_theName">日式料理餐厅</div>
+				</div>
+				<div style="background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); height: 60px; /*position: absolute; bottom: 0; left: 0;*/"></div>
+			</div>
+		</div>
+
+		<div style="height: 40px;"></div>
+
+		<div id="main_section">
+			<div id="main_section_qustion">
+				<span class="question_main">今天的心情对应日本料理？</span>
+				<br>
+				<span class="question_jp">今日（きょう）は日本料理（にっぽんりょうり）を食（た）べたい？</span>
+			</div>
+
+			<div id="main_section_random_dish">
+				<img id="main_section_random_dish_img" src="https://nuevoaromakaori.com/resources/examples/example_48.png" />
+			</div>
+
+			<div id="main_section_buttons">
+				<button class="main_section_menu" onclick="new_page('https://nuevoaromakaori.com/order/');">
+					<span class="material-icons">book_online</span>
+					<br>
+					<span class="main_text">预约餐席</span>
+				</button>
+				<br>
+				<button class="main_section_info" onclick="new_page('https://nuevoaromakaori.com/order/');">
+					<span class="material-icons">menu_book</span>
+					<br>
+					<span class="main_text">菜单簿</span>
+				</button>
+			</div>
+		</div>
+
+		<div id="news">
+			<span class="title">消息</span>
+			<div class="news_post">
+				<div class="news_post_prev">
+					<img src="https://nuevoaromakaori.com/resources/news/news_1.png" />
+				</div>
+
+				<div class="news_post_cnt" onclick="set_viewer_state(true);">
+					<span class="news_post_title">大活动！庆祝本店 Nuevo Aroma Kaori 两周年纪念</span>
+					<span class="news_post_desc">数以千计的礼物免费送给我们的顾客。无限点餐。第二杯饮料免费。自 7 月 22 日起（2021 年）。</span>
+				</div>
+			</div>
+		</div>
+
+		<div id="news_viewer">
+			<div id="news_viewer_container">
+				<div id="news_viewer_bar">
+					<span class="title"><span style="color: #D51B19">消息</span> 阅读器</span>
+					<span class="material-icons" onclick="set_viewer_state(false);">close</span>
+				</div>
+				<iframe id="news_viewer_iframe" src="https://www.baidu.com/"></iframe>
+			</div>
+		</div>
+
+		<div id="footer">
+			<div id="footer_the_logo">
+				<img class="footer_the_logo_img" src="https://nuevoaromakaori.com/resources/logo_main.png" />
+				<img class="footer_the_logo_img" src="https://nuevoaromakaori.com/resources/logo_character.png" />
+			</div>
+			<div id="footer_social_media">
+				<span class="title">相关链接</span>
+				<br>
+				<div id="footer_social_media_choices">
+					<div class="social_media_option" onclick="window.open('https://www.instagram.com/nuevoaromakaori/', '_blank').focus();">
+						<img class="social_media_option_img" src="https://nuevoaromakaori.com/resources/instagram_icon.png" />
+					</div>
+					<div class="social_media_option" onclick="window.open('https://www.google.com/maps/place/Nuevo+Aroma+Kaori/@41.4513656,2.2479754,17.97z/data=!3m1!5s0x12a4bb0e658d7b75:0xcede58e7a7ece3bd!4m5!3m4!1s0x12a4bb0e6517e4d3:0x60341e759fabfcf4!8m2!3d41.4513303!4d2.2490368', '_blank').focus();">
+						<img class="social_media_option_img" src="https://nuevoaromakaori.com/resources/google_maps_icon.png" />
+					</div>
+				</div>
+			</div>
+			<div id="footer_contact">
+				<span class="title">联系方式</span>
+				<br>
+				<span class="telephone_number">(+34) 934 647 647 &nbsp;&nbsp; (+34) 649 267 471</span>
+				<br>
+				<span class="others">Carrer de Francesc Layret, 100, 08911 Badalona, Barcelona</span>
+			</div>
+			<div id="footer_copyright">
+				<span class="title">版权声明</span>
+				<br>
+				<span class="others">@版权声明: Nuevo Aroma Kaori 2019 - 2021。保留所有权利。</span>
+			</div>
+		</div>
+
+    	<script src="https://nuevoaromakaori.com/script.js"></script>
+  	</body>
+</html>

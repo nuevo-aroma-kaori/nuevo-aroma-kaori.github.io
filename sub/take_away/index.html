@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width">
+    	<title>Nuevo Aroma Kaori - Sitio Web Oficial</title>
+    	<link href="style.css" rel="stylesheet" type="text/css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&family=Work+Sans:wght@100;200;300;600;700;800&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+		<link href="//fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  	</head>
+  	<body>
+		<div id="nav_bar">
+			<div id="show_nav_menu" onclick="page_menu_FX(true);">
+				<span class="material-icons">menu</span>
+			</div>
+			<div id="nav_bar_logo">
+				<img src="https://first.junhaoliu.repl.co/resources/logo_character.png" />
+			</div>
+			<div id="nav_search">
+				<span class="material-icons">search</span>
+			</div>
+		</div>
+
+		<div style="height: 80px; width: 100%;"></div>
+
+		<div id="nav_menu">
+			<div id="close_nav_menu" onclick="page_menu_FX(false);">
+				<span class="material-icons">close</span>
+			</div>
+			<div id="nav_menu_cnt">
+				<div id="nav_menu_lang_select">
+					<div id="nav_menu_lang_select_container">
+						<span class="material-icons">language</span>
+						<span class="others">ESPAÑOL</span>
+					</div>
+				</div>
+
+				<span class="title">Opciones</span>
+				<div id="nav_menu_cnt_options">
+					<button class="nav_menu_cnt_option">Página principal</button>
+					<button class="nav_menu_cnt_option">Nosotros</button>
+					<button class="nav_menu_cnt_option">Cartas</button>
+					<button class="nav_menu_cnt_option">Contacto</button>
+					<button class="nav_menu_cnt_option">¿Cómo ...?</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="section" id="menus">
+			<div class="section_title">Menús para llevar</div>
+
+			<div class="a_menu">
+				<div class="menu_title">
+					<span>Menú mediodia</span>
+				</div>
+				<div class="menu_desc">
+					<span>Contiene 4 platos de los 59 elejibles, y una bebida.</span>
+				</div>
+				<div class="menu_price">
+					<div>
+						<span class="bigger">10</span>
+						<span class="smaller">.50 €/menú</span>
+					</div>
+				</div>
+				<div class="menu_selection">
+					<button class="i_want_it" onclick="window.location = 'https://first.junhaoliu.repl.co/sub/order_now/';">Pedir ahora</button>
+				</div>
+			</div>
+			
+			<div class="a_menu">
+				<div class="menu_title">
+					<span>Menú noche y festivo</span>
+				</div>
+				<div class="menu_desc">
+					<span>Contiene 5 platos libres de los 100 elejibles, bebida no inclusa.</span>
+				</div>
+				<div class="menu_price">
+					<div>
+						<span class="bigger">15</span>
+						<span class="smaller">.95 €/menú</span>
+					</div>
+				</div>
+				<div class="menu_selection">
+					<button class="i_want_it" onclick="window.location = 'https://first.junhaoliu.repl.co/sub/order_now/';">Pedir ahora</button>
+				</div>
+			</div>
+
+			<div class="a_menu">
+				<div class="menu_title">
+					<span>Platos sueltos</span>
+				</div>
+				<div class="menu_desc">
+					<span>Se cobra por plato. Cantidad de contenido mayor que los menús en cada plato.</span>
+				</div>
+				<div class="menu_selection">
+					<button class="i_want_it" onclick="window.location = 'https://first.junhaoliu.repl.co/sub/order_now/';">Pedir ahora</button>
+				</div>
+			</div>
+		</div>
+
+		<div id="footer">
+			<div id="footer_the_logo">
+				<img class="footer_the_logo_img" src="https://first.junhaoliu.repl.co/resources/logo_main.png" />
+				<img class="footer_the_logo_img" src="https://first.junhaoliu.repl.co/resources/logo_character.png" />
+			</div>
+			<div id="footer_social_media">
+				<span class="title">SITIOS DE INTERÉS</span>
+				<br>
+				<div id="footer_social_media_choices">
+					<div class="social_media_option" onclick="window.open('https://www.instagram.com/nuevoaromakaori/', '_blank').focus();">
+						<img class="social_media_option_img" src="https://first.junhaoliu.repl.co/resources/instagram_icon.png" />
+					</div>
+					<div class="social_media_option" onclick="window.open('https://www.google.com/maps/place/Nuevo+Aroma+Kaori/@41.4513656,2.2479754,17.97z/data=!3m1!5s0x12a4bb0e658d7b75:0xcede58e7a7ece3bd!4m5!3m4!1s0x12a4bb0e6517e4d3:0x60341e759fabfcf4!8m2!3d41.4513303!4d2.2490368', '_blank').focus();">
+						<img class="social_media_option_img" src="https://first.junhaoliu.repl.co/resources/google_maps_icon.png" />
+					</div>
+				</div>
+			</div>
+			<div id="footer_contact">
+				<span class="title">CONTACTO</span>
+				<br>
+				<span class="telephone_number">(+34) 934 647 647 &nbsp;&nbsp; (+34) 649 267 471</span>
+				<br>
+				<span class="others">Carrer de Francesc Layret, 100, 08911 Badalona, Barcelona</span>
+			</div>
+			<div id="footer_copyright">
+				<span class="title">DERECHOS DE AUTOR</span>
+				<br>
+				<span class="others">@Copyright: Nuevo Aroma Kaori 2019 - 2021. Todos los derechos reservados.</span>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+  	</body>
+</html>

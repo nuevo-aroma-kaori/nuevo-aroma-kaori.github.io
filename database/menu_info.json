@@ -1,0 +1,11 @@
+{
+	"all_menus" : {
+		"take_away" : {
+			"name" : {
+				"es" : "Menú mediodia",
+				"ca" : "Menú migdia"
+			},
+			
+		}
+	}
+}

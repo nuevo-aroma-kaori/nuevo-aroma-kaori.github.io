@@ -1,0 +1,311 @@
+body {
+	margin: 0;
+	background: #000000;
+}
+
+span.material-icons {
+	user-select: none;
+}
+
+div#nav_bar {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: linear-gradient(180deg, #212121, #000000);
+	box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 1);
+	text-align: center;
+	z-index: 100;
+}
+
+div#nav_bar div {
+	/*display: inline-block;*/
+	display: inline;
+}
+
+div#nav_bar div span.material-icons {
+	font-size: 40px;
+	color: #D51B19;
+	margin: 20px;
+}
+
+div#nav_bar div#show_nav_menu span.material-icons {
+	float: left;
+}
+
+div#nav_bar div#nav_search span.material-icons {
+	float: right;
+}
+
+div#nav_bar div#nav_bar_logo {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 20px);
+}
+
+div#nav_bar div#nav_bar_logo img {
+	height: 40px;
+	width: auto;
+}
+
+div#nav_menu {
+	position: fixed;
+	width: 0.001%;
+	height: 0.001%;
+	background: rgba(0, 0, 0, 0.92);
+	left: 0;
+	top: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	z-index: 110;
+	transition-duration: 0.6s;
+	transition-timing-function: cubic-bezier(.36, 0, 0, 1);
+	border-radius: 0% 0% 100% 0%;
+}
+
+div#nav_menu div#close_nav_menu {}
+
+div#nav_menu div#close_nav_menu span.material-icons {
+	margin: 20px;
+	font-size: 40px;
+	color: #FFFFFF;
+}
+
+div#nav_menu div#nav_menu_cnt {
+	padding: 0px 20px 20px 20px;
+	transition-duration: 0.2s;
+}
+
+div#nav_menu div#nav_menu_cnt div#nav_menu_lang_select {
+	user-select: none;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+div#nav_menu div#nav_menu_cnt div#nav_menu_lang_select div#nav_menu_lang_select_container {
+	display: inline-block;
+	border: 1px solid #D51B19;
+	border-radius: 400px;
+	background: rgba(0, 0, 0, 0);
+	padding: 10px 14px;
+}
+
+div#nav_menu div#nav_menu_cnt div#nav_menu_lang_select div#nav_menu_lang_select_container span {
+	color: #D51B19;
+	display: inline-block;
+}
+
+div#nav_menu div#nav_menu_cnt div#nav_menu_lang_select div#nav_menu_lang_select_container span.material-icons {
+	font-size: 24px;
+	transform: translateY(3px);
+}
+
+div#nav_menu div#nav_menu_cnt div#nav_menu_lang_select div#nav_menu_lang_select_container span.others {
+	font-size: 20px;
+	transform: translateY(-2px);
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 600;
+}
+
+div#nav_menu div#nav_menu_cnt span.title {
+	font-family: 'Zen Tokyo Zoo', cursive;
+	font-size: 2.4em;
+	color: #D51B19;
+	user-select: none;
+}
+
+div#nav_menu div#nav_menu_cnt div#nav_menu_cnt_options {}
+
+div#nav_menu div#nav_menu_cnt div#nav_menu_cnt_options button.nav_menu_cnt_option {
+	user-select: none;
+	display: block;
+	padding: 14px 24px;
+	background: rgba(0, 0, 0, 0);
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1.12em;
+	box-sizing: border-box;
+	width: 100%;
+	border: none;
+	color: #FFFFFF;
+	border-radius: 0px;
+	text-align: left;
+	margin: 20px 0px;
+	border-left: 1px solid #FFFFFF;
+	transition-duration: 0.2s;
+	transition-timing-function: cubic-bezier(.36, 0, 0, 1);
+}
+
+div#nav_menu div#nav_menu_cnt div#nav_menu_cnt_options button.nav_menu_cnt_option:focus {
+	border-left: 20px solid #FFFFFF;
+	background: rgba(255, 255, 255, 1);
+	color: #000000;
+	font-weight: 600;
+}
+
+div.section {
+	background: #000000;
+	padding: 20px;
+}
+
+div.section div.section_title {
+	font-family: 'Zen Tokyo Zoo', cursive;
+	font-size: 2.4em;
+	color: #D51B19;
+}
+
+div#menus {
+
+}
+
+div#menus div.a_menu {
+	margin: 40px 0px;
+}
+
+div#menus div.a_menu div.menu_title {
+	text-align: center;
+}
+
+div#menus div.a_menu div.menu_title span {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 600;
+	color: #FFFFFF;
+	font-size: 1.6em;
+}
+
+div#menus div.a_menu div.menu_desc {
+	margin: 10px 0px;
+	padding: 0px 10px;
+	text-align: center;
+}
+
+div#menus div.a_menu div.menu_desc span {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	color: #9F9F9F;
+}
+
+div#menus div.a_menu div.menu_price {
+	text-align: center;
+}
+
+div#menus div.a_menu div.menu_price div {
+	display: inline;
+}
+
+div#menus div.a_menu div.menu_price div span.bigger {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+	font-size: 2em;
+	color: #D51B19;
+}
+
+div#menus div.a_menu div.menu_price div span.smaller {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 600;
+	font-size: 1em;
+	color: #FFFFFF;
+}
+
+div#menus div.a_menu div.menu_selection {
+	margin-top: 10px;
+	text-align: center;
+}
+
+div#menus div.a_menu div.menu_selection button {
+	display: inline;
+	border-radius: 200px;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	padding: 14px;
+	transition-duration: 0.2s;
+	margin: 2px;
+	cursor: pointer;
+}
+
+div#menus div.a_menu div.menu_selection button:focus {
+	transform: scale(88%);
+}
+
+div#menus div.a_menu div.menu_selection button.i_want_it {
+	background: #D51B19;
+	font-family: 'Work Sans', sans-serif;
+	color: #FFFFFF;
+	font-weight: 600;
+	border: none;
+}
+
+div#footer {
+	background: #101010;
+	padding: 40px 0px;
+}
+
+div#footer div#footer_the_logo {
+	padding: 20px;
+	text-align: center;
+}
+
+div#footer div#footer_the_logo img.footer_the_logo_img {
+	display: inline-block;
+	height: 40px;
+}
+
+div#footer div#footer_social_media {
+	padding: 20px;
+	text-align: center;
+}
+
+div#footer div span.title {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 300;
+	color: #8A8A8A;
+	letter-spacing: 2px;
+	display: inline-block;
+	margin: 10px;
+}
+
+div#footer div#footer_social_media div#footer_social_media_choices {
+	border: none;
+}
+
+div#footer div#footer_social_media div#footer_social_media_choices div.social_media_option {
+	border: none;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.16);
+	display: inline-block;
+	padding: 20px;
+	margin: 10px;
+}
+
+div#footer div#footer_social_media div#footer_social_media_choices div.social_media_option img.social_media_option_img {
+	width: 28px;
+	height: auto;
+	display: block;
+}
+
+div#footer div#footer_contact {
+	text-align: center;
+}
+
+div#footer div#footer_contact span.telephone_number {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 600;
+	color: #AFAFAF;
+}
+
+div#footer div#footer_contact span.others {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	color: #7F7F7F;
+}
+
+div#footer div#footer_copyright {
+	padding: 20px;
+	text-align: center;
+}
+
+div#footer div#footer_copyright span.others {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	color: #4F4F4F;
+}

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width">
+    	<title>Nuevo Aroma Kaori - Sitio Web Oficial</title>
+    	<link href="style.css" rel="stylesheet" type="text/css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&family=Work+Sans:wght@100;200;300;400;600;700;800&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+		<link href="//fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/js-cookie@2.2.1/src/js.cookie.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  	</head>
+  	<body>
+		<div id="nav_bar">
+			<div id="show_nav_menu" onclick="page_menu_FX(true);">
+				<span class="material-icons">menu</span>
+			</div>
+			<div id="nav_bar_logo">
+				<img src="https://nuevoaromakaori.com/resources/logo_character.png" />
+			</div>
+			<div id="nav_search">
+				<span class="material-icons">search</span>
+			</div>
+		</div>
+
+		<div style="height: 80px; width: 100%;"></div>
+
+		<div id="nav_menu">
+			<div id="close_nav_menu" onclick="page_menu_FX(false);">
+				<span class="material-icons">close</span>
+			</div>
+			<div id="nav_menu_cnt">
+				<div id="nav_menu_lang_select">
+					<div id="nav_menu_lang_select_container">
+						<span class="material-icons">language</span>
+						<span class="others">ESPAÑOL</span>
+					</div>
+				</div>
+
+				<span class="title">Opciones</span>
+				<div id="nav_menu_cnt_options">
+					<button class="nav_menu_cnt_option" onclick="window.location = 'https://nuevoaromakaori.com/';">Página principal</button>
+					<button class="nav_menu_cnt_option">Nosotros</button>
+					<button class="nav_menu_cnt_option">Cartas</button>
+					<button class="nav_menu_cnt_option">Contacto</button>
+					<button class="nav_menu_cnt_option">¿Cómo ...?</button>
+				</div>
+			</div>
+		</div>
+
+		<div id="main_part">
+			<div id="loading_animation">
+				<img src="https://nuevoaromakaori.com/resources/loading.gif" />
+			</div>
+
+			<div class="section" id="asking_for_cookies">
+				<span class="title">El uso de Cookies en nuestro sitio web</span>
+				<span class="desc">Usamos la tecnología Cookies para desar la información necesaria de su pedido. Le guardaremos sus datos para que usted pueda volver a pedir de una forma conveniente. Si los limpia, tendrá que volver a introducir todos los datos necesarios para que pueda hacer el pedido, en la cual le recomendamos limpiarlos si está usando un dispositivo de un propietario no fidedigno/fiable. Acepta para poder funcionar correctamente el web.</span>
+
+				<div class="button_container">
+					<button id="accept_cookies" onclick="change_section('page_1_asking', 'accept_cookies'); cookies_accept();">ACEPTO EL USO DE LA TECNOLOGÍA COOKIES</button>
+				</div>
+			</div>
+
+			<div class="section" id="page_1_asking">
+				<span class="title">¿Come a tienda o desea pedir para llevar?</span>
+				<span class="desc">Siempre le recomendamos usar carta digital (lo que está usando ahora mismo) tal como esté a tienda o para llevar.</span>
+
+				<div class="button_container">
+					<button id="i_want_take_away" onclick="change_section('page_2_asking_take_away', 'i_want_take_away');">
+						<span class="material-icons">local_mall</span>
+						<span class="text">PEDIR PARA LLEVAR</span>
+					</button>
+
+					<button id="i_want_eat_here" onclick="change_section('page_2_asking_eat_here', 'i_want_eat_here');">
+						<span class="material-icons">food_bank</span>
+						<span class="text">COMO/ESTOY EN TIENDA</span>
+					</button>
+				</div>
+			</div>
+
+			<div class="section" id="page_2_asking_take_away">
+				<div class="go_back" onclick="change_section_forward('page_1_asking');">
+					<span class="material-icons">arrow_back</span>
+					<span class="msg">Volver</span>
+				</div>
+
+				<span class="title">Para llevar. ¿A domicilio o recoge a tienda?</span>
+				<span class="desc">Elige una opción de las opciones posteriores.</span>
+
+				<div class="button_container">
+					<button id="i_want_take_away_to_home" onclick="change_section('page_2_take_away_1_to_home', 'i_want_take_away_to_home');">
+						<span class="material-icons">delivery_dining</span>
+						<span class="text">PEDIR A DOMICILIO</span>
+					</button>
+
+					<button id="i_want_take_away_and_come" onclick="change_section('page_2_take_away_2_and_come', 'i_want_take_away_and_come');">
+						<span class="material-icons">store</span>
+						<span class="text">RECOJO A TIENDA</span>
+					</button>
+				</div>
+			</div>
+
+			<div class="section" id="page_2_asking_eat_here">
+				<div class="go_back" onclick="change_section_forward('page_1_asking');">
+					<span class="material-icons">arrow_back</span>
+					<span class="msg">Volver</span>
+				</div>
+
+				<span class="title">Comer en tienda. ¿Desea ir ahora o ya está en tienda?</span>
+				<span class="desc">Cuando esté en tienda, esta página web servirá como su carta digital.</span>
+
+				<div class="button_container">
+					<button id="i_want_eat_here_maps">
+						<span class="material-icons">place</span>
+						<span class="text">LOCALÍZAME LA DIRECCIÓN</span>
+					</button>
+
+					<button id="i_want_eat_here_contact">
+						<span class="material-icons">people</span>
+						<span class="text">QUIERO CONTACTAR CON VOSOTROS</span>
+					</button>
+
+					<button id="i_want_eat_here_menu" onclick="change_section('pre_1_allergen_page_of_dish_menu', 'i_want_eat_here_menu');">
+						<span class="material-icons">menu_book</span>
+						<span class="text">QUIERO VER CARTA</span>
+					</button>
+				</div>
+			</div>
+
+			<div class="section" id="page_2_take_away_1_to_home">
+				<div class="go_back" onclick="change_section_forward('page_2_asking_take_away');">
+					<span class="material-icons">arrow_back</span>
+					<span class="msg">Volver</span>
+				</div>
+
+				<span class="title">Para llevar a domicilio</span>
+				<span class="desc">Antes de hacer la pedida, necesitamos su información de contacto y dirección.</span>
+
+				<div id="contact_address_form">
+					<span class="input_header">Teléfono</span>
+					<input id="contact_phone_number" class="input_asker" placeholder="Teléfono" type="tel" />
+
+					<span class="input_header">Tipo de vía (clica para selecionar)</span>
+					<select id="contact_street_type">
+						<option value="C">Calle</option>
+						<option value="Av">Avenida</option>
+						<option value="Pl">Plaza</option>
+						<option value="Ps">Paseo</option>
+						<option value="B">Barrio</option>
+					</select>
+
+					<span class="input_header">Nombre de vía</span>
+					<input id="contact_street" class="input_asker" placeholder="Ejemplo: Francesc Layret" />
+
+					<span class="input_header">Número (cuando hay 2 números, como 24-27, pon un signo de "menos")</span>
+					<input id="contact_door_number" class="input_asker" placeholder="Ejemplo: 100" type="number" />
+
+					<span class="input_header">Escala (no obligatorio)</span>
+					<input id="contact_ladder" class="input_asker" placeholder="Ejemplo: A" />
+
+					<span class="input_header">Piso</span>
+					<input id="contact_floor" class="input_asker" placeholder="Ejemplo: 1 (primero)" type="number" />
+
+					<span class="input_header">Planta</span>
+					<input id="contact_floo" class="input_asker" placeholder="Ejemplo: 1 (primera)" type="number" />
+
+					<span class="input_header">Código Postal</span>
+					<input id="contact_street" class="input_asker" placeholder="Ejemplo: 08911" type="number" />
+
+					<button id="save_contact_address">DESAR Y CONTINUAR</button>
+				</div>
+
+				<!--div class="section_title">Para llevar</div>
+				<div class="section_desc">Siguiendo las pistas para hacer pedidos.</div>
+
+				<div id="page_2_take_away_current_dish_info">
+					<div id="page_2_take_away_current_dish_info_title">Hasta ahora, has pedido: </div>
+					<div id="page_2_take_away_current_dish_info_dishes">
+						<div id="page_2_take_away_current_dish_info_dishes_none">
+							NADA
+						</div>
+
+						<div class="page_2_take_away_current_dish_info_dishes_dish">
+							<span class="page_2_take_away_current_dish_info_dishes_dish_left">MENÚ MEDIODIA</span>
+							<span class="page_2_take_away_current_dish_info_dishes_dish_right">× 1</span>
+						</div>
+					</div>
+				</div-->
+			</div>
+
+			<div class="section" id="page_2_take_away_2_and_come">
+				<div class="go_back" onclick="change_section_forward('page_2_asking_take_away');">
+					<span class="material-icons">arrow_back</span>
+					<span class="msg">Volver</span>
+				</div>
+
+				<span class="title">Para llevar para recogerlo a tienda</span>
+				<span class="desc">Aún no hay nada.</span>
+
+				<div id="contact_address_form">
+					<span class="input_header">Teléfono</span>
+					<input id="contact_phone_number_2" class="input_asker" placeholder="Teléfono" type="tel" />
+
+					<button id="save_contact_address">CONTINUAR</button>
+				</div>
+			</div>
+
+			<div class="section" id="page_2_eat_here"></div>
+
+			<div class="section" id="pre_1_allergen_page_of_dish_menu">
+				<div class="go_back" onclick="change_section_forward('page_2_asking_eat_here');">
+					<span class="material-icons">arrow_back</span>
+					<span class="msg">Volver</span>
+				</div>
+
+				<span class="title">¿Padeces algún alérgeno o preferencia?</span>
+				<span class="desc">Destácalos (clicando) para que le ayudamos a evitarlos.</span>
+
+				<div id="all_allergen_options">
+					<div class="allergen_option no_chosen" onclick="allergen_add(0);">
+						<div class="all_allergen_options_option_desc_container">
+							<span class="opt_title">Gluten</span>
+							<span class="opt_desc">Harina Blanca, Trigo Candeal...</span>
+						</div>
+					</div>
+					<div class="allergen_option no_chosen" onclick="allergen_add(1);">
+						<div class="all_allergen_options_option_desc_container">
+							<span class="opt_title">Crustáceos</span>
+							<span class="opt_desc">Cangrejo, Cochinillas...</span>
+						</div>
+					</div>
+					<div class="allergen_option no_chosen" onclick="allergen_add(2);">
+						<div class="all_allergen_options_option_desc_container">
+							<span class="opt_title">Huevos</span>
+							<span class="opt_desc">Todo tipo de alimentos relacionados con huevo, como tartas, mayonesas, etc.</span>
+						</div>
+					</div>
+					<div class="allergen_option no_chosen" onclick="allergen_add(3);">
+						<div class="all_allergen_options_option_desc_container">
+							<span class="opt_title">Pescado</span>
+							<span class="opt_desc">Todo tipo de alimentos relacionados con peces.</span>
+						</div>
+					</div>
+					<div class="allergen_option no_chosen" onclick="allergen_add(4);">
+						<div class="all_allergen_options_option_desc_container">
+							<span class="opt_title">Cacahuete</span>
+							<span class="opt_desc">Frutos secos.</span>
+						</div>
+					</div>
+					<div class="allergen_option no_chosen" onclick="allergen_add(5);">
+						<div class="all_allergen_options_option_desc_container">
+							<span class="opt_title">Soja</span>
+							<span class="opt_desc">Leche de soja, Salsa de soja, Miso, Tofu, etc.</span>
+						</div>
+					</div>
+					<div class="allergen_option no_chosen" onclick="allergen_add(6);">
+						<div class="all_allergen_options_option_desc_container">
+							<span class="opt_title">Lácteos</span>
+							<span class="opt_desc">Queso, Nata, Helado...</span>
+						</div>
+					</div>
+
+					<div class="allergen_option no_chosen" onclick="allergen_add(7);">
+						<div class="all_allergen_options_option_desc_container">
+							<span class="opt_title">Frutos de cáscara</span>
+							<span class="opt_desc">Altamuces, Cacahuetes...</span>
+						</div>
+					</div>
+					<div class="allergen_option no_chosen" onclick="allergen_add(8);">
+						<div class="all_allergen_options_option_desc_container">
+							<span class="opt_title">Apio</span>
+							<span class="opt_desc">Todo tipo de alimentos relacionados con apios.</span>
+						</div>
+					</div>
+					<div class="allergen_option no_chosen" onclick="allergen_add(9);">
+						<div class="all_allergen_options_option_desc_container">
+							<span class="opt_title">Mostaza</span>
+							<span class="opt_desc">Todo tipo de alimentos relacionados con mostazas.</span>
+						</div>
+					</div>
+					<div class="allergen_option no_chosen" onclick="allergen_add(10);">
+						<div class="all_allergen_options_option_desc_container">
+							<span class="opt_title">Granos de sésamo</span>
+							<span class="opt_desc">Puede ser usadas de forma cruda o tostada en Sushi, sopa, etc.</span>
+						</div>
+					</div>
+					<div class="allergen_option no_chosen" onclick="allergen_add(11);">
+						<div class="all_allergen_options_option_desc_container">
+							<span class="opt_title">Dióxido de Azufre y Sulfatos</span>
+							<span class="opt_desc">Se utiliza tradicionalmente como antioxidante y conservante para frutas y verduras, frutos secos, aperitivos y vino.</span>
+						</div>
+					</div>
+					<div class="allergen_option no_chosen" onclick="allergen_add(12);">
+						<div class="all_allergen_options_option_desc_container">
+							<span class="opt_title">Moluscos</span>
+							<span class="opt_desc">Sepia, Sashimi, Paella, etc.</span>
+						</div>
+					</div>
+					<div class="allergen_option no_chosen" onclick="allergen_add(13);">
+						<div class="all_allergen_options_option_desc_container">
+							<span class="opt_title">Altramuz</span>
+							<span class="opt_desc">Se puede encontrar en la semilla, la harina, el pan, pasteles y pastas.</span>
+						</div>
+					</div>
+				</div>
+
+				<span class="desc">Los platos alérgenos para usted se aparecerán de fondo rojo en la carta. Podrás clicar en "¿Qué lo es?" para ver qué contiene.</span>
+
+				<div class="button_container">
+					<button id="allergen_option_selection_finished_submit" onclick="change_section('page_of_dish_menu', 'allergen_option_selection_finished_submit'); page_of_dish_menu_request();">
+						<span class="text">DESAR Y CONTINUAR</span>
+					</button>
+				</div>
+			</div>
+
+			<div id="dish_description_floating_window">
+				<div id="dish_description_floating_window_bg" onclick="dish_description_floating_window_Hide();"></div>
+				<div id="dish_description_floating_window_container">
+					<div id="dish_description_floating_window_bar">
+						<span class="material-icons" onclick="dish_description_floating_window_Hide();">close</span>
+					</div>
+					<div id="dish_description_floating_window_cnt">
+						<div id="dish_description_floating_window_cnt_img">
+							<img id="dish_description_floating_window_cnt_img_img" src="" />
+						</div>
+
+						<div id="dish_description_floating_window_cnt_title">
+							<span id="dish_description_floating_window_cnt_title_number">Número de plato: 1</span>
+							<span id="dish_description_floating_window_cnt_title_name">Ensalada de la casa</span>
+						</div>
+
+						<span class="sub_title"><span>Alérgenos</span></span>
+						<div id="dish_description_floating_window_cnt_allergen">
+							<ul id="dish_description_floating_window_cnt_allergen_list">
+								<li class="dish_description_floating_window_cnt_allergen_list_elem non_usr_allergic">Gluten</li>
+								<li class="dish_description_floating_window_cnt_allergen_list_elem non_usr_allergic">Crustáceos</li>
+								<li class="dish_description_floating_window_cnt_allergen_list_elem non_usr_allergic">Huevos</li>
+								<li class="dish_description_floating_window_cnt_allergen_list_elem non_usr_allergic">Pescado</li>
+								<li class="dish_description_floating_window_cnt_allergen_list_elem non_usr_allergic">Cacahuete</li>
+								<li class="dish_description_floating_window_cnt_allergen_list_elem non_usr_allergic">Soja</li>
+								<li class="dish_description_floating_window_cnt_allergen_list_elem non_usr_allergic">Lácteos</li>
+
+								<li class="dish_description_floating_window_cnt_allergen_list_elem non_usr_allergic">Frutos de cáscara</li>
+								<li class="dish_description_floating_window_cnt_allergen_list_elem non_usr_allergic">Apio</li>
+								<li class="dish_description_floating_window_cnt_allergen_list_elem non_usr_allergic">Mostaza</li>
+								<li class="dish_description_floating_window_cnt_allergen_list_elem non_usr_allergic">Granos de sésamo</li>
+								<li class="dish_description_floating_window_cnt_allergen_list_elem non_usr_allergic">Dióxido de Azufre y Sulfatos</li>
+								<li class="dish_description_floating_window_cnt_allergen_list_elem non_usr_allergic">Moluscos</li>
+								<li class="dish_description_floating_window_cnt_allergen_list_elem non_usr_allergic">Altramuz</li>
+
+								<li class="dish_description_floating_window_cnt_allergen_list_elem non_usr_allergic" style="padding: 2px; border-radius: 2px; border: 2px solid #00FF7F; background: #2F2F2F;">Ningún alérgeno</li>
+							</ul>
+						</div>
+
+						<span class="sub_title"><span>Descripción</span></span>
+						<div id="dish_description_floating_window_cnt_text"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="section" id="page_of_dish_menu">
+				<div class="go_back" onclick="change_section_forward('pre_1_allergen_page_of_dish_menu');">
+					<span class="material-icons">arrow_back</span>
+					<span class="msg">Volver</span>
+				</div>
+
+				<span class="title">Carta</span>
+				<span class="desc">Aquí tienes la carta de todos los platos de nuestra tienda. Puedes clicar en el icono de lupa (arriba derecha) para buscar alguna cosa.</span>
+
+				<div id="main_all_dishes">
+					<div id="main_all_dishes_container">
+						<table id="main_all_dishes_table">
+							
+						</table>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+		<script src="design.js"></script>
+		<script src="system.js"></script>
+  	</body>
+</html>

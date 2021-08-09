@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width">
+    	<title>Nuevo Aroma Kaori - Sitio Web Oficial</title>
+    	<link href="style.css" rel="stylesheet" type="text/css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&family=Noto+Sans+JP:wght@100;300;400&family=Work+Sans:wght@100;200;300;400;500;600;700;800&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+		<link href="//fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  	</head>
+  	<body>
+		<div id="nav_bar">
+			<div id="show_nav_menu" onclick="page_menu_FX(true);">
+				<span class="material-icons">menu</span>
+			</div>
+			<div id="nav_bar_logo">
+				<img id="nav_bar_logo_img" src="https://nuevoaromakaori.com/resources/logo_character.png" />
+			</div>
+			<div id="nav_search">
+				<span class="material-icons">search</span>
+			</div>
+		</div>
+ 
+		<div style="height: 80px; width: 100%;"></div>
+
+		<div id="nav_menu">
+			<div id="close_nav_menu" onclick="page_menu_FX(false);">
+				<span class="material-icons">close</span>
+			</div>
+			<div id="nav_menu_cnt">
+				<div id="nav_menu_lang_select">
+					<div id="nav_menu_lang_select_container">
+						<span class="material-icons">language</span>
+						<span class="others">ESPAÑOL</span>
+					</div>
+				</div>
+
+				<span class="title">Opciones</span>
+				<div id="nav_menu_cnt_options">
+					<button class="nav_menu_cnt_option" onclick="new_page('https://nuevoaromakaori.com/order/');">Página principal</button>
+					<button class="nav_menu_cnt_option" onclick="new_page('https://nuevoaromakaori.com/order/');">Nosotros</button>
+					<button class="nav_menu_cnt_option" onclick="new_page('https://nuevoaromakaori.com/carta/');">Cartas</button>
+					<button class="nav_menu_cnt_option" onclick="new_page('https://nuevoaromakaori.com/order/');">Contacto</button>
+					<button class="nav_menu_cnt_option" onclick="new_page('https://nuevoaromakaori.com/order/');">¿Cómo ...?</button>
+				</div>
+			</div>
+		</div>
+
+		<div id="selection_table_fixed">
+			<div id="selection_table_container_fixed">
+				<div>
+					<table>
+						<tr>
+							<td class="selection_table_elem_f" onclick="page_change_to(0);">Bebidas</td>
+							<td class="selection_table_elem_f chosen" onclick="page_change_to(1);">Platos</td>
+							<td class="selection_table_elem_f" onclick="page_change_to(2);">Postres</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div id="plan_menu_option_page" class="option_page">
+			<span class="material-icons opt_top">menu_book</span>
+			<span class="opt_title">Plan</span>
+			<span class="opt_desc">Elige una de las opciones siguientes para que le podamos filtrar mejor la carta. Cuando el butón está rojo, quiere decir que este plan es seleccionable para ahora - <span id="opt_desc_time">Lunes, Mediodía - 14:10</span>. Si no, quiere decir que no está disponible para que pida ahora.</span>
+		</div>
+
+		<div id="main_container">
+			<img src="https://nuevoaromakaori.com/resources/sakura_bg_fx.png" width="100%" />
+			<span class="main_title">Cartas</span>
+			<span class="main_desc">Aquí tienes toda la información de los platos, las bebidas y los postres de Nuevo Aroma Kaori (Badalona).</span>
+
+			<div class="user_available_choice">
+				<span class="user_choice_title">Plan</span>
+				<span class="user_choice_show">Buffet Noche, Festivo y Fin de semana</span>
+				<div class="user_available_choice_change">
+					<div class="user_available_choice_change_container">
+						<span class="sp_desc">CAMBIAR EL PLAN</span>
+						<span class="material-icons">chevron_right</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="user_available_choice">
+				<span class="user_choice_title">Alérgenos</span>
+				<span class="user_choice_show">Ningún alergénico seleccionado</span>
+				<div class="user_available_choice_change">
+					<div class="user_available_choice_change_container">
+						<span class="sp_desc">MODIFICAR ALERGÉNICOS</span>
+						<span class="material-icons">chevron_right</span>
+					</div>
+				</div>
+			</div>
+
+			<div id="selection_table">
+				<div id="selection_table_container">
+					<div>
+						<table>
+							<tr>
+								<td class="selection_table_elem" onclick="page_change_to(0);">Bebidas</td>
+								<td class="selection_table_elem chosen" onclick="page_change_to(1);">Platos</td>
+								<td class="selection_table_elem" onclick="page_change_to(2);">Postres</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<div id="loading_information">
+				<div>
+					<img src="https://nuevoaromakaori.com/resources/loading.gif" />
+					<span>Cargando información....</span>
+				</div>
+			</div>
+
+			<!-- MOST MAIN SPACE -->
+			<div id="main_all_dishes">
+				<div id="main_all_dishes_container">
+					<table id="main_all_dishes_table"></table>
+				</div>
+			</div>
+
+			<div id="main_all_dishes_drink">
+				<div id="main_all_dishes_drink_container">
+					<table id="main_all_dishes_drink_table"></table>
+				</div>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+  	</body>
+</html>
