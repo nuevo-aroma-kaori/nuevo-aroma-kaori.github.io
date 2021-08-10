@@ -1,5 +1,6 @@
 window.onload = function() {
 	request_necessary_information();
+	set_chosen_menu(1);
 };
 
 var all_dish_info = null;
@@ -154,3 +155,69 @@ function selection_table_at_top() {
 }
 
 setInterval(selection_table_at_top, 1);
+
+function set_chosen_menu(index) {
+	var elems_parent = document.getElementsByClassName("option_page_option");
+	var elems_title = document.getElementsByClassName("option_page_option_title");
+	var elems_child = document.getElementsByClassName("option_page_option_container");
+
+	for (var i = 0; i < elems_parent.length; ++i) {
+		if (i == index) {
+			elems_parent[i].style.background = "#D51B19";
+			elems_parent[i].style.padding = "4px";
+		} else {
+			elems_parent[i].style.background = "#E8E8E8";
+			elems_parent[i].style.padding = "2px";
+		}
+	}
+
+	for (var i = 0; i < elems_title.length; ++i) {
+		if (i == index) {
+			elems_title[i].style.height = "1.2em";
+		} else {
+			elems_title[i].style.height = "0em";
+		}
+	}
+
+	for (var i = 0; i < elems_child.length; ++i) {
+		if (i == index) {
+			elems_child[i].style.borderRadius = "16px";
+		} else {
+			elems_child[i].style.borderRadius = "18px";
+		}
+	}
+
+	change_plan_menu_hide(true);
+}
+
+function change_plan_menu_show() {
+	var bg_elem = document.getElementById("whatever_wnd_bg");
+	bg_elem.style.display = "block";
+	setTimeout(function() { bg_elem.style.opacity = "1"; }, 50);
+
+	var option_page_elem = document.getElementById("plan_menu_option_page");
+	option_page_elem.style.display = "block";
+	setTimeout(function() { option_page_elem.style.top = "0%"; }, 50);
+}
+
+function change_plan_menu_hide(wait) {
+	if (wait) {
+		setTimeout(function() {
+			var bg_elem = document.getElementById("whatever_wnd_bg");
+			bg_elem.style.opacity = "0";
+			setTimeout(function() { bg_elem.style.display = "none"; }, 200);
+
+			var option_page_elem = document.getElementById("plan_menu_option_page");
+			option_page_elem.style.top = "100%";
+			setTimeout(function() { option_page_elem.style.display = "none"; }, 200);
+		}, 200);
+	} else {
+		var bg_elem = document.getElementById("whatever_wnd_bg");
+		bg_elem.style.opacity = "0";
+		setTimeout(function() { bg_elem.style.display = "none"; }, 200);
+
+		var option_page_elem = document.getElementById("plan_menu_option_page");
+		option_page_elem.style.top = "100%";
+		setTimeout(function() { option_page_elem.style.display = "none"; }, 200);
+	}
+}

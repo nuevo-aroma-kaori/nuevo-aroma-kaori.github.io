@@ -8,7 +8,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&family=Noto+Sans+JP:wght@100;300;400&family=Work+Sans:wght@100;200;300;400;500;600;700;800&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
-		<link href="//fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   	</head>
   	<body>
@@ -63,11 +63,247 @@
 			</div>
 		</div>
 
+		<div id="whatever_wnd_bg"></div>
+
 		<div id="plan_menu_option_page" class="option_page">
 			<div class="option_page_container">
 				<span class="material-icons opt_top">menu_book</span>
 				<span class="opt_title">Plan</span>
-				<span class="opt_desc">Elige una de las opciones siguientes para que le podamos filtrar mejor la carta. Cuando el butón está rojo, quiere decir que este plan es seleccionable para ahora - <span id="opt_desc_time">Lunes, Mediodía - 14:10</span>. Si no, quiere decir que no está disponible para que pida ahora.</span>
+				<span class="opt_desc">Elige una de las opciones siguientes para que le podamos filtrar mejor la carta. Cuando el butón está <span style="color: #D51B19; font-weight: 600;">rojo</span>, quiere decir que este plan es seleccionable para ahora: <span id="opt_desc_time">Lunes, Mediodía</span>. Si no, quiere decir que no está disponible para que pida ahora.</span>
+
+				<!-- OPTIONS -->
+				<div class="option_page_option" onclick="set_chosen_menu(0);">
+					<span class="option_page_option_title">ELEGIDO</span>
+					<div class="option_page_option_container">
+						<div class="option_page_option_container_tip">
+							<span class="material-icons">restaurant_menu</span>
+							<span class="m_desc">PARA COMER EN TIENDA</span>
+						</div>
+						<span class="option_page_option_menu_name">Buffet Mediodía</span>
+						<span class="option_page_option_menu_desc">Cantidad de platos ilimitados en los 55 platos elejibles (de nº 1 hasta el nº 55 de la carta). Quitar su hambre a un precio económico y con buena aroma.</span>
+						<div>
+							<table class="option_page_option_menu_noted_points_2">
+								<tr>
+									<td>
+										<span class="option_page_option_menu_noted_points_title">Platos disponibles</span>
+										<br>
+										<span class="option_page_option_menu_noted_points_value">55</span>
+										<br>
+										<span class="option_page_option_menu_noted_points_unit">platos elejibles</span>
+									</td>
+									<td>
+										<span class="option_page_option_menu_noted_points_title">Cantidad de platos</span>
+										<br>
+										<span class="option_page_option_menu_noted_points_value">Ilimitado</span>
+										<br>
+										<span class="option_page_option_menu_noted_points_unit">lo que pueda consumir</span>
+									</td>
+								</tr>
+							</table>
+						</div>
+
+						<div>
+							<table class="option_page_option_menu_noted_points_1">
+								<tr>
+									<td>
+										<span class="option_page_option_menu_noted_points_title">Precio</span>
+										<br>
+										<span class="option_page_option_menu_noted_points_value">12.95</span>
+										<br>
+										<span class="option_page_option_menu_noted_points_unit">€/persona</span>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<div class="option_page_option" onclick="set_chosen_menu(1);">
+					<span class="option_page_option_title">ELEGIDO</span>
+					<div class="option_page_option_container">
+						<div class="option_page_option_container_tip">
+							<span class="material-icons">restaurant_menu</span>
+							<span class="m_desc">PARA COMER EN TIENDA</span>
+						</div>
+						<span class="option_page_option_menu_name">Buffet Noche, Fin de semana y Festivo</span>
+						<span class="option_page_option_menu_desc">Cantidad de platos ilimitados en los 100 platos elejibles (de nº 1 hasta el nº 100 de la carta). Tener la máxima experiencia con alta diversidad en los platos.</span>
+						<div>
+							<table class="option_page_option_menu_noted_points_2">
+								<tr>
+									<td>
+										<span class="option_page_option_menu_noted_points_title">Platos disponibles</span>
+										<br>
+										<span class="option_page_option_menu_noted_points_value">100</span>
+										<br>
+										<span class="option_page_option_menu_noted_points_unit">platos elejibles</span>
+									</td>
+									<td>
+										<span class="option_page_option_menu_noted_points_title">Cantidad de platos</span>
+										<br>
+										<span class="option_page_option_menu_noted_points_value">Ilimitado</span>
+										<br>
+										<span class="option_page_option_menu_noted_points_unit">lo que pueda consumir</span>
+									</td>
+								</tr>
+							</table>
+						</div>
+
+						<div>
+							<table class="option_page_option_menu_noted_points_1">
+								<tr>
+									<td>
+										<span class="option_page_option_menu_noted_points_title">Precio</span>
+										<br>
+										<span class="option_page_option_menu_noted_points_value">16.95</span>
+										<br>
+										<span class="option_page_option_menu_noted_points_unit">€/persona</span>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<div class="option_page_option" onclick="set_chosen_menu(2);">
+					<span class="option_page_option_title">ELEGIDO</span>
+					<div class="option_page_option_container">
+						<div class="option_page_option_container_tip">
+							<span class="material-icons">restaurant_menu</span>
+							<span class="m_desc">PARA COMER EN TIENDA</span>
+							<br>
+							<span class="material-icons">takeout_dining</span>
+							<span class="m_desc">PARA LLEVAR</span>
+						</div>
+						<span class="option_page_option_menu_name">Menú Mediodía</span>
+						<span class="option_page_option_menu_desc">Cantidad de platos limitados a 4 en los 59 platos elejibles (de nº 1 hasta el nº 59 de la carta). </span>
+						<div>
+							<table class="option_page_option_menu_noted_points_2">
+								<tr>
+									<td>
+										<span class="option_page_option_menu_noted_points_title">Platos disponibles</span>
+										<br>
+										<span class="option_page_option_menu_noted_points_value">59</span>
+										<br>
+										<span class="option_page_option_menu_noted_points_unit">platos elejibles</span>
+									</td>
+									<td>
+										<span class="option_page_option_menu_noted_points_title">Cantidad de platos</span>
+										<br>
+										<span class="option_page_option_menu_noted_points_value">4</span>
+										<br>
+										<span class="option_page_option_menu_noted_points_unit">platos/menú</span>
+									</td>
+								</tr>
+							</table>
+						</div>
+
+						<div>
+							<table class="option_page_option_menu_noted_points_1">
+								<tr>
+									<td>
+										<span class="option_page_option_menu_noted_points_title">Precio</span>
+										<br>
+										<span class="option_page_option_menu_noted_points_value">16.95</span>
+										<br>
+										<span class="option_page_option_menu_noted_points_unit">€/persona</span>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<div class="option_page_option" onclick="set_chosen_menu(3);">
+					<span class="option_page_option_title">ELEGIDO</span>
+					<div class="option_page_option_container">
+						<div class="option_page_option_container_tip">
+							<span class="material-icons">restaurant_menu</span>
+							<span class="m_desc">PARA COMER EN TIENDA</span>
+						</div>
+						<span class="option_page_option_menu_name">Buffet Noche, Fin de semana y Festivo</span>
+						<span class="option_page_option_menu_desc">Cantidad de platos ilimitados en los 100 platos elejibles (de nº 1 hasta el nº 100 de la carta). Tener la máxima experiencia con alta diversidad en los platos.</span>
+						<div>
+							<table class="option_page_option_menu_noted_points_2">
+								<tr>
+									<td>
+										<span class="option_page_option_menu_noted_points_title">Platos disponibles</span>
+										<br>
+										<span class="option_page_option_menu_noted_points_value">100</span>
+										<br>
+										<span class="option_page_option_menu_noted_points_unit">platos elejibles</span>
+									</td>
+									<td>
+										<span class="option_page_option_menu_noted_points_title">Cantidad de platos</span>
+										<br>
+										<span class="option_page_option_menu_noted_points_value">Ilimitado</span>
+										<br>
+										<span class="option_page_option_menu_noted_points_unit">lo que pueda consumir</span>
+									</td>
+								</tr>
+							</table>
+						</div>
+
+						<div>
+							<table class="option_page_option_menu_noted_points_1">
+								<tr>
+									<td>
+										<span class="option_page_option_menu_noted_points_title">Precio</span>
+										<br>
+										<span class="option_page_option_menu_noted_points_value">16.95</span>
+										<br>
+										<span class="option_page_option_menu_noted_points_unit">€/persona</span>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<div class="option_page_option" onclick="set_chosen_menu(4);">
+					<span class="option_page_option_title">ELEGIDO</span>
+					<div class="option_page_option_container">
+						<div class="option_page_option_container_tip">
+							<span class="material-icons">restaurant_menu</span>
+							<span class="m_desc">PARA COMER EN TIENDA</span>
+						</div>
+						<span class="option_page_option_menu_name">Buffet Noche, Fin de semana y Festivo</span>
+						<span class="option_page_option_menu_desc">Cantidad de platos ilimitados en los 100 platos elejibles (de nº 1 hasta el nº 100 de la carta). Tener la máxima experiencia con alta diversidad en los platos.</span>
+						<div>
+							<table class="option_page_option_menu_noted_points_2">
+								<tr>
+									<td>
+										<span class="option_page_option_menu_noted_points_title">Platos disponibles</span>
+										<br>
+										<span class="option_page_option_menu_noted_points_value">100</span>
+										<br>
+										<span class="option_page_option_menu_noted_points_unit">platos elejibles</span>
+									</td>
+									<td>
+										<span class="option_page_option_menu_noted_points_title">Cantidad de platos</span>
+										<br>
+										<span class="option_page_option_menu_noted_points_value">Ilimitado</span>
+										<br>
+										<span class="option_page_option_menu_noted_points_unit">lo que pueda consumir</span>
+									</td>
+								</tr>
+							</table>
+						</div>
+
+						<div>
+							<table class="option_page_option_menu_noted_points_1">
+								<tr>
+									<td>
+										<span class="option_page_option_menu_noted_points_title">Precio</span>
+										<br>
+										<span class="option_page_option_menu_noted_points_value">16.95</span>
+										<br>
+										<span class="option_page_option_menu_noted_points_unit">€/persona</span>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -78,9 +314,13 @@
 
 			<div class="user_available_choice">
 				<span class="user_choice_title">Plan</span>
-				<span class="user_choice_show">Buffet Noche, Festivo y Fin de semana</span>
+				<span class="user_choice_show">Buffet Noche, Fin de semana y Festivo</span>
+				<span class="user_choice_show">Buffet Mediodía</span>
+				<span class="user_choice_show">Menú Mediodía</span>
+				<span class="user_choice_show">Menú Noche</span>
+				<span class="user_choice_show">Platos sueltos</span>
 				<div class="user_available_choice_change">
-					<div class="user_available_choice_change_container">
+					<div class="user_available_choice_change_container" onclick="change_plan_menu_show();">
 						<span class="sp_desc">CAMBIAR EL PLAN</span>
 						<span class="material-icons">chevron_right</span>
 					</div>
