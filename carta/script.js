@@ -160,6 +160,8 @@ function set_chosen_menu(index) {
 	var elems_parent = document.getElementsByClassName("option_page_option");
 	var elems_title = document.getElementsByClassName("option_page_option_title");
 	var elems_child = document.getElementsByClassName("option_page_option_container");
+	
+	var elems_show = document.getElementsByClassName("user_choice_show_menu");
 
 	for (var i = 0; i < elems_parent.length; ++i) {
 		if (i == index) {
@@ -184,6 +186,14 @@ function set_chosen_menu(index) {
 			elems_child[i].style.borderRadius = "16px";
 		} else {
 			elems_child[i].style.borderRadius = "18px";
+		}
+	}
+
+	for (var i = 0; i < elems_show.length; ++i) {
+		if (i == index) {
+			elems_show[i].style.display = "block";
+		} else {
+			elems_show[i].style.display = "none";
 		}
 	}
 
