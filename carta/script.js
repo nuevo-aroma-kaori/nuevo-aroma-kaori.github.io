@@ -202,7 +202,7 @@ function create_drink_cnt_element_drinks(proc_element, alcohol) {
 	var elem_preview_image = document.createElement("img");
 	elem_preview_image.setAttribute("class", "main_dish_image");
 	elem_preview_image.setAttribute("src", "https://nuevoaromakaori.com/resources/dish_img/" + all_dish_info.dish_info.all_dishes[proc_index].number.toString() + ".png");
-	*/
+	**/
 
 	var elem_dish_description = document.createElement("div");
 	elem_dish_description.setAttribute("class", "main_dish_desc");
