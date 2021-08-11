@@ -103,7 +103,7 @@ div#nav_menu div#nav_menu_cnt div#nav_menu_lang_select div#nav_menu_lang_select_
 div#nav_menu div#nav_menu_cnt div#nav_menu_lang_select div#nav_menu_lang_select_container span.others {
 	font-size: 20px;
 	transform: translateY(-2px);
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 600;
 }
 
@@ -121,7 +121,7 @@ div#nav_menu div#nav_menu_cnt div#nav_menu_cnt_options button.nav_menu_cnt_optio
 	display: block;
 	padding: 14px 24px;
 	background: rgba(0, 0, 0, 0);
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 400;
 	font-size: 1.12em;
 	box-sizing: border-box;
@@ -162,7 +162,7 @@ div#main div#main_header span.title {
 }
 
 div#main div#main_header span.desc {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 400;
 	color: #FFFFFF;
 	display: block;
@@ -202,7 +202,7 @@ div#main div#main_all_dishes div#main_all_dishes_container table#main_all_dishes
 }
 
 div#main div#main_all_dishes div#main_all_dishes_container table#main_all_dishes_table tr td div.main_all_dishes_dish_container div.main_dish_number {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 600;
 	text-align: center;
 	color: #FFFFFF;
@@ -212,7 +212,7 @@ div#main div#main_all_dishes div#main_all_dishes_container table#main_all_dishes
 }
 
 div#main div#main_all_dishes div#main_all_dishes_container table#main_all_dishes_table tr td div.main_all_dishes_dish_container div.main_dish_desc {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	padding: 10px;
 	text-align: center;
 	background: #FFFFFF;
@@ -228,7 +228,7 @@ div#main div#main_all_dishes div#main_all_dishes_container table#main_all_dishes
 }
 
 div#main div#main_all_dishes div#main_all_dishes_container table#main_all_dishes_table tr td div.main_all_dishes_dish_container div.main_dish_options button {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	padding: 10px;
 	text-align: center;
 	box-sizing: border-box;
@@ -280,7 +280,7 @@ div#footer div#footer_social_media {
 }
 
 div#footer div span.title {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 300;
 	color: #8A8A8A;
 	letter-spacing: 2px;
@@ -312,13 +312,13 @@ div#footer div#footer_contact {
 }
 
 div#footer div#footer_contact span.telephone_number {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 600;
 	color: #AFAFAF;
 }
 
 div#footer div#footer_contact span.others {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 400;
 	color: #7F7F7F;
 }
@@ -329,7 +329,7 @@ div#footer div#footer_copyright {
 }
 
 div#footer div#footer_copyright span.others {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 400;
 	color: #4F4F4F;
 }

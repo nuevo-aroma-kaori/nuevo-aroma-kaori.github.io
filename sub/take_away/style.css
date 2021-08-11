@@ -103,7 +103,7 @@ div#nav_menu div#nav_menu_cnt div#nav_menu_lang_select div#nav_menu_lang_select_
 div#nav_menu div#nav_menu_cnt div#nav_menu_lang_select div#nav_menu_lang_select_container span.others {
 	font-size: 20px;
 	transform: translateY(-2px);
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 600;
 }
 
@@ -121,7 +121,7 @@ div#nav_menu div#nav_menu_cnt div#nav_menu_cnt_options button.nav_menu_cnt_optio
 	display: block;
 	padding: 14px 24px;
 	background: rgba(0, 0, 0, 0);
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 400;
 	font-size: 1.12em;
 	box-sizing: border-box;
@@ -167,7 +167,7 @@ div#menus div.a_menu div.menu_title {
 }
 
 div#menus div.a_menu div.menu_title span {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 600;
 	color: #FFFFFF;
 	font-size: 1.6em;
@@ -180,7 +180,7 @@ div#menus div.a_menu div.menu_desc {
 }
 
 div#menus div.a_menu div.menu_desc span {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 400;
 	color: #9F9F9F;
 }
@@ -194,14 +194,14 @@ div#menus div.a_menu div.menu_price div {
 }
 
 div#menus div.a_menu div.menu_price div span.bigger {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 800;
 	font-size: 2em;
 	color: #D51B19;
 }
 
 div#menus div.a_menu div.menu_price div span.smaller {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 600;
 	font-size: 1em;
 	color: #FFFFFF;
@@ -215,7 +215,7 @@ div#menus div.a_menu div.menu_selection {
 div#menus div.a_menu div.menu_selection button {
 	display: inline;
 	border-radius: 200px;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 400;
 	padding: 14px;
 	transition-duration: 0.2s;
@@ -229,7 +229,7 @@ div#menus div.a_menu div.menu_selection button:focus {
 
 div#menus div.a_menu div.menu_selection button.i_want_it {
 	background: #D51B19;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	color: #FFFFFF;
 	font-weight: 600;
 	border: none;
@@ -256,7 +256,7 @@ div#footer div#footer_social_media {
 }
 
 div#footer div span.title {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 300;
 	color: #8A8A8A;
 	letter-spacing: 2px;
@@ -288,13 +288,13 @@ div#footer div#footer_contact {
 }
 
 div#footer div#footer_contact span.telephone_number {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 600;
 	color: #AFAFAF;
 }
 
 div#footer div#footer_contact span.others {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 400;
 	color: #7F7F7F;
 }
@@ -305,7 +305,7 @@ div#footer div#footer_copyright {
 }
 
 div#footer div#footer_copyright span.others {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 400;
 	color: #4F4F4F;
 }

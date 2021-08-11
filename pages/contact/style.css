@@ -103,7 +103,7 @@ div#nav_menu div#nav_menu_cnt div#nav_menu_lang_select div#nav_menu_lang_select_
 div#nav_menu div#nav_menu_cnt div#nav_menu_lang_select div#nav_menu_lang_select_container span.others {
 	font-size: 20px;
 	transform: translateY(-2px);
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 600;
 }
 
@@ -121,7 +121,7 @@ div#nav_menu div#nav_menu_cnt div#nav_menu_cnt_options button.nav_menu_cnt_optio
 	display: block;
 	padding: 14px 24px;
 	background: rgba(0, 0, 0, 0);
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 400;
 	font-size: 1.12em;
 	box-sizing: border-box;
@@ -163,7 +163,7 @@ div.section div.subsection {
 }
 
 div.section div.subsection span.headline {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 600;
 	color: #FFFFFF;
 	font-size: 1.6em;
@@ -171,7 +171,7 @@ div.section div.subsection span.headline {
 }
 
 div.section div.subsection span.description {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 500;
 	color: #AFAFAF;
 	font-size: 0.9em;
@@ -197,7 +197,7 @@ div.section div.subsection div.phone span {
 }
 
 div.section div.subsection div.phone span.normal {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 500;
 	font-size: 20px;
 	position: absolute;
@@ -213,7 +213,7 @@ div.section div.subsection div.complement {
 }
 
 div.section div.subsection div.complement span.normal {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 500;
 	font-size: 20px;
 	position: absolute;
@@ -241,7 +241,7 @@ div#footer div#footer_social_media {
 }
 
 div#footer div span.title {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 300;
 	color: #8A8A8A;
 	letter-spacing: 2px;
@@ -273,13 +273,13 @@ div#footer div#footer_contact {
 }
 
 div#footer div#footer_contact span.telephone_number {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 600;
 	color: #AFAFAF;
 }
 
 div#footer div#footer_contact span.others {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 400;
 	color: #7F7F7F;
 }
@@ -290,7 +290,7 @@ div#footer div#footer_copyright {
 }
 
 div#footer div#footer_copyright span.others {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 400;
 	color: #4F4F4F;
 }

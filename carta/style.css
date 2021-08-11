@@ -377,6 +377,28 @@ div.option_page div.option_page_container div.option_page_option div.option_page
 	font-size: 0.8em;
 }
 
+div.option_page div.option_page_container div.option_page_notes {
+	margin-top: 20px;
+}
+
+div.option_page div.option_page_container div.option_page_notes span.n_title {
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
+	text-align: center;
+	display: block;
+	font-size: 1.2em;
+	color: #4F4F4F;
+}
+
+div.option_page div.option_page_container div.option_page_notes ol {
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
+	font-size: 1em;
+	color: #4F4F4F;
+}
+
+div.option_page div.option_page_container div.option_page_notes ol li {
+	margin: 10px 0px;
+}
+
 div#main_container {}
 
 div#main_container span.main_title {
@@ -485,33 +507,33 @@ div#main_container div#selection_table div#selection_table_container table tr td
 	font-weight: 600;
 }
 
-div#main_container div#main_all_dishes div#main_all_dishes_container {
+div#main_container div.main_all_table_div div.main_all_table_div_container {
 	margin: 0px 10px 10px 10px;
 }
 
-div#main_container div#main_all_dishes div#main_all_dishes_container table#main_all_dishes_table {
+div#main_container div.main_all_table_div div.main_all_table_div_container table.main_all_table_div_table {
 	width: 100%;
 	border: none;
 }
 
-div#main_container div#main_all_dishes div#main_all_dishes_container table#main_all_dishes_table tr td {
+div#main_container div.main_all_table_div div.main_all_table_div_container table.main_all_table_div_table tr td {
 	width: 50%;
 }
 
-div#main_container div#main_all_dishes div#main_all_dishes_container table#main_all_dishes_table tr td div.main_all_dishes_dish_container {
+div#main_container div.main_all_table_div div.main_all_table_div_container table.main_all_table_div_table tr td div.main_all_dishes_dish_container {
 	border-radius: 12px;
 	border: 1px solid #F6F6F6;
 	background: linear-gradient(180deg, #FFFFFF, #F6F6F6);
 	margin: 10px;
 }
 
-div#main_container div#main_all_dishes div#main_all_dishes_container table#main_all_dishes_table tr td div.main_all_dishes_dish_container img.main_dish_image {
+div#main_container div.main_all_table_div div.main_all_table_div_container table.main_all_table_div_table tr td div.main_all_dishes_dish_container img.main_dish_image {
 	width: 100%;
 	box-sizing: border-box;
 }
 
-div#main_container div#main_all_dishes div#main_all_dishes_container table#main_all_dishes_table tr td div.main_all_dishes_dish_container div.main_dish_number {
-	font-family: 'Work Sans', sans-serif;
+div#main_container div.main_all_table_div div.main_all_table_div_container table.main_all_table_div_table tr td div.main_all_dishes_dish_container div.main_dish_number {
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 600;
 	text-align: center;
 	color: #000000;
@@ -520,24 +542,53 @@ div#main_container div#main_all_dishes div#main_all_dishes_container table#main_
 	margin: 0;
 }
 
-div#main_container div#main_all_dishes div#main_all_dishes_container table#main_all_dishes_table tr td div.main_all_dishes_dish_container div.main_dish_desc {
-	font-family: 'Work Sans', sans-serif;
+div#main_container div.main_all_table_div div.main_all_table_div_container table.main_all_table_div_table tr td div.main_all_dishes_dish_container div.main_dish_desc {
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	padding: 10px;
 	text-align: center;
-
 }
 
-div#main_container div#main_all_dishes div#main_all_dishes_container table#main_all_dishes_table tr td div.main_all_dishes_dish_container div.main_dish_desc span.main_dish_desc_title {
+div#main_container div.main_all_table_div div.main_all_table_div_container table.main_all_table_div_table tr td div.main_all_dishes_dish_container div.main_dish_desc span.main_dish_desc_title {
+	display: block;
+	text-align: center;
 	font-weight: 600;
 	color: #D51B19;
 }
 
-div#main_container div#main_all_dishes div#main_all_dishes_container table#main_all_dishes_table tr td div.main_all_dishes_dish_container div.main_dish_options {
+div#main_container div.main_all_table_div div.main_all_table_div_container table.main_all_table_div_table tr td div.main_all_dishes_dish_container div.main_dish_desc span.main_drink_desc_alcohol {
+	display: block;
+	text-align: center;
+	font-weight: 400;
+	color: #000000;
+	margin-top: 6px;
+}
+
+div#main_container div.main_all_table_div div.main_all_table_div_container table.main_all_table_div_table tr td div.main_all_dishes_dish_container div.main_dish_desc span.main_drink_desc_capacity {
+	display: block;
+	text-align: center;
+	font-weight: 600;
+	color: #4F4F4F;
+	margin-top: 6px;
+}
+
+div#main_container div.main_all_table_div div.main_all_table_div_container table.main_all_table_div_table tr td div.main_all_dishes_dish_container div.main_dish_desc span.main_drink_desc_price {
+	display: block;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 600;
+	color: #D51B19;
+	padding: 2px;
+	border-radius: 4px;
+	background: #F6F6F6;
+	margin-top: 6px;
+}
+
+div#main_container div.main_all_table_div div.main_all_table_div_container table.main_all_table_div_table tr td div.main_all_dishes_dish_container div.main_dish_options {
 	margin: 0px 10px 10px 10px;
 }
 
-div#main_container div#main_all_dishes div#main_all_dishes_container table#main_all_dishes_table tr td div.main_all_dishes_dish_container div.main_dish_options button {
-	font-family: 'Work Sans', sans-serif;
+div#main_container div.main_all_table_div div.main_all_table_div_container table.main_all_table_div_table tr td div.main_all_dishes_dish_container div.main_dish_options button {
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	padding: 10px;
 	text-align: center;
 	box-sizing: border-box;
@@ -546,15 +597,34 @@ div#main_container div#main_all_dishes div#main_all_dishes_container table#main_
 	transition-duration: 0.1s;
 }
 
-div#main_container div#main_all_dishes div#main_all_dishes_container table#main_all_dishes_table tr td div.main_all_dishes_dish_container div.main_dish_options button:hover {
+div#main_container div.main_all_table_div div.main_all_table_div_container table.main_all_table_div_table tr td div.main_all_dishes_dish_container div.main_dish_options button:hover {
 	transform: scale(94%);
 }
 
-div#main_container div#main_all_dishes div#main_all_dishes_container table#main_all_dishes_table tr td div.main_all_dishes_dish_container div.main_dish_options button.main_dish_info {
+div#main_container div.main_all_table_div div.main_all_table_div_container table.main_all_table_div_table tr td div.main_all_dishes_dish_container div.main_dish_options button.main_dish_info {
 	border: 1px solid #8F8F8F;
 	background: rgba(0, 0, 0, 0);
 	color: #000000;
 	font-weight: 400;
+}
+
+div#main_container div#main_all_dishes_drink div#main_all_dishes_drink_container span.main_all_dishes_drink_container_section_title {
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
+	margin: 10px;
+	font-size: 1.2em;
+	font-weight: 600;
+	color: #000000;
+	display: block;
+	border-bottom: 1px solid #8F8F8F;
+	padding-bottom: 10px;
+}
+
+div#main_container div#main_all_dishes_drink div#main_all_dishes_drink_container span.main_all_dishes_drink_container_section_title span.age_18 {
+	background: #000000;
+	padding: 2px 10px;
+	border-radius: 20px;
+	margin-left: 10px;
+	color: #D51B19;
 }
 
 div#loading_information {
@@ -575,7 +645,7 @@ div#loading_information div img {
 }
 
 div#loading_information div span {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-size: 1em;
 	font-weight: 600;
 	color: #FFFFFF;

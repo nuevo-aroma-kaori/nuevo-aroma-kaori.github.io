@@ -103,7 +103,7 @@ div#nav_menu div#nav_menu_cnt div#nav_menu_lang_select div#nav_menu_lang_select_
 div#nav_menu div#nav_menu_cnt div#nav_menu_lang_select div#nav_menu_lang_select_container span.others {
 	font-size: 20px;
 	transform: translateY(-2px);
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 600;
 }
 
@@ -121,7 +121,7 @@ div#nav_menu div#nav_menu_cnt div#nav_menu_cnt_options button.nav_menu_cnt_optio
 	display: block;
 	padding: 14px 24px;
 	background: rgba(0, 0, 0, 0);
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 400;
 	font-size: 1.12em;
 	box-sizing: border-box;
@@ -178,7 +178,7 @@ div#main_part div.section {
 div#main_part div.section span.title {
 	display: block;
 	text-align: center;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 600;
 	font-size: 1.4em;
 	box-sizing: border-box;
@@ -189,7 +189,7 @@ div#main_part div.section span.title {
 div#main_part div.section span.desc {
 	display: block;
 	text-align: center;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 400;
 	font-size: 1em;
 	box-sizing: border-box;
@@ -199,7 +199,7 @@ div#main_part div.section span.desc {
 
 div#main_part div.section#asking_for_cookies div.button_container button#accept_cookies {
 	background: #D51B19;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	color: #FFFFFF;
 	font-weight: 600;
 	border: none;
@@ -227,7 +227,7 @@ div#main_part div.section div.go_back span.material-icons {
 
 div#main_part div.section div.go_back span.msg {
 	color: #8F8F8F;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 600;
 	margin: 0px 10px 0px 4px;
 	transform: translateY(-4px);
@@ -256,7 +256,7 @@ div#main_part div.section div.button_container button span.material-icons {
 }
 
 div#main_part div.section div.button_container button span.text {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	color: #FFFFFF;
 	background: #D51B19;
 	border: 1px solid #D51B19;
@@ -269,7 +269,7 @@ div#main_part div.section div.button_container button span.text {
 }
 
 div#main_part div.section#page_2_take_away_1_to_home div#contact_address_form span.input_header {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	color: #FFFFFF;
 	font-weight: 400;
 	font-size: 1em;
@@ -283,7 +283,7 @@ div#main_part div.section#page_2_take_away_1_to_home div#contact_address_form in
 	display: block;
 	padding: 10px 12px;
 	color: #AFAFAF;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 400;
 	border: 1px solid #D51B19;
 	background: rgba(0, 0, 0, 0);
@@ -301,7 +301,7 @@ div#main_part div.section#page_2_take_away_1_to_home div#contact_address_form se
 	display: block;
 	padding: 10px 12px;
 	color: #FFFFFF;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 400;
 	border: 1px solid #D51B19;
 	background: rgba(0, 0, 0, 0);
@@ -318,7 +318,7 @@ div#main_part div.section#page_2_take_away_1_to_home div#contact_address_form se
 
 div#main_part div.section#page_2_take_away_1_to_home div#contact_address_form button#save_contact_address {
 	background: #D51B19;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	color: #FFFFFF;
 	font-weight: 600;
 	border: none;
@@ -372,7 +372,7 @@ div#main_part div.section#pre_1_allergen_page_of_dish_menu div#all_allergen_opti
 }
 
 div#main_part div.section#pre_1_allergen_page_of_dish_menu div#all_allergen_options div.allergen_option div.all_allergen_options_option_desc_container span.opt_title {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	color: #D51B19;
 	font-weight: 600;
 	font-size: 1.2em;
@@ -381,7 +381,7 @@ div#main_part div.section#pre_1_allergen_page_of_dish_menu div#all_allergen_opti
 }
 
 div#main_part div.section#pre_1_allergen_page_of_dish_menu div#all_allergen_options div.allergen_option div.all_allergen_options_option_desc_container span.opt_desc {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	color: #8F8F8F;
 	font-weight: 400;
 	font-size: 1em;
@@ -450,7 +450,7 @@ div#dish_description_floating_window div#dish_description_floating_window_contai
 }
 
 div#dish_description_floating_window div#dish_description_floating_window_container div#dish_description_floating_window_cnt span.sub_title {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	display: block;
 	font-weight: 400;
 	font-size: 0.8em;
@@ -477,7 +477,7 @@ div#dish_description_floating_window div#dish_description_floating_window_contai
 }
 
 div#dish_description_floating_window div#dish_description_floating_window_container div#dish_description_floating_window_cnt div#dish_description_floating_window_cnt_title {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 }
 
 div#dish_description_floating_window div#dish_description_floating_window_container div#dish_description_floating_window_cnt div#dish_description_floating_window_cnt_title span#dish_description_floating_window_cnt_title_number {
@@ -500,7 +500,7 @@ div#dish_description_floating_window div#dish_description_floating_window_contai
 }
 
 div#dish_description_floating_window div#dish_description_floating_window_container div#dish_description_floating_window_cnt div#dish_description_floating_window_cnt_allergen {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	color: #FFFFFF;
 }
 
@@ -521,7 +521,7 @@ div#dish_description_floating_window div#dish_description_floating_window_contai
 }
 
 div#dish_description_floating_window div#dish_description_floating_window_container div#dish_description_floating_window_cnt div#dish_description_floating_window_cnt_text {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	color: #FFFFFF;
 	font-weight: 400;
 }
@@ -553,7 +553,7 @@ div#main_part div.section#page_of_dish_menu div#main_all_dishes div#main_all_dis
 }
 
 div#main_part div.section#page_of_dish_menu div#main_all_dishes div#main_all_dishes_container table#main_all_dishes_table tr td div.main_all_dishes_dish_container div.main_dish_number {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 600;
 	text-align: center;
 	color: #FFFFFF;
@@ -563,7 +563,7 @@ div#main_part div.section#page_of_dish_menu div#main_all_dishes div#main_all_dis
 }
 
 div#main_part div.section#page_of_dish_menu div#main_all_dishes div#main_all_dishes_container table#main_all_dishes_table tr td div.main_all_dishes_dish_container div.main_dish_desc {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	padding: 10px;
 	text-align: center;
 	background: #FFFFFF;
@@ -579,7 +579,7 @@ div#main_part div.section#page_of_dish_menu div#main_all_dishes div#main_all_dis
 }
 
 div#main_part div.section#page_of_dish_menu div#main_all_dishes div#main_all_dishes_container table#main_all_dishes_table tr td div.main_all_dishes_dish_container div.main_dish_options button {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	padding: 10px;
 	text-align: center;
 	box-sizing: border-box;
