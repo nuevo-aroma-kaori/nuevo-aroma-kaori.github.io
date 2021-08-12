@@ -173,13 +173,15 @@ function show_drinks() {
 			var new_tr_elem = document.createElement("tr");
 	
 			for (var proc_limit_count = 0; proc_limit_count < 2; ++proc_limit_count, ++proc_index) {
-				var elem = create_drink_cnt_element_drinks(
-					all_drinks_sections[section_index].child_list[proc_index],
-					all_drinks_sections[section_index].type_notes.indexOf("age_18") != -1
-				);
-	
-				/* APPEAR */
-				new_tr_elem.appendChild(elem);
+				if (all_drinks_sections[section_index].child_list[proc_index] != undefined) {
+					var elem = create_drink_cnt_element_drinks(
+						all_drinks_sections[section_index].child_list[proc_index],
+						all_drinks_sections[section_index].type_notes.indexOf("age_18") != -1
+					);
+
+					/* APPEAR */
+					new_tr_elem.appendChild(elem);
+				}
 			}
 	
 			new_table_element.appendChild(new_tr_elem);
@@ -192,10 +194,12 @@ function show_drinks() {
 
 function create_drink_cnt_element_drinks(proc_element, alcohol) {
 	var elem_td_container = document.createElement("td");
-	if (!(id == undefined || id == null))
+	try {
 		elem_td_container.setAttribute("id", "main_all_drinks_drink_" + proc_element.id.toString());
-	else
+	} catch (msg) {
 		console.log("ERROR: " + proc_element);
+	}
+
 	elem_td_container.style.width = (100.0 / 2).toString() + "%";
 
 	var elem_div_everything_container = document.createElement("div");
@@ -217,7 +221,10 @@ function create_drink_cnt_element_drinks(proc_element, alcohol) {
 	var elem_dish_description_alcohol = document.createElement("span");
 	elem_dish_description_alcohol.setAttribute("class", "main_drink_desc_alcohol");
 	if (alcohol) {
-		elem_dish_description_alcohol.innerText = "Vol. " + proc_element.desc.grade + "%";
+		if (proc_element.desc.grade != 0 && proc_element.desc.grade != undefined)
+			elem_dish_description_alcohol.innerText = "Vol. " + proc_element.desc.grade + "%";
+		else
+			elem_dish_description_alcohol.innerText = "Falta info.";
 	}
 
 	var elem_dish_description_capacity = document.createElement("span");
