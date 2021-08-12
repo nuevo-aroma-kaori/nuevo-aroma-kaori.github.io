@@ -207,11 +207,9 @@ function create_drink_cnt_element_drinks(proc_element, alcohol) {
 	var elem_div_everything_container = document.createElement("div");
 	elem_div_everything_container.setAttribute("class", "main_all_dishes_dish_container");
 
-	/*
 	var elem_preview_image = document.createElement("img");
 	elem_preview_image.setAttribute("class", "main_dish_image");
-	elem_preview_image.setAttribute("src", "https://nuevoaromakaori.com/resources/dish_img/" + all_dish_info.dish_info.all_dishes[proc_index].number.toString() + ".png");
-	**/
+	elem_preview_image.setAttribute("src", "https://nuevoaromakaori.com/resources/drink_img/" + proc_element.id.toString() + ".jpg");
 
 	var elem_dish_description = document.createElement("div");
 	elem_dish_description.setAttribute("class", "main_dish_desc");
@@ -244,7 +242,7 @@ function create_drink_cnt_element_drinks(proc_element, alcohol) {
 	elem_dish_description.appendChild(elem_dish_description_capacity);
 	elem_dish_description.appendChild(elem_dish_description_price);
 
-	//elem_div_everything_container.appendChild(elem_preview_image);
+	elem_div_everything_container.appendChild(elem_preview_image);
 	elem_div_everything_container.appendChild(elem_dish_description);
 
 	elem_td_container.appendChild(elem_div_everything_container);
