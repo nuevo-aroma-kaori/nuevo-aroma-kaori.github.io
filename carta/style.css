@@ -572,15 +572,13 @@ div#main_container div.main_all_table_div div.main_all_table_div_container table
 }
 
 div#main_container div.main_all_table_div div.main_all_table_div_container table.main_all_table_div_table tr td div.main_all_dishes_dish_container div.main_dish_desc span.main_drink_desc_price {
-	display: block;
-	text-align: center;
 	font-size: 1.2em;
 	font-weight: 600;
 	color: #D51B19;
-	padding: 2px;
+	padding: 2px 4px;
 	border-radius: 4px;
-	background: #F6F6F6;
-	margin-top: 6px;
+	background: #DFDFDF;
+	margin-top: 10px;
 }
 
 div#main_container div.main_all_table_div div.main_all_table_div_container table.main_all_table_div_table tr td div.main_all_dishes_dish_container div.main_dish_options {

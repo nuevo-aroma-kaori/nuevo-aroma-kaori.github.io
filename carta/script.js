@@ -166,7 +166,7 @@ function show_drinks() {
 		new_table_element.setAttribute("class", "main_all_table_div_table");
 
 		var new_section_title = document.createElement("span");
-		new_section_title.setAttribute("span", "main_all_dishes_drink_container_section_title");
+		new_section_title.setAttribute("class", "main_all_dishes_drink_container_section_title");
 		new_section_title.innerText = all_drinks_sections[section_index].type_name.es;
 
 		for (var proc_index = 0; proc_index < all_drinks_sections[section_index].child_list.length; ) {
@@ -175,7 +175,7 @@ function show_drinks() {
 			for (var proc_limit_count = 0; proc_limit_count < 2; ++proc_limit_count, ++proc_index) {
 				var elem = create_drink_cnt_element_drinks(
 					all_drinks_sections[section_index].child_list[proc_index],
-					all_drinks_sections[section_index].type_notes.indexOf("age_18") == -1
+					all_drinks_sections[section_index].type_notes.indexOf("age_18") != -1
 				);
 	
 				/* APPEAR */
