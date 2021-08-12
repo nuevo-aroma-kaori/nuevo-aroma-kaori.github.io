@@ -43,10 +43,12 @@ function page_change_to(pageIndex) {
 	case 0:
 		document.getElementById("main_all_dishes").style.display = "none";
 		document.getElementById("main_all_dishes_drink").style.display = "block";
+		setTimeout(show_dishes, 100);
 		break;
 	case 1:
 		document.getElementById("main_all_dishes").style.display = "block";
 		document.getElementById("main_all_dishes_drink").style.display = "none";
+		setTimeout(show_drinks, 100);
 		break;
 	}
 }
