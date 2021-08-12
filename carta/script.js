@@ -1,7 +1,5 @@
 window.onload = function() {
 	request_necessary_information();
-	set_chosen_menu(1);
-	page_change_to(1);
 };
 
 var all_dish_info = null;
@@ -43,12 +41,10 @@ function page_change_to(pageIndex) {
 	case 0:
 		document.getElementById("main_all_dishes").style.display = "none";
 		document.getElementById("main_all_dishes_drink").style.display = "block";
-		setTimeout(show_dishes, 100);
 		break;
 	case 1:
 		document.getElementById("main_all_dishes").style.display = "block";
 		document.getElementById("main_all_dishes_drink").style.display = "none";
-		setTimeout(show_drinks, 100);
 		break;
 	}
 }
@@ -69,13 +65,15 @@ function request_necessary_information() {
 			all_dish_info = callback;
 			document.getElementById("loading_information").style.display = "none";
 
-			show_dishes();
+			set_chosen_menu(1);
+			page_change_to(1);
+
 			show_drinks();
 		}
 	);
 }
 
-function show_dishes() {
+function show_dishes(menu_plan_index = 1) {
 	const all_dishes_quantity = all_dish_info.dish_info.all_dishes.length;
 
 	var table_element = document.getElementById("main_all_dishes_table");
@@ -85,10 +83,12 @@ function show_dishes() {
 		var new_tr_elem = document.createElement("tr");
 
 		for (var proc_limit_count = 0; proc_limit_count < 2; ++proc_limit_count, ++proc_index) {
-			var elem = create_dish_cnt_element_dishes(proc_index);
+			if (all_dish_info.menu_info.all_menus[menu_plan_index].included_dishes.indexOf(all_dish_info.dish_info.all_dishes[proc_index].number) != -1) {
+				var elem = create_dish_cnt_element_dishes(proc_index);
 
-			/* APPEAR */
-			new_tr_elem.appendChild(elem);
+				/* APPEAR */
+				new_tr_elem.appendChild(elem);
+			}
 		}
 
 		table_element.appendChild(new_tr_elem);
@@ -308,6 +308,7 @@ function set_chosen_menu(index) {
 	}
 
 	change_plan_menu_hide(true);
+	show_dishes(index);
 }
 
 function change_plan_menu_show() {
