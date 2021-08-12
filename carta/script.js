@@ -192,7 +192,10 @@ function show_drinks() {
 
 function create_drink_cnt_element_drinks(proc_element, alcohol) {
 	var elem_td_container = document.createElement("td");
-	elem_td_container.setAttribute("id", "main_all_drinks_drink_" + proc_element.id.toString());
+	if (!(id == undefined || id == null))
+		elem_td_container.setAttribute("id", "main_all_drinks_drink_" + proc_element.id.toString());
+	else
+		console.log("ERROR: " + proc_element);
 	elem_td_container.style.width = (100.0 / 2).toString() + "%";
 
 	var elem_div_everything_container = document.createElement("div");
