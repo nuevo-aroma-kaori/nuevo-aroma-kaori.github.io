@@ -337,7 +337,7 @@ Allergen
 					{
 						"id" : 20,
 						"name" : "Bach Semi Seco",
-						"price" : 0,
+						"price" : 11.95,
 						"desc" : {
 							"capacity" : {
 								"number" : 75,
@@ -350,8 +350,8 @@ Allergen
 
 					{
 						"id" : 21,
-						"name" : "Visiega Semi Seco",
-						"price" : 0,
+						"name" : "Cava de la casa - Semiseco (Visiega Semi Seco)",
+						"price" : 8.95,
 						"desc" : {
 							"capacity" : {
 								"number" : 75,
@@ -364,8 +364,8 @@ Allergen
 
 					{
 						"id" : 22,
-						"name" : "Visiega Brut",
-						"price" : 0,
+						"name" : "Cava de la casa - Brut (Visiega Brut)",
+						"price" : 8.95,
 						"desc" : {
 							"capacity" : {
 								"number" : 75,
@@ -379,7 +379,7 @@ Allergen
 					{
 						"id" : 23,
 						"name" : "Mo\u00ebt & Chandon Imp\u00e9rial Brut",
-						"price" : 0,
+						"price" : 58.95,
 						"desc" : {
 							"capacity" : {
 								"number" : 75,
@@ -539,7 +539,7 @@ Allergen
 
 					{
 						"id" : 33,
-						"name" : "Zumo de naranja/melocotón/piña",
+						"name" : "Zumo Granini de naranja/melocotón/piña",
 						"price" : 2.5,
 						"notes" : [],
 						"desc" : {
@@ -689,6 +689,45 @@ Allergen
 							"capacity" : {
 								"number" : 0,
 								"unit" : "mL"
+							}
+						}
+					},
+
+					{
+						"id" : 45,
+						"name" : "Bitter Kas",
+						"price" : 2.8,
+						"notes" : [],
+						"desc" : {
+							"capacity" : {
+								"number" : 200,
+								"unit" : "mL"
+							}
+						}
+					},
+
+					{
+						"id" : 46,
+						"name" : "Gaseosa",
+						"price" : 2.8,
+						"notes" : [],
+						"desc" : {
+							"capacity" : {
+								"number" : 50,
+								"unit" : "cL"
+							}
+						}
+					},
+
+					{
+						"id" : 47,
+						"name" : "T\u00f3nica",
+						"price" : 2.8,
+						"notes" : [],
+						"desc" : {
+							"capacity" : {
+								"number" : 25,
+								"unit" : "cL"
 							}
 						}
 					}
