@@ -613,11 +613,13 @@ div#main_container div.main_all_table_div div.main_all_table_div_container table
 
 div#main_container div.main_all_table_div div.main_all_table_div_container div#main_all_dishes_no_included span.n_title {
 	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
-	color: #4F4F4F;
-	font-weight: 400;
-	margin: 10px 40px;
-	display: block;
-	text-align: center;
+    color: #AFAFAF;
+    font-weight: 400;
+    padding: 10px 40px;
+    display: block;
+    text-align: center;
+    background: #000000;
+    border-radius: 10px;
 }
 
 div#main_container div#main_all_dishes_drink div#main_all_dishes_drink_container span.main_all_dishes_drink_container_section_title {

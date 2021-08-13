@@ -1560,7 +1560,7 @@ Allergen
 			{
 				"number" : 66,
 				"name" : {
-					"es" : "Takoyayi",
+					"es" : "Takoyaki",
 					"ca" : "Takoyaki"
 				},
 				"allergen" : ["gl", "sj", "lt"],
