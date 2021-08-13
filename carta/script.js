@@ -88,7 +88,18 @@ function show_dishes(menu_plan_index = 1) {
 
 				/* APPEAR */
 				new_tr_elem.appendChild(elem);
+			} else {
+				break;
 			}
+		}
+
+		if (
+			all_dish_info.menu_info.all_menus[menu_plan_index].included_dishes[all_dish_info.menu_info.all_menus[menu_plan_index].included_dishes.length - 1]
+			== all_dish_info.dish_info.all_dishes[all_dish_info.dish_info.all_dishes.length - 1].number) {
+			document.getElementById("main_all_dishes_no_included").style.display = "none";
+		} else {
+			table_element = document.getElementById("main_all_dishes_no_included_table");
+			menu_plan_index = 1;
 		}
 
 		table_element.appendChild(new_tr_elem);
@@ -170,6 +181,9 @@ function show_drinks() {
 		var new_section_title = document.createElement("span");
 		new_section_title.setAttribute("class", "main_all_dishes_drink_container_section_title");
 		new_section_title.innerText = all_drinks_sections[section_index].type_name.es;
+		if (all_drinks_sections[section_index].type_notes.indexOf("age_18") != -1) {
+			new_section_title.innerHTML += "<span class='age_18'>18+</span>";
+		}
 
 		for (var proc_index = 0; proc_index < all_drinks_sections[section_index].child_list.length; ) {
 			var new_tr_elem = document.createElement("tr");
