@@ -39,12 +39,19 @@ function page_change_to(pageIndex) {
 
 	switch (pageIndex) {
 	case 0:
-		document.getElementById("main_all_dishes").style.display = "none";
 		document.getElementById("main_all_dishes_drink").style.display = "block";
+		document.getElementById("main_all_dishes").style.display = "none";
+		document.getElementById("main_all_dishes_dessert").style.display = "none";
 		break;
 	case 1:
-		document.getElementById("main_all_dishes").style.display = "block";
 		document.getElementById("main_all_dishes_drink").style.display = "none";
+		document.getElementById("main_all_dishes").style.display = "block";
+		document.getElementById("main_all_dishes_dessert").style.display = "none";
+		break;
+	case 2:
+		document.getElementById("main_all_dishes_drink").style.display = "none";
+		document.getElementById("main_all_dishes").style.display = "none";
+		document.getElementById("main_all_dishes_dessert").style.display = "block";
 		break;
 	}
 }
@@ -284,6 +291,119 @@ function create_drink_cnt_element_drinks(proc_element, alcohol) {
 	return elem_td_container;
 }
 
+function show_desserts(menu_plan_index = 1) {
+	const all_desserts_quantity = all_dish_info.dessert_info.all_desserts.length;
+
+	var table_element = document.getElementById("main_all_dishes_dessert_table");
+	table_element.innerHTML = "";
+
+	document.getElementById("main_all_dishes_dessert_no_included").style.display = "none";
+
+	var proc_index, trigger_getout = false;
+	for (proc_index = 0; proc_index < all_desserts_quantity; ) {
+		var new_tr_elem = document.createElement("tr");
+
+		for (var proc_limit_count = 0; proc_limit_count < 2; ++proc_limit_count, ++proc_index) {
+			if (all_dish_info.menu_info.all_menus[menu_plan_index].included_desserts.indexOf(all_dish_info.dessert_info.all_desserts[proc_index].number) != -1) {
+				var elem = create_dessert_cnt_element_desserts(all_dish_info.dessert_info.all_desserts[proc_index]);
+
+				/* APPEAR */
+				new_tr_elem.appendChild(elem);
+				table_element.appendChild(new_tr_elem);
+			} else {
+				table_element.appendChild(new_tr_elem);
+				trigger_getout = true;
+				break;
+			}
+		}
+
+		if (trigger_getout) { break; }
+	}
+
+	if (
+		all_dish_info.menu_info.all_menus[menu_plan_index].included_desserts[all_dish_info.menu_info.all_menus[menu_plan_index].included_desserts.length - 1]
+		!= all_dish_info.dessert_info.all_desserts[all_desserts_quantity - 1].number) {
+		document.getElementById("main_all_dishes_dessert_no_included").style.display = "block";
+
+		table_element = document.getElementById("main_all_dishes_dessert_no_included_table");
+		table_element.innerHTML = "";
+
+		for (; proc_index < all_desserts_quantity; ) {
+			var new_tr_elem = document.createElement("tr");
+	
+			for (var proc_limit_count = 0; proc_limit_count < 2; ++proc_limit_count, ++proc_index) {
+				var elem = create_dessert_cnt_element_desserts(proc_index);
+	
+				/* APPEAR */
+				new_tr_elem.appendChild(elem);
+			}
+	
+			table_element.appendChild(new_tr_elem);
+		}
+	}
+}
+
+function create_dessert_cnt_element_desserts(proc_element) {
+	var elem_td_container = document.createElement("td");
+	elem_td_container.setAttribute("id", "main_all_desserts_dessert_" + proc_index.toString());
+	elem_td_container.style.width = (100.0 / 2).toString() + "%";
+
+	var elem_div_everything_container = document.createElement("div");
+	elem_div_everything_container.setAttribute("class", "main_all_dishes_dish_container");
+
+	var elem_preview_image = document.createElement("img");
+	elem_preview_image.setAttribute("class", "main_dish_image");
+	elem_preview_image.setAttribute("src", "https://nuevoaromakaori.com/resources/dish_img/" + proc_element.number.toString() + ".png");
+
+	var elem_dish_number = document.createElement("div");
+	elem_dish_number.setAttribute("class", "main_dish_number");
+	elem_dish_number.innerText = "n. " + proc_element.number.toString();
+
+	var elem_dish_description = document.createElement("div");
+	elem_dish_description.setAttribute("class", "main_dish_desc");
+
+	var elem_dish_description_name = document.createElement("span");
+	elem_dish_description_name.setAttribute("class", "main_dish_desc_title");
+	elem_dish_description_name.innerText = proc_element.name.es;
+
+	var elem_dessert_description = document.createElement("div");
+	elem_dessert_description.setAttribute("class", "main_dessert_desc");
+
+	var elem_dessert_description_units = document.createElement("span");
+	elem_dessert_description_units.setAttribute("class", "main_dessert_desc_units");
+	elem_dessert_description_units.innerText = proc_element.units + " uds.";
+
+	var elem_dessert_description_price = document.createElement("span");
+	elem_dessert_description_price.setAttribute("class", "main_dessert_desc_price");
+	elem_dessert_description_price.innerText = proc_element.price.toFixed(2) + "€";
+
+	var elem_dish_options = document.createElement("div");
+	elem_dish_options.setAttribute("class", "main_dish_options");
+	
+	var elem_dish_options_info = document.createElement("button");
+	elem_dish_options_info.setAttribute("class", "main_dish_info");
+	elem_dish_options_info.innerText = "Ver variedades";
+	elem_dish_options_info.setAttribute("onclick", "dish_description_floating_window_Show(" + proc_index.toString() + ");");
+	
+	/* APPEND CHILD */
+	elem_dish_options.appendChild(elem_dish_options_info);
+
+	elem_dessert_description.appendChild(elem_dessert_description_units);
+	elem_dessert_description.appendChild(elem_dessert_description_price);
+
+	elem_dish_description.appendChild(elem_dish_description_name);
+
+	elem_div_everything_container.appendChild(elem_preview_image);
+	elem_div_everything_container.appendChild(elem_dish_number);
+	elem_div_everything_container.appendChild(elem_dish_description);
+	elem_div_everything_container.appendChild(elem_dessert_description);
+
+	elem_td_container.appendChild(elem_div_everything_container);
+
+	/* FINAL ELEMENT */
+	return elem_td_container;
+}
+
 function selection_table_at_top() {
 	var elem = document.getElementById("selection_table");
 
@@ -340,6 +460,7 @@ function set_chosen_menu(index) {
 
 	change_plan_menu_hide(true);
 	show_dishes(index);
+	show_desserts(index);
 }
 
 function change_plan_menu_show() {

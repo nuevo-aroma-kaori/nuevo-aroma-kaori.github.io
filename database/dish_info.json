@@ -111,6 +111,20 @@ Allergen
 
 							"grade" : 12
 						}
+					},
+
+					{
+						"id" : 48,
+						"name" : "LOESS Rueda",
+						"price" : 17.95,
+						"desc" : {
+							"capacity" : {
+								"number" : 75,
+								"unit" : "cL"
+							},
+
+							"grade" : 13
+						}
 					}
 				]
 			},
@@ -1885,7 +1899,760 @@ Allergen
 	},
 
 	"dessert_info" : {
+		"all_desserts" : [
+			{
+				"number" : 150,
+				"name" : {
+					"es" : "Flam vainilla",
+					"ca" : "Flan vainilla"
+				},
+				"price" : 1.5,
+				"units" : 1,
+				"desc" : {
+					"es" : "No hay descripción para este postre.",
+					"ca" : "No hi ha descripció per a aquest postre."
+				},
+				"varieties" : false
+			},
 
+			{
+				"number" : 151,
+				"name" : {
+					"es" : "Tarta de queso",
+					"ca" : "Pastís de formatge"
+				},
+				"price" : 1.5,
+				"units" : 1,
+				"desc" : {
+					"es" : "No hay descripción para este postre.",
+					"ca" : "No hi ha descripció per a aquest postre."
+				},
+				"varieties" : false
+			},
+
+			{
+				"number" : 152,
+				"name" : {
+					"es" : "Mousse chocolate",
+					"ca" : "Mousse xocolata"
+				},
+				"price" : 1.5,
+				"units" : 1,
+				"desc" : {
+					"es" : "No hay descripción para este postre.",
+					"ca" : "No hi ha descripció per a aquest postre."
+				},
+				"varieties" : false
+			},
+
+			{
+				"number" : 153,
+				"name" : {
+					"es" : "Helado de bola",
+					"ca" : "Gelat de bola"
+				},
+				"price" : 1.5,
+				"units" : 1,
+				"desc" : {
+					"es" : "No hay descripción para este postre.",
+					"ca" : "No hi ha descripció per a aquest postre."
+				},
+				"varieties" : true,
+				"varieties_array" : [
+					{
+						"number" : 153,
+						"name" : {
+							"es" : "Fresa",
+							"ca" : "Maduixa"
+						},
+						"price" : 1.5
+					},
+
+					{
+						"number" : 153,
+						"name" : {
+							"es" : "Limón",
+							"ca" : "Llimona"
+						},
+						"price" : 1.5
+					},
+
+					{
+						"number" : 153,
+						"name" : {
+							"es" : "Chocolate",
+							"ca" : "Xocolata"
+						},
+						"price" : 1.5
+					},
+
+					{
+						"number" : 153,
+						"name" : {
+							"es" : "Vainilla",
+							"ca" : "Vainilla"
+						},
+						"price" : 1.5
+					}
+				]
+			},
+
+			{
+				"number" : 154,
+				"name" : {
+					"es" : "Profiteroles",
+					"ca" : "Profiterols"
+				},
+				"price" : 1.5,
+				"units" : 3,
+				"desc" : {
+					"es" : "No hay descripción para este postre.",
+					"ca" : "No hi ha descripció per a aquest postre."
+				},
+				"varieties" : false
+			},
+
+			{
+				"number" : 156,
+				"name" : {
+					"es" : "Lichys",
+					"ca" : "Lichys"
+				},
+				"price" : 1.5,
+				"units" : 3,
+				"desc" : {
+					"es" : "No hay descripción para este postre.",
+					"ca" : "No hi ha descripció per a aquest postre."
+				},
+				"varieties" : false
+			},
+
+			{
+				"number" : 157,
+				"name" : {
+					"es" : "Tiramisú",
+					"ca" : "Tiramisú"
+				},
+				"price" : 1.5,
+				"units" : 1,
+				"desc" : {
+					"es" : "No hay descripción para este postre.",
+					"ca" : "No hi ha descripció per a aquest postre."
+				},
+				"varieties" : false
+			},
+
+			{
+				"number" : 158,
+				"name" : {
+					"es" : "Sándwich",
+					"ca" : "Sandwich"
+				},
+				"price" : 1.5,
+				"units" : 1,
+				"desc" : {
+					"es" : "No hay descripción para este postre.",
+					"ca" : "No hi ha descripció per a aquest postre."
+				},
+				"varieties" : true,
+				"varieties_array" : [
+					{
+						"number" : 158,
+						"name" : {
+							"es" : "Nata",
+							"ca" : "Nata"
+						},
+						"price" : 1.5
+					}
+				]
+			},
+
+			{
+				"number" : 159,
+				"name" : {
+					"es" : "Helado en cono",
+					"ca" : "Gelat en con"
+				},
+				"price" : 1.5,
+				"units" : 1,
+				"desc" : {
+					"es" : "No hay descripción para este postre.",
+					"ca" : "No hi ha descripció per a aquest postre."
+				},
+				"varieties" : true,
+				"varieties_array" : [
+					{
+						"number" : 159,
+						"name" : {
+							"es" : "Nata y chocolate",
+							"ca" : "Nata i xocolata"
+						},
+						"price" : 1.5
+					}
+				]
+			},
+
+			{
+				"number" : 160,
+				"name" : {
+					"es" : "Infusiones",
+					"ca" : "Infusions"
+				},
+				"price" : 1.9,
+				"units" : 1,
+				"desc" : {
+					"es" : "No hay descripción para este postre.",
+					"ca" : "No hi ha descripció per a aquest postre."
+				},
+				"varieties" : true,
+				"varieties_array" : [
+					{
+						"number" : 160,
+						"name" : {
+							"es" : "Manzanilla",
+							"ca" : "Manzanilla"
+						},
+						"price" : 1.9
+					},
+
+					{
+						"number" : 160,
+						"name" : {
+							"es" : "Té verde (Gunpowder)",
+							"ca" : "Té verd (Gunpowder)"
+						},
+						"price" : 1.9
+					},
+
+					{
+						"number" : 160,
+						"name" : {
+							"es" : "Té rojo (Pu-erh)",
+							"ca" : "Té roig (Pu-erh)"
+						},
+						"price" : 1.9
+					},
+
+					{
+						"number" : 160,
+						"name" : {
+							"es" : "Té negro (Ceylán)",
+							"ca" : "Té negre (Ceylàn)"
+						},
+						"price" : 1.9
+					},
+
+					{
+						"number" : 160,
+						"name" : {
+							"es" : "Poleo-menta",
+							"ca" : "Poleo-menta"
+						},
+						"price" : 1.9
+					},
+
+					{
+						"number" : 160,
+						"name" : {
+							"es" : "Tila",
+							"ca" : "Tila"
+						},
+						"price" : 1.9
+					},
+
+					{
+						"number" : 160,
+						"name" : {
+							"es" : "Frutas del bosque",
+							"ca" : "Fruites del bosc"
+						},
+						"price" : 1.9
+					},
+
+					{
+						"number" : 160,
+						"name" : {
+							"es" : "Rooibos Canela",
+							"ca" : "Rooibos Canela"
+						},
+						"price" : 1.9
+					}
+				]
+			},
+
+			{
+				"number" : 161,
+				"name" : {
+					"es" : "Café",
+					"ca" : "Cafè"
+				},
+				"price" : 0.0,
+				"units" : 1,
+				"desc" : {
+					"es" : "No hay descripción para este postre.",
+					"ca" : "No hi ha descripció per a aquest postre."
+				},
+				"varieties" : true,
+				"varieties_array" : [
+					{
+						"number" : 137,
+						"name" : {
+							"es" : "Café solo",
+							"ca" : "Café sol"
+						},
+						"price" : 1.5
+					},
+
+					{
+						"number" : 146,
+						"name" : {
+							"es" : "Café solo con hielo",
+							"ca" : "Cafè sol amb gel"
+						},
+						"price" : 1.6
+					},
+
+					{
+						"number" : 138,
+						"name" : {
+							"es" : "Cortado",
+							"ca" : "Tallat"
+						},
+						"price" : 1.7
+					},
+
+					{
+						"number" : 139,
+						"name" : {
+							"es" : "Café con leche",
+							"ca" : "Cafè amb llet"
+						},
+						"price" : 1.8
+					},
+
+					{
+						"number" : 140,
+						"name" : {
+							"es" : "Café Americano",
+							"ca" : "Cafà Americà"
+						},
+						"price" : 1.8
+					},
+
+					{
+						"number" : 141,
+						"name" : {
+							"es" : "Carajillo de Coñac",
+							"ca" : "Cigaló de Conyac"
+						},
+						"price" : 2.7
+					},
+
+					{
+						"number" : 142,
+						"name" : {
+							"es" : "Carajillo de Whisky",
+							"ca" : "Cigaló de Whisky"
+						},
+						"price" : 2.8
+					},
+
+					{
+						"number" : 147,
+						"name" : {
+							"es" : "Carajillo de Baileys",
+							"ca" : "Cigaló de Baileys"
+						},
+						"price" : 2.8
+					},
+
+					{
+						"number" : 143,
+						"name" : {
+							"es" : "Trifásico",
+							"ca" : "Trifàsic"
+						},
+						"price" : 2.8
+					},
+
+					{
+						"number" : 144,
+						"name" : {
+							"es" : "Café irlandés",
+							"ca" : "Cafè irlandés"
+						},
+						"price" : 5.2
+					}
+				]
+			},
+
+			{
+				"number" : 162,
+				"name" : {
+					"es" : "Helado Té verde (De cubo)",
+					"ca" : "Gelat Té verd (En cub)"
+				},
+				"price" : 3.5,
+				"units" : 1,
+				"desc" : {
+					"es" : "No hay descripción para este postre.",
+					"ca" : "No hi ha descripció per a aquest postre."
+				},
+				"varieties" : false
+			},
+
+			{
+				"number" : 163,
+				"name" : {
+					"es" : "Trufas japonesas",
+					"ca" : "Trufes japoneses"
+				},
+				"price" : 4.0,
+				"units" : 4,
+				"desc" : {
+					"es" : "No hay descripción para este postre.",
+					"ca" : "No hi ha descripció per a aquest postre."
+				},
+				"varieties" : true,
+				"varieties_array" : [
+					{
+						"number" : 163,
+						"name" : {
+							"es" : "Té verde",
+							"ca" : "Té verd"
+						},
+						"price" : 4.0
+					},
+
+					{
+						"number" : 163,
+						"name" : {
+							"es" : "Chocolate",
+							"ca" : "Xocolata"
+						},
+						"price" : 4.0
+					}
+				]
+			},
+
+			{
+				"number" : 164,
+				"name" : {
+					"es" : "Trufas de chocolate",
+					"ca" : "Trufes de xocolata"
+				},
+				"price" : 3.5,
+				"units" : 3,
+				"desc" : {
+					"es" : "No hay descripción para este postre.",
+					"ca" : "No hi ha descripció per a aquest postre."
+				},
+				"varieties" : false
+			},
+
+			{
+				"number" : 165,
+				"name" : {
+					"es" : "Helado de Mochi",
+					"ca" : "Gelat de Mochi"
+				},
+				"price" : 4.0,
+				"units" : 1,
+				"desc" : {
+					"es" : "No hay descripción para este postre.",
+					"ca" : "No hi ha descripció per a aquest postre."
+				},
+				"varieties" : true,
+				"varieties_array" : [
+					{
+						"number" : 165,
+						"name" : {
+							"es" : "Té verde",
+							"ca" : "Té verd"
+						},
+						"price" : 4.0
+					},
+
+					{
+						"number" : 165,
+						"name" : {
+							"es" : "Fresa",
+							"ca" : "Maduixa"
+						},
+						"price" : 4.0
+					},
+
+					{
+						"number" : 165,
+						"name" : {
+							"es" : "Chocolate",
+							"ca" : "Xocolata"
+						},
+						"price" : 4.0
+					}
+				]
+			},
+
+			{
+				"number" : 166,
+				"name" : {
+					"es" : "Helado Té verde (de bola)",
+					"ca" : "Gelat Té verd (de bola)"
+				},
+				"price" : 2.0,
+				"units" : 1,
+				"desc" : {
+					"es" : "No hay descripción para este postre.",
+					"ca" : "No hi ha descripció per a aquest postre."
+				},
+				"varieties" : false
+			},
+
+			{
+				"number" : 167,
+				"name" : {
+					"es" : "Mochi pequeño",
+					"ca" : "Mochi petit"
+				},
+				"price" : 2.5,
+				"units" : 1,
+				"desc" : {
+					"es" : "No hay descripción para este postre.",
+					"ca" : "No hi ha descripció per a aquest postre."
+				},
+				"varieties" : true,
+				"varieties_array" : [
+					{
+						"number" : 167,
+						"name" : {
+							"es" : "Té verde",
+							"ca" : "Té verd"
+						},
+						"price" : 2.5
+					},
+
+					{
+						"number" : 167,
+						"name" : {
+							"es" : "Mango",
+							"ca" : "Mango"
+						},
+						"price" : 2.5
+					},
+
+					{
+						"number" : 167,
+						"name" : {
+							"es" : "Coco",
+							"ca" : "Coco"
+						},
+						"price" : 2.5
+					},
+
+					{
+						"number" : 167,
+						"name" : {
+							"es" : "Chocolate",
+							"ca" : "Xocolata"
+						},
+						"price" : 2.5
+					}
+				]
+			},
+
+			{
+				"number" : 168,
+				"name" : {
+					"es" : "Dorayaki どら焼き",
+					"ca" : "Dorayaki どら焼き"
+				},
+				"price" : 4.0,
+				"units" : 1,
+				"desc" : {
+					"es" : "Aperitivo característico japonés. Promovido por un dibujo animado famoso llamado Doraemon.",
+					"ca" : "Aperitiu característic japonès. Promogut per un dibuix animat famós anomenat Doraemon."
+				},
+				"varieties" : false
+			},
+
+			{
+				"number" : 169,
+				"name" : {
+					"es" : "Mascarpone",
+					"ca" : "Mascarpone"
+				},
+				"price" : 4.25,
+				"units" : 1,
+				"desc" : {
+					"es" : "No hay descripción para este postre.",
+					"ca" : "No hi ha descripció per a aquest postre."
+				},
+				"varieties" : false
+			},
+
+			{
+				"number" : 170,
+				"name" : {
+					"es" : "Brownie",
+					"ca" : "Brownie"
+				},
+				"price" : 4.5,
+				"units" : 1,
+				"desc" : {
+					"es" : "No hay descripción para este postre.",
+					"ca" : "No hi ha descripció per a aquest postre."
+				},
+				"varieties" : false
+			},
+
+			{
+				"number" : 171,
+				"name" : {
+					"es" : "Souffle",
+					"ca" : "Souffle"
+				},
+				"price" : 4.5,
+				"units" : 1,
+				"desc" : {
+					"es" : "No hay descripción para este postre.",
+					"ca" : "No hi ha descripció per a aquest postre."
+				},
+				"varieties" : false
+			},
+
+			{
+				"number" : 172,
+				"name" : {
+					"es" : "Crema catalana",
+					"ca" : "Crema catalana"
+				},
+				"price" : 4.2,
+				"units" : 1,
+				"desc" : {
+					"es" : "No hay descripción para este postre.",
+					"ca" : "No hi ha descripció per a aquest postre."
+				},
+				"varieties" : false
+			},
+
+			{
+				"number" : 173,
+				"name" : {
+					"es" : "Flor de coco",
+					"ca" : "Flor de coco"
+				},
+				"price" : 4.25,
+				"units" : 1,
+				"desc" : {
+					"es" : "No hay descripción para este postre.",
+					"ca" : "No hi ha descripció per a aquest postre."
+				},
+				"varieties" : false
+			},
+
+			{
+				"number" : 174,
+				"name" : {
+					"es" : "Helado Baileys",
+					"ca" : "Gelat Baileys"
+				},
+				"price" : 4.5,
+				"units" : 1,
+				"desc" : {
+					"es" : "No hay descripción para este postre.",
+					"ca" : "No hi ha descripció per a aquest postre."
+				},
+				"varieties" : false
+			},
+
+			{
+				"number" : 175,
+				"name" : {
+					"es" : "Fuji té verde",
+					"ca" : "Fuji té verd"
+				},
+				"price" : 3.8,
+				"units" : 1,
+				"desc" : {
+					"es" : "No hay descripción para este postre.",
+					"ca" : "No hi ha descripció per a aquest postre."
+				},
+				"varieties" : false
+			},
+
+			{
+				"number" : 176,
+				"name" : {
+					"es" : "Flor de mango",
+					"ca" : "Flor de mango"
+				},
+				"price" : 4.25,
+				"units" : 1,
+				"desc" : {
+					"es" : "No hay descripción para este postre.",
+					"ca" : "No hi ha descripció per a aquest postre."
+				},
+				"varieties" : false
+			},
+
+			{
+				"number" : 177,
+				"name" : {
+					"es" : "Helado de mojito",
+					"ca" : "Gelat de mojito"
+				},
+				"price" : 4.0,
+				"units" : 1,
+				"desc" : {
+					"es" : "No hay descripción para este postre.",
+					"ca" : "No hi ha descripció per a aquest postre."
+				},
+				"varieties" : false
+			},
+
+			{
+				"number" : 178,
+				"name" : {
+					"es" : "Mochi grande",
+					"ca" : "Mochi gran"
+				},
+				"price" : 4.6,
+				"units" : 1,
+				"desc" : {
+					"es" : "No hay descripción para este postre.",
+					"ca" : "No hi ha descripció per a aquest postre."
+				},
+				"varieties" : true,
+				"varieties_array" : [
+					{
+						"number" : 165,
+						"name" : {
+							"es" : "Té verde",
+							"ca" : "Té verd"
+						},
+						"price" : 4.0
+					},
+
+					{
+						"number" : 165,
+						"name" : {
+							"es" : "Fresa",
+							"ca" : "Maduixa"
+						},
+						"price" : 4.0
+					},
+
+					{
+						"number" : 165,
+						"name" : {
+							"es" : "Chocolate",
+							"ca" : "Xocolata"
+						},
+						"price" : 4.0
+					}
+				]
+			}
+		]
 	},
 
 	"menu_info" : {
@@ -1938,7 +2705,10 @@ Allergen
 					36, 37, 38, 39, 40,
 					41, 42
 				],
-				"included_desserts" : []
+				"included_desserts" : [
+					150, 151, 152, 153, 154,
+					156, 157, 158, 159, 160, 161
+				]
 			},
 
 			{

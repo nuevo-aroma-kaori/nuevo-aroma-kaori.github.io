@@ -298,7 +298,7 @@
 					<span class="n_title">Anotaciones</span>
 					<ol>
 						<li>El Menú mediodía incluye varias bebidas, pero no todas. Véase la página de Bebidas para saber cuales bebidas están incluidas, y cuales no.</li>
-						<li>El Menú mediodía incluye varias postres, pero no todas. Si no ha pedido ningún postre que está incluido y quiere pedir 1 que sea fuera de los incluidos, le haremos un descuento de 1,5€. Véase la página de Postres para saber cuales postres están incluidos, y cuales no.</li>
+						<li>El Menú mediodía incluye varios postres, pero no todos. Si no ha pedido ningún postre que está incluido y quiere pedir 1 que sea fuera de los incluidos, le haremos un descuento de 1,5€. Véase la página de Postres para saber cuales postres están incluidos, y cuales no.</li>
 						<li>Los platos sueltos se cobran por plato. El precio es dependiente del plato que elija.</li>
 					</ol>
 				</div>
@@ -370,6 +370,16 @@
 
 			<div id="main_all_dishes_drink" class="main_all_table_div">
 				<div id="main_all_dishes_drink_container" class="main_all_table_div_container"></div>
+			</div>
+
+			<div id="main_all_dishes_dessert" class="main_all_table_div" style="display: block;">
+				<div id="main_all_dishes_dessert_container" class="main_all_table_div_container">
+					<table id="main_all_dishes_dessert_table" class="main_all_table_div_table"></table>
+					<div id="main_all_dishes_dessert_no_included" style="display: none;">
+						<span class="n_title" onclick="change_plan_menu_show();">Los platos siguientes no están incluidos en su buffet/menú seleccionado. <span style="color: #D51B19; font-weight: 600;">Cambiar mi plan.</span></span>
+						<table id="main_all_dishes_dessert_no_included_table" class="main_all_table_div_table"></table>
+					</div>
+				</div>
 			</div>
 		</div>
 
