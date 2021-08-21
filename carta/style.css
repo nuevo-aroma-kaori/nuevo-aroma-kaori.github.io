@@ -641,11 +641,12 @@ div#main_container div#main_all_dishes_drink div#main_all_dishes_drink_container
 	color: #D51B19;
 }
 
-div#main_container div#main_all_dishes_dessert div#main_all_dishes_dessert_container table#main_all_dishes_dessert_table tr td div.main_dessert_desc {
+div#main_container div#main_all_dishes_dessert div#main_all_dishes_dessert_container table tr td div.main_dessert_desc {
 	margin: 0px 10px 10px 10px;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 }
 
-div#main_container div#main_all_dishes_dessert div#main_all_dishes_dessert_container table#main_all_dishes_dessert_table tr td div.main_dessert_desc span.main_dessert_desc_units {
+div#main_container div#main_all_dishes_dessert div#main_all_dishes_dessert_container table tr td div.main_dessert_desc span.main_dessert_desc_units {
 	display: block;
 	text-align: center;
 	font-weight: 400;
@@ -653,7 +654,7 @@ div#main_container div#main_all_dishes_dessert div#main_all_dishes_dessert_conta
 	margin-top: 6px;
 }
 
-div#main_container div#main_all_dishes_dessert div#main_all_dishes_dessert_container table#main_all_dishes_dessert_table tr td div.main_dessert_desc span.main_dessert_desc_price {
+div#main_container div#main_all_dishes_dessert div#main_all_dishes_dessert_container table tr td div.main_dessert_desc span.main_dessert_desc_price {
 	font-size: 1.2em;
 	font-weight: 600;
 	color: #D51B19;
@@ -665,12 +666,11 @@ div#main_container div#main_all_dishes_dessert div#main_all_dishes_dessert_conta
 
 div#main_container div#main_all_dishes_dessert div#main_all_dishes_dessert_container div#main_all_dishes_dessert_no_included span.n_title {
 	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
-    color: #AFAFAF;
+    color: #8F8F8F;
     font-weight: 400;
     padding: 10px 40px;
     display: block;
     text-align: center;
-    background: #000000;
     border-radius: 10px;
 }
 

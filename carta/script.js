@@ -305,7 +305,7 @@ function show_desserts(menu_plan_index = 1) {
 
 		for (var proc_limit_count = 0; proc_limit_count < 2; ++proc_limit_count, ++proc_index) {
 			if (all_dish_info.menu_info.all_menus[menu_plan_index].included_desserts.indexOf(all_dish_info.dessert_info.all_desserts[proc_index].number) != -1) {
-				var elem = create_dessert_cnt_element_desserts(all_dish_info.dessert_info.all_desserts[proc_index]);
+				var elem = create_dessert_cnt_element_desserts(all_dish_info.dessert_info.all_desserts[proc_index], proc_index);
 
 				/* APPEAR */
 				new_tr_elem.appendChild(elem);
@@ -332,7 +332,7 @@ function show_desserts(menu_plan_index = 1) {
 			var new_tr_elem = document.createElement("tr");
 	
 			for (var proc_limit_count = 0; proc_limit_count < 2; ++proc_limit_count, ++proc_index) {
-				var elem = create_dessert_cnt_element_desserts(proc_index);
+				var elem = create_dessert_cnt_element_desserts(all_dish_info.dessert_info.all_desserts[proc_index], proc_index);
 	
 				/* APPEAR */
 				new_tr_elem.appendChild(elem);
@@ -343,7 +343,7 @@ function show_desserts(menu_plan_index = 1) {
 	}
 }
 
-function create_dessert_cnt_element_desserts(proc_element) {
+function create_dessert_cnt_element_desserts(proc_element, proc_index) {
 	var elem_td_container = document.createElement("td");
 	elem_td_container.setAttribute("id", "main_all_desserts_dessert_" + proc_index.toString());
 	elem_td_container.style.width = (100.0 / 2).toString() + "%";
@@ -376,6 +376,9 @@ function create_dessert_cnt_element_desserts(proc_element) {
 	var elem_dessert_description_price = document.createElement("span");
 	elem_dessert_description_price.setAttribute("class", "main_dessert_desc_price");
 	elem_dessert_description_price.innerText = proc_element.price.toFixed(2) + "€";
+	if (proc_element.price == 0.0) {
+		elem_dessert_description_price.innerText = "Depende";
+	}
 
 	var elem_dish_options = document.createElement("div");
 	elem_dish_options.setAttribute("class", "main_dish_options");
