@@ -2630,7 +2630,7 @@ Allergen
 							"es" : "Té verde",
 							"ca" : "Té verd"
 						},
-						"price" : 4.0
+						"price" : 4.6
 					},
 
 					{
@@ -2639,7 +2639,7 @@ Allergen
 							"es" : "Fresa",
 							"ca" : "Maduixa"
 						},
-						"price" : 4.0
+						"price" : 4.6
 					},
 
 					{
@@ -2648,7 +2648,7 @@ Allergen
 							"es" : "Chocolate",
 							"ca" : "Xocolata"
 						},
-						"price" : 4.0
+						"price" : 4.6
 					}
 				]
 			}

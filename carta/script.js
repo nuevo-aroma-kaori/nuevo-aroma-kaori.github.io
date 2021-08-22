@@ -379,18 +379,8 @@ function create_dessert_cnt_element_desserts(proc_element, proc_index) {
 	if (proc_element.price == 0.0) {
 		elem_dessert_description_price.innerText = "Depende";
 	}
-
-	var elem_dish_options = document.createElement("div");
-	elem_dish_options.setAttribute("class", "main_dish_options");
-	
-	var elem_dish_options_info = document.createElement("button");
-	elem_dish_options_info.setAttribute("class", "main_dish_info");
-	elem_dish_options_info.innerText = "Ver variedades";
-	elem_dish_options_info.setAttribute("onclick", "dish_description_floating_window_Show(" + proc_index.toString() + ");");
 	
 	/* APPEND CHILD */
-	elem_dish_options.appendChild(elem_dish_options_info);
-
 	elem_dessert_description.appendChild(elem_dessert_description_units);
 	elem_dessert_description.appendChild(elem_dessert_description_price);
 
@@ -400,6 +390,19 @@ function create_dessert_cnt_element_desserts(proc_element, proc_index) {
 	elem_div_everything_container.appendChild(elem_dish_number);
 	elem_div_everything_container.appendChild(elem_dish_description);
 	elem_div_everything_container.appendChild(elem_dessert_description);
+	if (proc_element.varieties) {
+		var elem_dish_options = document.createElement("div");
+		elem_dish_options.setAttribute("class", "main_dish_options");
+	
+		var elem_dish_options_info = document.createElement("button");
+		elem_dish_options_info.setAttribute("class", "main_dish_info");
+		elem_dish_options_info.innerText = "Ver variedades";
+		elem_dish_options_info.setAttribute("onclick", "show_dish_varieties(" + proc_index.toString() + ");");
+
+		elem_dish_options.appendChild(elem_dish_options_info);
+
+		elem_div_everything_container.appendChild(elem_dish_options);
+	}
 
 	elem_td_container.appendChild(elem_div_everything_container);
 
@@ -496,4 +499,85 @@ function change_plan_menu_hide(wait) {
 		option_page_elem.style.top = "100%";
 		setTimeout(function() { option_page_elem.style.display = "none"; }, 200);
 	}
+}
+
+function show_dish_varieties(proc_elem_index) {
+	var bg_elem = document.getElementById("whatever_wnd_bg");
+	bg_elem.style.display = "block";
+	setTimeout(function() { bg_elem.style.opacity = "1"; }, 50);
+
+	var varieties_page_elem = document.getElementById("dish_varieties_option_page");
+	varieties_page_elem.style.display = "block";
+	setTimeout(function() { varieties_page_elem.style.top = "0%"; }, 50);
+
+	/* SET CONTENTS */
+	var proc_infos = all_dish_info.dessert_info.all_desserts[proc_elem_index];
+
+	document.getElementById("dish_varieties_option_title").innerText = proc_infos.name.es;
+
+	var container_elem = document.getElementById("dish_varieties_option_page_container");
+	container_elem.innerHTML = "";
+	
+	const varieties_length = proc_infos.varieties_array.length;
+	const varieties_info = proc_infos.varieties_array;
+	for (var variety_index = 0; variety_index < varieties_length; ++variety_index) {
+		var option_elem = document.createElement("div");
+		option_elem.setAttribute("class", "option_page_option");
+		option_elem.setAttribute("style", "border-radius:18px;padding:2px;background:#f0f0f0;");
+
+		var option_container_elem = document.createElement("div");
+		option_container_elem.setAttribute("class", "option_page_option_container");
+
+		var option_variety_name_elem = document.createElement("span");
+		option_variety_name_elem.setAttribute("class", "option_page_option_variety_name");
+		option_variety_name_elem.innerText = varieties_info[variety_index].name.es;
+
+		var option_variety_info_container_elem = document.createElement("div");
+		option_variety_info_container_elem.setAttribute("class", "option_page_option_variety_info_container");
+
+		var option_variety_info_table_elem = document.createElement("table");
+		var option_variety_info_table_tr_elem = document.createElement("tr");
+
+		var option_variety_info_td_left_elem = document.createElement("td");
+		option_variety_info_td_left_elem.setAttribute("class", "align_left");
+		var option_variety_info_td_right_elem = document.createElement("td");
+		option_variety_info_td_right_elem.setAttribute("class", "align_right");
+
+		var option_variety_info_number_elem = document.createElement("div");
+		option_variety_info_number_elem.setAttribute("class", "option_page_option_variety_info_number");
+		option_variety_info_number_elem.innerText = "n. " + varieties_info[variety_index].number;
+
+		var option_variety_info_price_elem = document.createElement("div");
+		option_variety_info_price_elem.setAttribute("class", "option_page_option_variety_info_price");
+		option_variety_info_price_elem.innerText = varieties_info[variety_index].price.toFixed(2) + "€";
+
+		// PUT THEM INSIDE OTHERS
+		option_variety_info_td_left_elem.appendChild(option_variety_info_number_elem);
+		option_variety_info_td_right_elem.appendChild(option_variety_info_price_elem);
+
+		option_variety_info_table_tr_elem.appendChild(option_variety_info_td_left_elem);
+		option_variety_info_table_tr_elem.appendChild(option_variety_info_td_right_elem);
+
+		option_variety_info_table_elem.appendChild(option_variety_info_table_tr_elem);
+
+		option_variety_info_container_elem.appendChild(option_variety_info_table_elem);
+
+		option_container_elem.appendChild(option_variety_name_elem);
+		option_container_elem.appendChild(option_variety_info_container_elem);
+
+		option_elem.appendChild(option_container_elem);
+
+		// APPEND
+		container_elem.appendChild(option_elem);
+	}
+}
+
+function hide_dish_varieties() {
+	var bg_elem = document.getElementById("whatever_wnd_bg");
+	bg_elem.style.opacity = "0";
+	setTimeout(function() { bg_elem.style.display = "none"; }, 200);
+
+	var option_page_elem = document.getElementById("dish_varieties_option_page");
+	option_page_elem.style.top = "100%";
+	setTimeout(function() { option_page_elem.style.display = "none"; }, 200);
 }

@@ -399,6 +399,41 @@ div.option_page div.option_page_container div.option_page_notes ol li {
 	margin: 10px 0px;
 }
 
+div.option_page div.option_page_container div.option_page_option div.option_page_option_container span.option_page_option_variety_name {
+	font-family: 'Work Sans';
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 2px;
+    display: block;
+}
+
+div.option_page div.option_page_container div.option_page_option div.option_page_option_container div.option_page_option_variety_info_container table {
+	border-spacing: 0;
+}
+
+div.option_page div.option_page_container div.option_page_option div.option_page_option_container div.option_page_option_variety_info_container table tr td.align_left {
+	text-align: left;
+}
+
+div.option_page div.option_page_container div.option_page_option div.option_page_option_container div.option_page_option_variety_info_container table tr td.align_right {
+	text-align: right;
+}
+
+div.option_page div.option_page_container div.option_page_option div.option_page_option_container div.option_page_option_variety_info_container table tr td div.option_page_option_variety_info_number {
+	display: inline-block;
+    font-family: 'Work Sans';
+    color: #4F4F4F;
+    padding: 2px;
+}
+
+div.option_page div.option_page_container div.option_page_option div.option_page_option_container div.option_page_option_variety_info_container table tr td div.option_page_option_variety_info_price {
+	padding: 4px;
+    background: #F0F0F0;
+    display: inline-block;
+    border-radius: 4px;
+    font-family: 'Work Sans';
+}
+
 div#main_container {}
 
 div#main_container span.main_title {
