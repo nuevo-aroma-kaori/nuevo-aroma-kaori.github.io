@@ -751,6 +751,99 @@ Allergen
 	},
 
 	"dish_info" : {
+		"dish_classification" : [
+			{
+				"class_name" : {
+					"es" : "Entrantes",
+					"ca" : "Entrants"
+				},
+
+				"class_dishes_number" : [1, 2, 3, 5, 6, 7]
+			},
+
+			{
+				"class_name" : {
+					"es" : "Arroz y fideos",
+					"ca" : "Arròs i fideos"
+				},
+
+				"class_dishes_number" : [8, 9, 10, 11, 12]
+			},
+
+			{
+				"class_name" : {
+					"es" : "Fritos & Vapores",
+					"ca" : "Fregits & Vapors"
+				},
+
+				"class_dishes_number" : [18, 19, 20, 27, 56]
+			},
+
+			{
+				"class_name" : {
+					"es" : "Platos especiales",
+					"ca" : "Plats especials"
+				},
+
+				"class_dishes_number" : [
+					14, 15, 16, 21, 22,
+					25, 28, 29, 57, 58,
+					59, 60, 62, 63, 64,
+					68, 69, 70, 71, 72,
+					74, 81, 82, 83
+				]
+			},
+
+			{
+				"class_name" : {
+					"es" : "Maki",
+					"ca" : "Maki"
+				},
+
+				"class_dishes_number" : [31, 32, 33, 34, 35, 36, 37, 38]
+			},
+
+			{
+				"class_name" : {
+					"es" : "Uramaki",
+					"ca" : "Uramaki"
+				},
+
+				"class_dishes_number" : [
+					39, 40, 41, 42, 43,
+					44, 45, 46, 75, 76,
+					77, 78
+				]
+			},
+
+			{
+				"class_name" : {
+					"es" : "Nigiri",
+					"ca" : "Nigiri"
+				},
+
+				"class_dishes_number" : [47, 48, 49, 50, 95, 99, 100]
+			},
+
+			{
+				"class_name" : {
+					"es" : "Gunkan",
+					"ca" : "Gunkan"
+				},
+
+				"class_dishes_number" : [51, 52, 53, 91, 92, 93, 94]
+			},
+
+			{
+				"class_name" : {
+					"es" : "Tarta & Sashimi",
+					"ca" : "Tarta & Sashimi"
+				},
+
+				"class_dishes_number" : [54, 55, 96, 98]
+			}
+		],
+
 		"all_dishes" : [
 			{
 				"number" : 1,
@@ -762,6 +855,11 @@ Allergen
 				"desc" : {
 					"es" : "",
 					"ca" : ""
+				},
+				"units" : 1,
+				"bigger_info" : {
+					"units" : 1,
+					"price" : 4.5
 				}
 			},
 
