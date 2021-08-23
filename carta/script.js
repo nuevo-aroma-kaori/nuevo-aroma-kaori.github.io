@@ -183,6 +183,13 @@ function create_dish_cnt_element_dishes(proc_index) {
 	elem_dish_options.appendChild(elem_dish_options_info);
 
 	elem_dish_description.appendChild(elem_dish_description_name);
+	if (all_dish_info.dish_info.all_dishes[proc_index].units > 1) {
+		var elem_dish_description_units = document.createElement("span");
+		elem_dish_description_units.setAttribute("class", "main_dish_desc_units");
+		elem_dish_description_units.innerText = all_dish_info.dish_info.all_dishes[proc_index].units.toString() + " uds.";
+
+		elem_dish_description.appendChild(elem_dish_description_units);
+	}
 
 	elem_div_everything_container.appendChild(elem_preview_image);
 	elem_div_everything_container.appendChild(elem_dish_number);
