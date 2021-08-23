@@ -83,6 +83,7 @@ function request_necessary_information() {
 function show_dishes(menu_plan_index = 1) {
 	const all_dishes_quantity = all_dish_info.dish_info.all_dishes.length;
 
+	/*
 	var table_element = document.getElementById("main_all_dishes_table");
 	table_element.innerHTML = "";
 
@@ -96,7 +97,7 @@ function show_dishes(menu_plan_index = 1) {
 			if (all_dish_info.menu_info.all_menus[menu_plan_index].included_dishes.indexOf(all_dish_info.dish_info.all_dishes[proc_index].number) != -1) {
 				var elem = create_dish_cnt_element_dishes(proc_index);
 
-				/* APPEAR */
+				/* APPEAR *
 				new_tr_elem.appendChild(elem);
 				table_element.appendChild(new_tr_elem);
 			} else {
@@ -107,7 +108,53 @@ function show_dishes(menu_plan_index = 1) {
 		}
 
 		if (trigger_getout) { break; }
+	}*/
+
+	/////////
+	var original_table_element = document.getElementById("main_all_dishes_table");
+	var no_included_table_element = document.getElementById("main_all_dishes_no_included_table");
+	original_table_element.innerHTML = "";
+	no_included_table_element.innerHTML = "";
+
+	var original_table_row_count = 0,
+		no_included_table_row_count = 0;
+	var original_table_tr_elem = document.createElement("tr"),
+		no_included_table_tr_elem = document.createElement("tr");
+
+	var exist_no_included_dishes = false;
+
+	for (var proc_index = 0; proc_index < all_dishes_quantity; ++proc_index) {
+		if (original_table_row_count == 2) {
+			original_table_row_count = 0;
+			original_table_element.appendChild(original_table_tr_elem);
+			original_table_tr_elem = document.createElement("tr");
+		}
+		if (no_included_table_row_count == 2) {
+			no_included_table_row_count = 0;
+			no_included_table_element.appendChild(no_included_table_tr_elem);
+			no_included_table_tr_elem = document.createElement("tr");
+		}
+
+		var elem = create_dish_cnt_element_dishes(proc_index);
+		// IF THE DISH IS INCLUDED
+		if (all_dish_info.menu_info.all_menus[menu_plan_index].included_dishes.indexOf(all_dish_info.dish_info.all_dishes[proc_index].number) != -1) {
+			original_table_tr_elem.appendChild(elem);
+			++original_table_row_count;
+		} else {
+			no_included_table_tr_elem.appendChild(elem);
+			++no_included_table_row_count;
+			exist_no_included_dishes = true;
+		}
 	}
+
+	if (original_table_row_count > 0) { original_table_element.appendChild(original_table_tr_elem); }
+	if (no_included_table_row_count > 0) { no_included_table_element.appendChild(no_included_table_tr_elem); }
+
+	if (!exist_no_included_dishes) {
+		document.getElementById("main_all_dishes_no_included").style.display = "none";
+	}
+
+	/*
 
 	if (
 		all_dish_info.menu_info.all_menus[menu_plan_index].included_dishes[all_dish_info.menu_info.all_menus[menu_plan_index].included_dishes.length - 1]
@@ -123,13 +170,14 @@ function show_dishes(menu_plan_index = 1) {
 			for (var proc_limit_count = 0; proc_limit_count < 2; ++proc_limit_count, ++proc_index) {
 				var elem = create_dish_cnt_element_dishes(proc_index);
 	
-				/* APPEAR */
+				/* APPEAR *
 				new_tr_elem.appendChild(elem);
 			}
 	
 			table_element.appendChild(new_tr_elem);
 		}
 	}
+	*/
 }
 
 function create_dish_cnt_element_dishes(proc_index) {
@@ -472,6 +520,8 @@ function set_chosen_menu(index) {
 	}
 
 	change_plan_menu_hide(true);
+
+	document.getElementById("main_all_dishes_no_included").style.display = "block";
 	show_dishes(index);
 	show_desserts(index);
 }
