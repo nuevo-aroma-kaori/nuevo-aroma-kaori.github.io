@@ -447,8 +447,8 @@ Allergen
 				"type_id" : 6,
 
 				"type_name" : {
-					"es" : "Otras bebidas",
-					"ca" : "Altres begudes"
+					"es" : "Cervezas y otros alcoholes",
+					"ca" : "Cervezes i altres alhocols"
 				},
 
 				"type_notes" : [],
@@ -525,6 +525,58 @@ Allergen
 						}
 					},
 
+					{
+						"id" : 41,
+						"name" : "Copa de Vino blanco",
+						"price" : 2.8,
+						"notes" : [],
+						"desc" : {
+							"capacity" : {
+								"number" : 0,
+								"unit" : "mL"
+							}
+						}
+					},
+
+					{
+						"id" : 42,
+						"name" : "Copa de Vino tinto",
+						"price" : 2.8,
+						"notes" : [],
+						"desc" : {
+							"capacity" : {
+								"number" : 0,
+								"unit" : "mL"
+							}
+						}
+					},
+
+					{
+						"id" : 43,
+						"name" : "Chupito",
+						"price" : 1.8,
+						"notes" : [],
+						"desc" : {
+							"capacity" : {
+								"number" : 0,
+								"unit" : "mL"
+							}
+						}
+					}
+				]
+			},
+
+			{
+				"type_id" : 6,
+
+				"type_name" : {
+					"es" : "Otras bebidas",
+					"ca" : "Altres begudes"
+				},
+
+				"type_notes" : [],
+
+				"child_list" : [
 					{
 						"id" : 31,
 						"name" : "Agua - Solan De Cabras",
@@ -650,45 +702,6 @@ Allergen
 						"desc" : {
 							"capacity" : {
 								"number" : 330,
-								"unit" : "mL"
-							}
-						}
-					},
-
-					{
-						"id" : 41,
-						"name" : "Copa de Vino blanco",
-						"price" : 2.8,
-						"notes" : [],
-						"desc" : {
-							"capacity" : {
-								"number" : 0,
-								"unit" : "mL"
-							}
-						}
-					},
-
-					{
-						"id" : 42,
-						"name" : "Copa de Vino tinto",
-						"price" : 2.8,
-						"notes" : [],
-						"desc" : {
-							"capacity" : {
-								"number" : 0,
-								"unit" : "mL"
-							}
-						}
-					},
-
-					{
-						"id" : 43,
-						"name" : "Chupito",
-						"price" : 1.8,
-						"notes" : [],
-						"desc" : {
-							"capacity" : {
-								"number" : 0,
 								"unit" : "mL"
 							}
 						}
@@ -873,6 +886,11 @@ Allergen
 				"desc" : {
 					"es" : "",
 					"ca" : ""
+				},
+				"units" : 1,
+				"bigger_info" : {
+					"units" : 1,
+					"price" : 3.5
 				}
 			},
 
@@ -886,6 +904,11 @@ Allergen
 				"desc" : {
 					"es" : "",
 					"ca" : ""
+				},
+				"units" : 1,
+				"bigger_info" : {
+					"units" : 1,
+					"price" : 3.5
 				}
 			},
 
@@ -899,6 +922,11 @@ Allergen
 				"desc" : {
 					"es" : "",
 					"ca" : ""
+				},
+				"units" : 1,
+				"bigger_info" : {
+					"units" : 1,
+					"price" : 3.5
 				}
 			},
 
@@ -912,6 +940,11 @@ Allergen
 				"desc" : {
 					"es" : "",
 					"ca" : ""
+				},
+				"units" : 1,
+				"bigger_info" : {
+					"units" : 1,
+					"price" : 2.8
 				}
 			},
 
@@ -925,6 +958,11 @@ Allergen
 				"desc" : {
 					"es" : "",
 					"ca" : ""
+				},
+				"units" : 1,
+				"bigger_info" : {
+					"units" : 1,
+					"price" : 1.8
 				}
 			},
 
@@ -938,6 +976,11 @@ Allergen
 				"desc" : {
 					"es" : "",
 					"ca" : ""
+				},
+				"units" : 1,
+				"bigger_info" : {
+					"units" : 1,
+					"price" : 4.95
 				}
 			},
 
@@ -951,6 +994,11 @@ Allergen
 				"desc" : {
 					"es" : "",
 					"ca" : ""
+				},
+				"units" : 1,
+				"bigger_info" : {
+					"units" : 1,
+					"price" : 5.95
 				}
 			},
 
@@ -964,6 +1012,11 @@ Allergen
 				"desc" : {
 					"es" : "",
 					"ca" : ""
+				},
+				"units" : 1,
+				"bigger_info" : {
+					"units" : 1,
+					"price" : 4.95
 				}
 			},
 
@@ -977,6 +1030,11 @@ Allergen
 				"desc" : {
 					"es" : "",
 					"ca" : ""
+				},
+				"units" : 1,
+				"bigger_info" : {
+					"units" : 1,
+					"price" : 4.95
 				}
 			},
 
@@ -990,6 +1048,11 @@ Allergen
 				"desc" : {
 					"es" : "",
 					"ca" : ""
+				},
+				"units" : 1,
+				"bigger_info" : {
+					"units" : 1,
+					"price" : 4.95
 				}
 			},
 
@@ -1003,6 +1066,11 @@ Allergen
 				"desc" : {
 					"es" : "",
 					"ca" : ""
+				},
+				"units" : 1,
+				"bigger_info" : {
+					"units" : 0,
+					"price" : 4.5
 				}
 			},
 
@@ -2773,7 +2841,7 @@ Allergen
 				"name" : "Buffet Noche, Fin de semana y Festivo",
 				"included_dishes" : [
 					1,  2,  3,      5,  6,  7,  8,  9,  10,
-					11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+					11, 12,     14, 15, 16, 17, 18, 19, 20,
 					21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
 					31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
 					41, 42, 43, 44, 45, 46, 47, 48, 49, 50,
