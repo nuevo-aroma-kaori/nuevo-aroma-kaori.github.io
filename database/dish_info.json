@@ -2897,49 +2897,6 @@ Allergen
 			},
 
 			{
-				"number" : 165,
-				"name" : {
-					"es" : "Helado de Mochi",
-					"ca" : "Gelat de Mochi"
-				},
-				"price" : 4.0,
-				"units" : 1,
-				"desc" : {
-					"es" : "No hay descripción para este postre.",
-					"ca" : "No hi ha descripció per a aquest postre."
-				},
-				"varieties" : true,
-				"varieties_array" : [
-					{
-						"number" : 165,
-						"name" : {
-							"es" : "Té verde",
-							"ca" : "Té verd"
-						},
-						"price" : 4.0
-					},
-
-					{
-						"number" : 165,
-						"name" : {
-							"es" : "Fresa",
-							"ca" : "Maduixa"
-						},
-						"price" : 4.0
-					},
-
-					{
-						"number" : 165,
-						"name" : {
-							"es" : "Chocolate",
-							"ca" : "Xocolata"
-						},
-						"price" : 4.0
-					}
-				]
-			},
-
-			{
 				"number" : 166,
 				"name" : {
 					"es" : "Helado Té verde (de bola)",
@@ -3173,8 +3130,8 @@ Allergen
 					{
 						"number" : 165,
 						"name" : {
-							"es" : "Té verde",
-							"ca" : "Té verd"
+							"es" : "Té verde: Matcha",
+							"ca" : "Té verd: Matcha"
 						},
 						"price" : 4.6
 					},
@@ -3193,6 +3150,33 @@ Allergen
 						"name" : {
 							"es" : "Chocolate",
 							"ca" : "Xocolata"
+						},
+						"price" : 4.6
+					},
+
+					{
+						"number" : 165,
+						"name" : {
+							"es" : "Sakura (Flor de cerezo)",
+							"ca" : "Sakura (Flor de cirerer)"
+						},
+						"price" : 4.6
+					},
+
+					{
+						"number" : 165,
+						"name" : {
+							"es" : "CheeseCake (Queso)",
+							"ca" : "CheeseCake (Formatge)"
+						},
+						"price" : 4.6
+					},
+
+					{
+						"number" : 165,
+						"name" : {
+							"es" : "Oreo",
+							"ca" : "Oreo"
 						},
 						"price" : 4.6
 					}
@@ -3214,7 +3198,15 @@ Allergen
 					51, 52, 53, 54, 55
 				],
 				"included_drinks" : [],
-				"included_desserts" : []
+				"included_desserts" : [],
+				"menu_alg_type" : 0,
+				"menu_time_info" : [
+					{ "day" : 1, "hour" : 0 },
+					{ "day" : 2, "hour" : 0 },
+					{ "day" : 3, "hour" : 0 },
+					{ "day" : 4, "hour" : 0 },
+					{ "day" : 5, "hour" : 0 }
+				]
 			},
 
 			{
@@ -3232,7 +3224,24 @@ Allergen
 					91, 92, 93, 94, 95, 96,     98, 99, 100
 				],
 				"included_drinks" : [],
-				"included_desserts" : []
+				"included_desserts" : [],
+				"menu_alg_type" : 0,
+				"menu_time_info" : [
+					{ "day" : 1, "hour" : 0 },
+					{ "day" : 1, "hour" : 1 },
+					{ "day" : 2, "hour" : 0 },
+					{ "day" : 2, "hour" : 1 },
+					{ "day" : 3, "hour" : 0 },
+					{ "day" : 3, "hour" : 1 },
+					{ "day" : 4, "hour" : 0 },
+					{ "day" : 4, "hour" : 1 },
+					{ "day" : 5, "hour" : 0 },
+					{ "day" : 5, "hour" : 1 },
+					{ "day" : 6, "hour" : 0 },
+					{ "day" : 6, "hour" : 1 },
+					{ "day" : 7, "hour" : 0 },
+					{ "day" : 7, "hour" : 1 }
+				]
 			},
 
 			{
@@ -3254,6 +3263,14 @@ Allergen
 				"included_desserts" : [
 					150, 151, 152, 153, 154,
 					156, 157, 158, 159, 160, 161
+				],
+				"menu_alg_type" : 0,
+				"menu_time_info" : [
+					{ "day" : 1, "hour" : 0 },
+					{ "day" : 2, "hour" : 0 },
+					{ "day" : 3, "hour" : 0 },
+					{ "day" : 4, "hour" : 0 },
+					{ "day" : 5, "hour" : 0 }
 				]
 			},
 
@@ -3272,7 +3289,24 @@ Allergen
 					91, 92, 93, 94, 95, 96,     98, 99, 100
 				],
 				"included_drinks" : [],
-				"included_desserts" : []
+				"included_desserts" : [],
+				"menu_alg_type" : 0,
+				"menu_time_info" : [
+					{ "day" : 1, "hour" : 0 },
+					{ "day" : 1, "hour" : 1 },
+					{ "day" : 2, "hour" : 0 },
+					{ "day" : 2, "hour" : 1 },
+					{ "day" : 3, "hour" : 0 },
+					{ "day" : 3, "hour" : 1 },
+					{ "day" : 4, "hour" : 0 },
+					{ "day" : 4, "hour" : 1 },
+					{ "day" : 5, "hour" : 0 },
+					{ "day" : 5, "hour" : 1 },
+					{ "day" : 6, "hour" : 0 },
+					{ "day" : 6, "hour" : 1 },
+					{ "day" : 7, "hour" : 0 },
+					{ "day" : 7, "hour" : 1 }
+				]
 			},
 
 			{
@@ -3290,7 +3324,24 @@ Allergen
 					91, 92, 93, 94, 95, 96,     98, 99, 100
 				],
 				"included_drinks" : [],
-				"included_desserts" : []
+				"included_desserts" : [],
+				"menu_alg_type" : 1,
+				"menu_time_info" : [
+					{ "day" : 1, "hour" : 0 },
+					{ "day" : 1, "hour" : 1 },
+					{ "day" : 2, "hour" : 0 },
+					{ "day" : 2, "hour" : 1 },
+					{ "day" : 3, "hour" : 0 },
+					{ "day" : 3, "hour" : 1 },
+					{ "day" : 4, "hour" : 0 },
+					{ "day" : 4, "hour" : 1 },
+					{ "day" : 5, "hour" : 0 },
+					{ "day" : 5, "hour" : 1 },
+					{ "day" : 6, "hour" : 0 },
+					{ "day" : 6, "hour" : 1 },
+					{ "day" : 7, "hour" : 0 },
+					{ "day" : 7, "hour" : 1 }
+				]
 			}
 		]
 	}
