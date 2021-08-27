@@ -451,7 +451,7 @@ Allergen
 					"ca" : "Cervezes i altres alhocols"
 				},
 
-				"type_notes" : [],
+				"type_notes" : ["age_18"],
 
 				"child_list" : [
 					{

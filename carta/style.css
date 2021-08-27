@@ -458,7 +458,7 @@ div.option_page div.option_page_container div#option_page_allergen_get_out div#o
 }
 
 div#menu_no_included_notif {
-	
+
 }
 
 div#main_container {}
@@ -654,6 +654,17 @@ div#main_container div.main_all_table_div div.main_all_table_div_container table
 	border-radius: 4px;
 	background: #DFDFDF;
 	margin-top: 10px;
+}
+
+div#main_container div.main_all_table_div div.main_all_table_div_container table.main_all_table_div_table tr td div.main_all_dishes_dish_container div.main_dish_desc span.main_dish_desc_price {
+	font-size: 1.2em;
+	font-weight: 600;
+	color: #D51B19;
+	padding: 2px 4px;
+	border-radius: 4px;
+	background: #DFDFDF;
+	margin-top: 10px;
+	display: inline-block;
 }
 
 div#main_container div.main_all_table_div div.main_all_table_div_container table.main_all_table_div_table tr td div.main_all_dishes_dish_container div.main_dish_options {

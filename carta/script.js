@@ -85,10 +85,12 @@ function request_necessary_information() {
 			document.getElementById("loading_information").style.display = "none";
 
 			set_chosen_menu(1);
+
+			init_menu_current_time();
+
 			page_change_to(1);
 
 			show_drinks();
-			init_menu_current_time();
 		}
 	);
 }
@@ -120,7 +122,17 @@ function show_dishes(menu_plan_index = 1) {
 			no_included_table_tr_elem = document.createElement("tr");
 		}
 
-		var elem = create_dish_cnt_element_dishes(proc_index);
+		// SEPARATE THE "PLATOS SUELTOS" GENERATING ALGORITHM
+		var elem;
+		switch (all_dish_info.menu_info.all_menus[menu_plan_index].menu_alg_type) {
+		case 0:
+			elem = create_dish_cnt_element_dishes(proc_index);
+			break;
+		case 1:
+			elem = create_dish_cnt_element_dishes_alg1(proc_index);
+			break;
+		}
+		
 		// IF THE DISH IS INCLUDED
 		if (all_dish_info.menu_info.all_menus[menu_plan_index].included_dishes.indexOf(all_dish_info.dish_info.all_dishes[proc_index].number) != -1) {
 			original_table_tr_elem.appendChild(elem);
@@ -198,6 +210,86 @@ function create_dish_cnt_element_dishes(proc_index) {
 
 		elem_dish_description.appendChild(elem_dish_description_units);
 	}
+
+	elem_div_everything_container.appendChild(elem_preview_image);
+	elem_div_everything_container.appendChild(elem_dish_number);
+	elem_div_everything_container.appendChild(elem_dish_description);
+	elem_div_everything_container.appendChild(elem_dish_options);
+
+	elem_td_container.appendChild(elem_div_everything_container);
+
+	/* FINAL ELEMENT */
+	return elem_td_container;
+}
+
+function create_dish_cnt_element_dishes_alg1(proc_index) {
+	const allergen_array = all_dish_info.dish_info.all_dishes[proc_index].allergen;
+	var allergic_for_user = false;
+
+	var elem_td_container = document.createElement("td");
+	elem_td_container.setAttribute("id", "main_all_dishes_dish_" + proc_index.toString());
+	elem_td_container.style.width = (100.0 / 2).toString() + "%";
+
+	var elem_div_everything_container = document.createElement("div");
+	elem_div_everything_container.setAttribute("class", "main_all_dishes_dish_container");
+	
+	for (var i_allergen_list = 0; i_allergen_list < user_allergen_info.length; ++i_allergen_list) {
+		if (allergen_array.indexOf(user_allergen_info[i_allergen_list]) != -1) {
+			allergic_for_user = true;
+			break;
+		}
+	}
+
+	if (allergic_for_user) {
+		elem_div_everything_container.style.background = "linear-gradient(180deg, #FFFFFF, #FFE0E0)";
+		elem_div_everything_container.style.border = "1px solid #FFE0E0";
+	}
+
+	var elem_preview_image = document.createElement("img");
+	elem_preview_image.setAttribute("class", "main_dish_image");
+	elem_preview_image.setAttribute("src", "https://nuevoaromakaori.com/resources/dish_img/" + all_dish_info.dish_info.all_dishes[proc_index].number.toString() + ".png");
+
+	var elem_dish_number = document.createElement("div");
+	elem_dish_number.setAttribute("class", "main_dish_number");
+	elem_dish_number.innerText = "n. " + all_dish_info.dish_info.all_dishes[proc_index].number.toString();
+
+	var elem_dish_description = document.createElement("div");
+	elem_dish_description.setAttribute("class", "main_dish_desc");
+
+	var elem_dish_description_name = document.createElement("span");
+	elem_dish_description_name.setAttribute("class", "main_dish_desc_title");
+	elem_dish_description_name.innerText = all_dish_info.dish_info.all_dishes[proc_index].name.es;
+
+	var elem_dish_description_price = document.createElement("span");
+	elem_dish_description_price.setAttribute("class", "main_dish_desc_price");
+	elem_dish_description_price.innerText = all_dish_info.dish_info.all_dishes[proc_index].bigger_info.price.toFixed(2) + "€";
+
+	var elem_dish_options = document.createElement("div");
+	elem_dish_options.setAttribute("class", "main_dish_options");
+
+	var elem_dish_options_info = document.createElement("button");
+	elem_dish_options_info.setAttribute("class", "main_dish_info");
+	elem_dish_options_info.innerText = "Ver detalles";
+	elem_dish_options_info.setAttribute("onclick", "dish_description_floating_window_Show(" + proc_index.toString() + ");");
+
+	/* APPEND CHILD */
+	elem_dish_options.appendChild(elem_dish_options_info);
+
+	elem_dish_description.appendChild(elem_dish_description_name);
+	if (all_dish_info.dish_info.all_dishes[proc_index].units > 1) {
+		var elem_dish_description_units = document.createElement("span");
+		elem_dish_description_units.setAttribute("class", "main_dish_desc_units");
+		if (all_dish_info.dish_info.all_dishes[proc_index].units == all_dish_info.dish_info.all_dishes[proc_index].bigger_info.units) {
+			elem_dish_description_units.innerText = all_dish_info.dish_info.all_dishes[proc_index].units.toString() + " uds.";
+		} else {
+			elem_dish_description_units.innerHTML = 
+				"<del>" + all_dish_info.dish_info.all_dishes[proc_index].units.toString() + " uds." + "</del><br>" +
+				"<b>" + all_dish_info.dish_info.all_dishes[proc_index].bigger_info.units.toString() + " uds." + "</b>";
+		}
+
+		elem_dish_description.appendChild(elem_dish_description_units);
+	}
+	elem_dish_description.appendChild(elem_dish_description_price);
 
 	elem_div_everything_container.appendChild(elem_preview_image);
 	elem_div_everything_container.appendChild(elem_dish_number);
@@ -309,52 +401,47 @@ function create_drink_cnt_element_drinks(proc_element, alcohol) {
 function show_desserts(menu_plan_index = 1) {
 	const all_desserts_quantity = all_dish_info.dessert_info.all_desserts.length;
 
-	var table_element = document.getElementById("main_all_dishes_dessert_table");
-	table_element.innerHTML = "";
+	var original_table_element = document.getElementById("main_all_dishes_dessert_table");
+	var no_included_table_element = document.getElementById("main_all_dishes_dessert_no_included_table");
+	original_table_element.innerHTML = "";
+	no_included_table_element.innerHTML = "";
 
-	document.getElementById("main_all_dishes_dessert_no_included").style.display = "none";
+	var original_table_row_count = 0,
+		no_included_table_row_count = 0;
+	var original_table_tr_elem = document.createElement("tr"),
+		no_included_table_tr_elem = document.createElement("tr");
 
-	var proc_index, trigger_getout = false;
-	for (proc_index = 0; proc_index < all_desserts_quantity; ) {
-		var new_tr_elem = document.createElement("tr");
+	var exist_no_included_desserts = false;
 
-		for (var proc_limit_count = 0; proc_limit_count < 2; ++proc_limit_count, ++proc_index) {
-			if (all_dish_info.menu_info.all_menus[menu_plan_index].included_desserts.indexOf(all_dish_info.dessert_info.all_desserts[proc_index].number) != -1) {
-				var elem = create_dessert_cnt_element_desserts(all_dish_info.dessert_info.all_desserts[proc_index], proc_index);
-
-				/* APPEAR */
-				new_tr_elem.appendChild(elem);
-				table_element.appendChild(new_tr_elem);
-			} else {
-				table_element.appendChild(new_tr_elem);
-				trigger_getout = true;
-				break;
-			}
+	for (var proc_index = 0; proc_index < all_desserts_quantity; ++proc_index) {
+		if (original_table_row_count == 2) {
+			original_table_row_count = 0;
+			original_table_element.appendChild(original_table_tr_elem);
+			original_table_tr_elem = document.createElement("tr");
+		}
+		if (no_included_table_row_count == 2) {
+			no_included_table_row_count = 0;
+			no_included_table_element.appendChild(no_included_table_tr_elem);
+			no_included_table_tr_elem = document.createElement("tr");
 		}
 
-		if (trigger_getout) { break; }
+		var elem = create_dessert_cnt_element_desserts(all_dish_info.dessert_info.all_desserts[proc_index], proc_index);
+		// IF THE DISH IS INCLUDED
+		if (all_dish_info.menu_info.all_menus[menu_plan_index].included_desserts.indexOf(all_dish_info.dessert_info.all_desserts[proc_index].number) != -1) {
+			original_table_tr_elem.appendChild(elem);
+			++original_table_row_count;
+		} else {
+			no_included_table_tr_elem.appendChild(elem);
+			++no_included_table_row_count;
+			exist_no_included_desserts = true;
+		}
 	}
 
-	if (
-		all_dish_info.menu_info.all_menus[menu_plan_index].included_desserts[all_dish_info.menu_info.all_menus[menu_plan_index].included_desserts.length - 1]
-		!= all_dish_info.dessert_info.all_desserts[all_desserts_quantity - 1].number) {
-		document.getElementById("main_all_dishes_dessert_no_included").style.display = "block";
+	if (original_table_row_count > 0) { original_table_element.appendChild(original_table_tr_elem); }
+	if (no_included_table_row_count > 0) { no_included_table_element.appendChild(no_included_table_tr_elem); }
 
-		table_element = document.getElementById("main_all_dishes_dessert_no_included_table");
-		table_element.innerHTML = "";
-
-		for (; proc_index < all_desserts_quantity; ) {
-			var new_tr_elem = document.createElement("tr");
-	
-			for (var proc_limit_count = 0; proc_limit_count < 2; ++proc_limit_count, ++proc_index) {
-				var elem = create_dessert_cnt_element_desserts(all_dish_info.dessert_info.all_desserts[proc_index], proc_index);
-	
-				/* APPEAR */
-				new_tr_elem.appendChild(elem);
-			}
-	
-			table_element.appendChild(new_tr_elem);
-		}
+	if (!exist_no_included_desserts) {
+		document.getElementById("main_all_dishes_dessert_no_included").style.display = "none";
 	}
 }
 
@@ -713,7 +800,7 @@ function init_menu_current_time() {
 		current_time_info.hour = 1;
 	} else {
 		out_str += "No abierto";
-		current_time_info.hour = 2;
+		current_time_info.hour = 1;
 	}
 
 	elem.innerText = out_str;
@@ -722,7 +809,8 @@ function init_menu_current_time() {
 	// CHECK IF CURRENT TIME IS IN MENU TIME
 	for (var index = 0; index < all_dish_info.menu_info.all_menus.length; ++index) {
 		var time_is_allowed = false;
-		var time_info = all_dish_info.menu_info.all_menus[index].menu_time_info;
+		const time_info = all_dish_info.menu_info.all_menus[index].menu_time_info;
+
 		for (var i = 0; i < time_info.length; ++i) {
 			if (time_info[i].day == current_time_info.day) {
 				if (time_info[i].hour == current_time_info.hour) {
@@ -732,7 +820,7 @@ function init_menu_current_time() {
 			}
 		}
 
-		if (time_is_allowed) {
+		if (!time_is_allowed) {
 			document.getElementsByClassName("option_page_option_menu_available")[index].style.display = "none";
 		} else {
 			document.getElementsByClassName("option_page_option_menu_available")[index].style.display = "block";
