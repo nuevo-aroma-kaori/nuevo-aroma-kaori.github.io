@@ -2,7 +2,14 @@ window.onload = function() {
 	request_necessary_information();
 };
 
+const user_allergen_data_list = [
+	"gl", "cr", "hv", "ps", "cc", "sj", "lt",
+	"fc", "ap", "mo", "gs", "da", "ml", "al"
+];
+
 var all_dish_info = null;
+var user_allergen_info = [];
+var current_chosen_menu_index = 1;
 
 /* opening : bool */
 function page_menu_FX(opening) {
@@ -83,34 +90,6 @@ function request_necessary_information() {
 function show_dishes(menu_plan_index = 1) {
 	const all_dishes_quantity = all_dish_info.dish_info.all_dishes.length;
 
-	/*
-	var table_element = document.getElementById("main_all_dishes_table");
-	table_element.innerHTML = "";
-
-	document.getElementById("main_all_dishes_no_included").style.display = "none";
-
-	var proc_index, trigger_getout = false;
-	for (proc_index = 0; proc_index < all_dishes_quantity; ) {
-		var new_tr_elem = document.createElement("tr");
-
-		for (var proc_limit_count = 0; proc_limit_count < 2; ++proc_limit_count, ++proc_index) {
-			if (all_dish_info.menu_info.all_menus[menu_plan_index].included_dishes.indexOf(all_dish_info.dish_info.all_dishes[proc_index].number) != -1) {
-				var elem = create_dish_cnt_element_dishes(proc_index);
-
-				/* APPEAR *
-				new_tr_elem.appendChild(elem);
-				table_element.appendChild(new_tr_elem);
-			} else {
-				table_element.appendChild(new_tr_elem);
-				trigger_getout = true;
-				break;
-			}
-		}
-
-		if (trigger_getout) { break; }
-	}*/
-
-	/////////
 	var original_table_element = document.getElementById("main_all_dishes_table");
 	var no_included_table_element = document.getElementById("main_all_dishes_no_included_table");
 	original_table_element.innerHTML = "";
@@ -153,31 +132,6 @@ function show_dishes(menu_plan_index = 1) {
 	if (!exist_no_included_dishes) {
 		document.getElementById("main_all_dishes_no_included").style.display = "none";
 	}
-
-	/*
-
-	if (
-		all_dish_info.menu_info.all_menus[menu_plan_index].included_dishes[all_dish_info.menu_info.all_menus[menu_plan_index].included_dishes.length - 1]
-		!= all_dish_info.dish_info.all_dishes[all_dish_info.dish_info.all_dishes.length - 1].number) {
-		document.getElementById("main_all_dishes_no_included").style.display = "block";
-
-		table_element = document.getElementById("main_all_dishes_no_included_table");
-		table_element.innerHTML = "";
-
-		for (; proc_index < all_dishes_quantity; ) {
-			var new_tr_elem = document.createElement("tr");
-	
-			for (var proc_limit_count = 0; proc_limit_count < 2; ++proc_limit_count, ++proc_index) {
-				var elem = create_dish_cnt_element_dishes(proc_index);
-	
-				/* APPEAR *
-				new_tr_elem.appendChild(elem);
-			}
-	
-			table_element.appendChild(new_tr_elem);
-		}
-	}
-	*/
 }
 
 function create_dish_cnt_element_dishes(proc_index) {
@@ -191,18 +145,18 @@ function create_dish_cnt_element_dishes(proc_index) {
 	var elem_div_everything_container = document.createElement("div");
 	elem_div_everything_container.setAttribute("class", "main_all_dishes_dish_container");
 
-	/*
-	for (var i_allergen_list = 0; i_allergen_list < allergen.length; ++i_allergen_list) {
-		if (allergen_array.indexOf(allergen[i_allergen_list]) != -1) {
+	
+	for (var i_allergen_list = 0; i_allergen_list < user_allergen_info.length; ++i_allergen_list) {
+		if (allergen_array.indexOf(user_allergen_info[i_allergen_list]) != -1) {
 			allergic_for_user = true;
 			break;
 		}
 	}
 
 	if (allergic_for_user) {
-		elem_div_everything_container.style.background = "rgb(58, 8, 8)";
-		elem_div_everything_container.style.border = "1px solid #D51B19";
-	}*/
+		elem_div_everything_container.style.background = "linear-gradient(180deg, #FFFFFF, #FFE0E0)";
+		elem_div_everything_container.style.border = "1px solid #FFE0E0";
+	}
 
 	var elem_preview_image = document.createElement("img");
 	elem_preview_image.setAttribute("class", "main_dish_image");
@@ -224,7 +178,7 @@ function create_dish_cnt_element_dishes(proc_index) {
 
 	var elem_dish_options_info = document.createElement("button");
 	elem_dish_options_info.setAttribute("class", "main_dish_info");
-	elem_dish_options_info.innerText = "¿Qué lo es?";
+	elem_dish_options_info.innerText = "Ver detalles";
 	elem_dish_options_info.setAttribute("onclick", "dish_description_floating_window_Show(" + proc_index.toString() + ");");
 
 	/* APPEND CHILD */
@@ -524,6 +478,8 @@ function set_chosen_menu(index) {
 	document.getElementById("main_all_dishes_no_included").style.display = "block";
 	show_dishes(index);
 	show_desserts(index);
+
+	current_chosen_menu_index = index;
 }
 
 function change_plan_menu_show() {
@@ -637,4 +593,90 @@ function hide_dish_varieties() {
 	var option_page_elem = document.getElementById("dish_varieties_option_page");
 	option_page_elem.style.top = "100%";
 	setTimeout(function() { option_page_elem.style.display = "none"; }, 200);
+}
+
+function set_chosen_allergen(index) {
+	var elems_parent = document.getElementsByClassName("option_page_allergen_option");
+	var elems_title = document.getElementsByClassName("option_page_allergen_option_title");
+	var elems_child = document.getElementsByClassName("option_page_allergen_option_container");
+	
+	var elems_show = document.getElementsByClassName("user_choice_show_allergen");
+
+	var allergen_id_str = user_allergen_data_list[index];
+	var if_existing_index;
+	// IF THE ALLERGEN ALREADY EXISTS IN THE LIST
+	if ((if_existing_index = user_allergen_info.indexOf(allergen_id_str)) != -1) {
+		user_allergen_info.splice(if_existing_index, 1);
+	} else {
+		user_allergen_info.push(allergen_id_str);
+	}
+
+	for (var i = 0; i < elems_parent.length; ++i) {
+		if (user_allergen_info.indexOf(user_allergen_data_list[i]) != -1) {
+			elems_parent[i].style.background = "#D51B19";
+			elems_parent[i].style.padding = "4px";
+		} else {
+			elems_parent[i].style.background = "#E8E8E8";
+			elems_parent[i].style.padding = "2px";
+		}
+	}
+
+	for (var i = 0; i < elems_title.length; ++i) {
+		if (user_allergen_info.indexOf(user_allergen_data_list[i]) != -1) {
+			elems_title[i].style.height = "1.2em";
+		} else {
+			elems_title[i].style.height = "0em";
+		}
+	}
+
+	for (var i = 0; i < elems_child.length; ++i) {
+		if (user_allergen_info.indexOf(user_allergen_data_list[i]) != -1) {
+			elems_child[i].style.borderRadius = "16px";
+		} else {
+			elems_child[i].style.borderRadius = "18px";
+		}
+	}
+
+	if (user_allergen_info.length == 0) {
+		elems_show[0].innerText = "Ningún alergénico seleccionado";
+	} else if (user_allergen_info.length == 1) {
+		elems_show[0].innerText = "Hay 1 alergénico seleccionado";
+	} else {
+		elems_show[0].innerText = "Hay" + user_allergen_info.length + "alergénicos seleccionados";
+	}
+}
+
+function modify_user_allergen_show() {
+	var bg_elem = document.getElementById("whatever_wnd_bg");
+	bg_elem.style.display = "block";
+	setTimeout(function() { bg_elem.style.opacity = "1"; }, 50);
+
+	var option_page_elem = document.getElementById("user_allergen_options");
+	option_page_elem.style.display = "block";
+	setTimeout(function() { option_page_elem.style.top = "0%"; }, 50);
+}
+
+function modify_user_allergen_hide(wait) {
+	if (wait) {
+		setTimeout(function() {
+			var bg_elem = document.getElementById("whatever_wnd_bg");
+			bg_elem.style.opacity = "0";
+			setTimeout(function() { bg_elem.style.display = "none"; }, 200);
+
+			var option_page_elem = document.getElementById("user_allergen_options");
+			option_page_elem.style.top = "100%";
+			setTimeout(function() { option_page_elem.style.display = "none"; }, 200);
+		}, 200);
+	} else {
+		var bg_elem = document.getElementById("whatever_wnd_bg");
+		bg_elem.style.opacity = "0";
+		setTimeout(function() { bg_elem.style.display = "none"; }, 200);
+
+		var option_page_elem = document.getElementById("user_allergen_options");
+		option_page_elem.style.top = "100%";
+		setTimeout(function() { option_page_elem.style.display = "none"; }, 200);
+	}
+
+	document.getElementById("main_all_dishes_no_included").style.display = "block";
+	show_dishes(current_chosen_menu_index);
 }

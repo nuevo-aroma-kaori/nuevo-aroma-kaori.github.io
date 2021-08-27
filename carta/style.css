@@ -295,6 +295,7 @@ div.option_page div.option_page_container div.option_page_option div.option_page
 	padding: 4px;
 	border-radius: 6px;
 	align-content: center;
+	margin-bottom: 10px;
 }
 
 div.option_page div.option_page_container div.option_page_option div.option_page_option_container div.option_page_option_container_tip span {
@@ -322,7 +323,6 @@ div.option_page div.option_page_container div.option_page_option div.option_page
 	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	color: #D51B19;
 	display: block;
-	margin-top: 10px;
 }
 
 div.option_page div.option_page_container div.option_page_option div.option_page_option_container span.option_page_option_menu_desc {
@@ -432,6 +432,29 @@ div.option_page div.option_page_container div.option_page_option div.option_page
     display: inline-block;
     border-radius: 4px;
     font-family: 'Work Sans';
+}
+
+div.option_page div.option_page_container div#option_page_allergen_get_out {
+	margin-top: 20px;
+	text-align: center;
+	user-select: none;
+}
+
+div.option_page div.option_page_container div#option_page_allergen_get_out div#option_page_allergen_get_out_button {
+	display: inline-block;
+	padding: 10px;
+	color: #FFFFFF;
+	background: #D51B19;
+	border-radius: 200px;
+}
+
+div.option_page div.option_page_container div#option_page_allergen_get_out div#option_page_allergen_get_out_button span.g_desc {
+	font-family: 'Work Sans';
+    font-size: 1em;
+    font-weight: 400;
+	display: inline-block;
+	transform: translateY(-5px);
+	margin: 0px 10px 0px 10px;
 }
 
 div#main_container {}

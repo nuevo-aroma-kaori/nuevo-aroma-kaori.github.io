@@ -40,11 +40,11 @@
 
 				<span class="title">Opciones</span>
 				<div id="nav_menu_cnt_options">
-					<button class="nav_menu_cnt_option" onclick="new_page('https://nuevoaromakaori.com/order/');">Página principal</button>
-					<button class="nav_menu_cnt_option" onclick="new_page('https://nuevoaromakaori.com/order/');">Nosotros</button>
+					<button class="nav_menu_cnt_option" onclick="new_page('https://nuevoaromakaori.com/');">Página principal</button>
+					<button class="nav_menu_cnt_option" onclick="new_page('https://nuevoaromakaori.com/');">Nosotros</button>
 					<button class="nav_menu_cnt_option" onclick="new_page('https://nuevoaromakaori.com/carta/');">Cartas</button>
-					<button class="nav_menu_cnt_option" onclick="new_page('https://nuevoaromakaori.com/order/');">Contacto</button>
-					<button class="nav_menu_cnt_option" onclick="new_page('https://nuevoaromakaori.com/order/');">¿Cómo ...?</button>
+					<button class="nav_menu_cnt_option" onclick="new_page('https://nuevoaromakaori.com/');">Contacto</button>
+					<button class="nav_menu_cnt_option" onclick="new_page('https://nuevoaromakaori.com/');">¿Cómo ...?</button>
 				</div>
 			</div>
 		</div>
@@ -322,6 +322,134 @@
 			</div>
 		</div>
 
+		<div id="user_allergen_options" class="option_page">
+			<div class="option_page_container">
+				<span class="material-icons opt_top">warning</span>
+				<span class="opt_title">Alérgenos</span>
+				<span class="opt_desc">Multiselecciones. Clica encima si le padece algún alérgia a ese tópico de alimentos. Luego, los platos correspondientes se pondrán de color rojo para ayudarle a evitarlos.</span>
+
+				<!-- OPTIONS -->
+				<div class="option_page_option option_page_allergen_option" onclick="set_chosen_allergen(0);">
+					<span class="option_page_option_title option_page_allergen_option_title">APLICADO</span>
+					<div class="option_page_option_container option_page_allergen_option_container">
+						<span class="option_page_option_menu_name option_page_option_allergen_name">Gluten</span>
+						<span class="option_page_option_menu_desc option_page_option_allergen_desc">Harina Blanca, Trigo Candeal...</span>
+					</div>
+				</div>
+
+				<div class="option_page_option option_page_allergen_option" onclick="set_chosen_allergen(1);">
+					<span class="option_page_option_title option_page_allergen_option_title">APLICADO</span>
+					<div class="option_page_option_container option_page_allergen_option_container">
+						<span class="option_page_option_menu_name option_page_option_allergen_name">Crustáceos</span>
+						<span class="option_page_option_menu_desc option_page_option_allergen_desc">Cangrejo, Cochinillas...</span>
+					</div>
+				</div>
+
+				<div class="option_page_option option_page_allergen_option" onclick="set_chosen_allergen(2);">
+					<span class="option_page_option_title option_page_allergen_option_title">APLICADO</span>
+					<div class="option_page_option_container option_page_allergen_option_container">
+						<span class="option_page_option_menu_name option_page_option_allergen_name">Huevos</span>
+						<span class="option_page_option_menu_desc option_page_option_allergen_desc">Todo tipo de alimentos relacionados con huevo, como tartas, mayonesas, etc.</span>
+					</div>
+				</div>
+
+				<div class="option_page_option option_page_allergen_option" onclick="set_chosen_allergen(3);">
+					<span class="option_page_option_title option_page_allergen_option_title">APLICADO</span>
+					<div class="option_page_option_container option_page_allergen_option_container">
+						<span class="option_page_option_menu_name option_page_option_allergen_name">Pescado</span>
+						<span class="option_page_option_menu_desc option_page_option_allergen_desc">Todo tipo de alimentos relacionados con peces.</span>
+					</div>
+				</div>
+
+				<div class="option_page_option option_page_option option_page_allergen_option" onclick="set_chosen_allergen(4);">
+					<span class="option_page_option_title option_page_allergen_option_title">APLICADO</span>
+					<div class="option_page_option_container option_page_allergen_option_container">
+						<span class="option_page_option_menu_name option_page_option_allergen_name">Cacahuete</span>
+						<span class="option_page_option_menu_desc option_page_option_allergen_desc">Frutos secos.</span>
+					</div>
+				</div>
+
+				<div class="option_page_option option_page_allergen_option" onclick="set_chosen_allergen(5);">
+					<span class="option_page_option_title option_page_allergen_option_title">APLICADO</span>
+					<div class="option_page_option_container option_page_allergen_option_container">
+						<span class="option_page_option_menu_name option_page_option_allergen_name">Soja</span>
+						<span class="option_page_option_menu_desc option_page_option_allergen_desc">Leche de soja, Salsa de soja, Miso, Tofu, etc.</span>
+					</div>
+				</div>
+
+				<div class="option_page_option option_page_allergen_option" onclick="set_chosen_allergen(6);">
+					<span class="option_page_option_title option_page_allergen_option_title">APLICADO</span>
+					<div class="option_page_option_container option_page_allergen_option_container">
+						<span class="option_page_option_menu_name option_page_option_allergen_name">Lácteos</span>
+						<span class="option_page_option_menu_desc option_page_option_allergen_desc">Queso, Nata, Helado...</span>
+					</div>
+				</div>
+
+				<div class="option_page_option option_page_allergen_option" onclick="set_chosen_allergen(7);">
+					<span class="option_page_option_title option_page_allergen_option_title">APLICADO</span>
+					<div class="option_page_option_container option_page_allergen_option_container">
+						<span class="option_page_option_menu_name option_page_option_allergen_name">Frutos de cáscara</span>
+						<span class="option_page_option_menu_desc option_page_option_allergen_desc">Altamuces, Cacahuetes...</span>
+					</div>
+				</div>
+
+				<div class="option_page_option option_page_allergen_option" onclick="set_chosen_allergen(8);">
+					<span class="option_page_option_title option_page_allergen_option_title">APLICADO</span>
+					<div class="option_page_option_container option_page_allergen_option_container">
+						<span class="option_page_option_menu_name option_page_option_allergen_name">Apio</span>
+						<span class="option_page_option_menu_desc option_page_option_allergen_desc">Todo tipo de alimentos relacionados con apios.</span>
+					</div>
+				</div>
+
+				<div class="option_page_option option_page_allergen_option" onclick="set_chosen_allergen(9);">
+					<span class="option_page_option_title option_page_allergen_option_title">APLICADO</span>
+					<div class="option_page_option_container option_page_allergen_option_container">
+						<span class="option_page_option_menu_name option_page_option_allergen_name">Mostaza</span>
+						<span class="option_page_option_menu_desc option_page_option_allergen_desc">Todo tipo de alimentos relacionados con mostazas.</span>
+					</div>
+				</div>
+
+				<div class="option_page_option option_page_allergen_option" onclick="set_chosen_allergen(10);">
+					<span class="option_page_option_title option_page_allergen_option_title">APLICADO</span>
+					<div class="option_page_option_container option_page_allergen_option_container">
+						<span class="option_page_option_menu_name option_page_option_allergen_name">Granos de sésamo</span>
+						<span class="option_page_option_menu_desc option_page_option_allergen_desc">Puede ser usadas de forma cruda o tostada en Sushi, sopa, etc.</span>
+					</div>
+				</div>
+
+				<div class="option_page_option option_page_allergen_option" onclick="set_chosen_allergen(11);">
+					<span class="option_page_option_title option_page_allergen_option_title">APLICADO</span>
+					<div class="option_page_option_container option_page_allergen_option_container">
+						<span class="option_page_option_menu_name option_page_option_allergen_name">Dióxido de Azufre y Sulfatos</span>
+						<span class="option_page_option_menu_desc option_page_option_allergen_desc">Se utiliza tradicionalmente como antioxidante y conservante para frutas y verduras, frutos secos, aperitivos y vino.</span>
+					</div>
+				</div>
+
+				<div class="option_page_option option_page_allergen_option" onclick="set_chosen_allergen(12);">
+					<span class="option_page_option_title option_page_allergen_option_title">APLICADO</span>
+					<div class="option_page_option_container option_page_allergen_option_container">
+						<span class="option_page_option_menu_name option_page_option_allergen_name">Moluscos</span>
+						<span class="option_page_option_menu_desc option_page_option_allergen_desc">Sepia, Sashimi, Paella, etc.</span>
+					</div>
+				</div>
+
+				<div class="option_page_option option_page_allergen_option" onclick="set_chosen_allergen(13);">
+					<span class="option_page_option_title option_page_allergen_option_title">APLICADO</span>
+					<div class="option_page_option_container option_page_allergen_option_container">
+						<span class="option_page_option_menu_name option_page_option_allergen_name">Altramuz</span>
+						<span class="option_page_option_menu_desc option_page_option_allergen_desc">Se puede encontrar en la semilla, la harina, el pan, pasteles, pastas, etc.</span>
+					</div>
+				</div>
+
+				<div id="option_page_allergen_get_out">
+					<div id="option_page_allergen_get_out_button" onclick="modify_user_allergen_hide(false);">
+						<span class="material-icons">done</span>
+						<span class="g_desc">TERMINADO</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div id="main_container">
 			<img src="https://nuevoaromakaori.com/resources/sakura_bg_fx.png" width="100%" />
 			<span class="main_title">Cartas</span>
@@ -344,9 +472,9 @@
 
 			<div class="user_available_choice">
 				<span class="user_choice_title">Alérgenos</span>
-				<span class="user_choice_show">Ningún alergénico seleccionado</span>
+				<span class="user_choice_show user_choice_show_allergen">Ningún alergénico seleccionado</span>
 				<div class="user_available_choice_change">
-					<div class="user_available_choice_change_container">
+					<div class="user_available_choice_change_container" onclick="modify_user_allergen_show();">
 						<span class="sp_desc">MODIFICAR ALERGÉNICOS</span>
 						<span class="material-icons">chevron_right</span>
 					</div>
@@ -393,7 +521,7 @@
 				<div id="main_all_dishes_dessert_container" class="main_all_table_div_container">
 					<table id="main_all_dishes_dessert_table" class="main_all_table_div_table"></table>
 					<div id="main_all_dishes_dessert_no_included" style="display: none;">
-						<span class="n_title" onclick="change_plan_menu_show();">Los platos siguientes no están incluidos en su buffet/menú seleccionado. <span style="color: #D51B19; font-weight: 600;">Cambiar mi plan.</span></span>
+						<span class="n_title" onclick="change_plan_menu_show();">Los postres siguientes no están incluidos en su buffet/menú seleccionado. <span style="color: #D51B19; font-weight: 600;">Cambiar mi plan.</span></span>
 						<table id="main_all_dishes_dessert_no_included_table" class="main_all_table_div_table"></table>
 					</div>
 				</div>
