@@ -40,11 +40,11 @@
 
 				<span class="title">Opciones</span>
 				<div id="nav_menu_cnt_options">
-					<button class="nav_menu_cnt_option" onclick="new_page('https://nuevoaromakaori.com/');">Página principal</button>
-					<button class="nav_menu_cnt_option" onclick="new_page('https://nuevoaromakaori.com/');">Nosotros</button>
-					<button class="nav_menu_cnt_option" onclick="new_page('https://nuevoaromakaori.com/carta/');">Cartas</button>
-					<button class="nav_menu_cnt_option" onclick="new_page('https://nuevoaromakaori.com/');">Contacto</button>
-					<button class="nav_menu_cnt_option" onclick="new_page('https://nuevoaromakaori.com/');">¿Cómo ...?</button>
+					<button class="nav_menu_cnt_option" onclick="goto_page('https://nuevoaromakaori.com/');">Página principal</button>
+					<!--button class="nav_menu_cnt_option" onclick="goto_page('https://nuevoaromakaori.com/');">Nosotros</button-->
+					<button class="nav_menu_cnt_option" onclick="goto_page('https://nuevoaromakaori.com/carta/');">Cartas</button>
+					<!--button class="nav_menu_cnt_option" onclick="goto_page('https://nuevoaromakaori.com/');">Contacto</button-->
+					<!--button class="nav_menu_cnt_option" onclick="goto_page('https://nuevoaromakaori.com/');">¿Cómo ...?</button-->
 				</div>
 			</div>
 		</div>
@@ -69,7 +69,7 @@
 			<div class="option_page_container">
 				<span class="material-icons opt_top">menu_book</span>
 				<span class="opt_title">Plan</span>
-				<span class="opt_desc">Elige una de las opciones siguientes para que le podamos filtrar mejor la carta. Habrá una señal cuando la opción NO es seleccionable para ahora mismo: <span id="opt_desc_time">Lunes, Mediodía</span>.</span>
+				<span class="opt_desc">Elige una de las opciones siguientes para que le podamos filtrar mejor la carta. Habrá un mensage de aviso cuando la opción NO es seleccionable para ahora mismo: <span id="opt_desc_time">Lunes, Mediodía</span>. <span style="font-weight: 600;">Le recomendamos echar un vistazo a Anotaciones, donde está abajo del todo. Si no, puede perder unas ofertas o provocar problemas.</span></span>
 
 				<!-- OPTIONS -->
 				<div class="option_page_option" onclick="set_chosen_menu(0);">
@@ -79,7 +79,7 @@
 							<span class="material-icons">restaurant_menu</span>
 							<span class="m_desc">PARA COMER EN TIENDA</span>
 						</div>
-						<span class="option_page_option_menu_name">Buffet Mediodía</span>
+						<span class="option_page_option_menu_name">Buffet Mediodía<sup>7, 8</sup></span>
 						<span class="option_page_option_menu_desc">Cantidad de platos ilimitados en los 55 platos elejibles (de nº 1 hasta el nº 55 de la carta). Quitar su hambre a un precio económico y con buena aroma.</span>
 						<div>
 							<table class="option_page_option_menu_noted_points_2">
@@ -94,7 +94,7 @@
 									<td>
 										<span class="option_page_option_menu_noted_points_title">Cantidad de platos</span>
 										<br>
-										<span class="option_page_option_menu_noted_points_value">Ilimitado</span>
+										<span class="option_page_option_menu_noted_points_value">Ilimitado<sup>1</sup></span>
 										<br>
 										<span class="option_page_option_menu_noted_points_unit">lo que pueda consumir</span>
 									</td>
@@ -108,7 +108,7 @@
 									<td>
 										<span class="option_page_option_menu_noted_points_title">Precio</span>
 										<br>
-										<span class="option_page_option_menu_noted_points_value">12.95</span>
+										<span class="option_page_option_menu_noted_points_value">12.95<sup>2</sup></span>
 										<br>
 										<span class="option_page_option_menu_noted_points_unit">€/persona</span>
 									</td>
@@ -125,7 +125,7 @@
 							<span class="material-icons">restaurant_menu</span>
 							<span class="m_desc">PARA COMER EN TIENDA</span>
 						</div>
-						<span class="option_page_option_menu_name">Buffet Noche, Fin de semana y Festivo</span>
+						<span class="option_page_option_menu_name">Buffet Noche, Fin de semana y Festivo<sup>7</sup></span>
 						<span class="option_page_option_menu_desc">Cantidad de platos ilimitados en los 100 platos elejibles (de nº 1 hasta el nº 100 de la carta). Tener la máxima experiencia con alta diversidad en los platos.</span>
 						<div>
 							<table class="option_page_option_menu_noted_points_2">
@@ -140,7 +140,7 @@
 									<td>
 										<span class="option_page_option_menu_noted_points_title">Cantidad de platos</span>
 										<br>
-										<span class="option_page_option_menu_noted_points_value">Ilimitado</span>
+										<span class="option_page_option_menu_noted_points_value">Ilimitado<sup>1</sup></span>
 										<br>
 										<span class="option_page_option_menu_noted_points_unit">lo que pueda consumir</span>
 									</td>
@@ -154,7 +154,7 @@
 									<td>
 										<span class="option_page_option_menu_noted_points_title">Precio</span>
 										<br>
-										<span class="option_page_option_menu_noted_points_value">16.95</span>
+										<span class="option_page_option_menu_noted_points_value">16.95<sup>3</sup></span>
 										<br>
 										<span class="option_page_option_menu_noted_points_unit">€/persona</span>
 									</td>
@@ -175,7 +175,7 @@
 							<span class="m_desc">PARA LLEVAR</span>
 						</div>
 						<span class="option_page_option_menu_name">Menú Mediodía</span>
-						<span class="option_page_option_menu_desc">Cantidad de platos limitados a 4 en los 59 platos elejibles (de nº 1 hasta el nº 59 de la carta). Bebida<sup>1</sup> y postre<sup>2</sup> incluido. Probar nuestros platos a un precio barato.</span>
+						<span class="option_page_option_menu_desc">Cantidad de platos limitados a 4 en los 59 platos elejibles (de nº 1 hasta el nº 59 de la carta). Bebida<sup>4</sup> y postre<sup>5</sup> incluidos. Probar nuestros platos a un precio barato.</span>
 						<div>
 							<table class="option_page_option_menu_noted_points_2">
 								<tr>
@@ -284,7 +284,7 @@
 									<td>
 										<span class="option_page_option_menu_noted_points_title">Precio</span>
 										<br>
-										<span class="option_page_option_menu_noted_points_value">Depende<sup>3</sup></span>
+										<span class="option_page_option_menu_noted_points_value">Depende<sup>6</sup></span>
 										<br>
 										<span class="option_page_option_menu_noted_points_unit">del plato que pida</span>
 									</td>
@@ -297,9 +297,14 @@
 				<div class="option_page_notes">
 					<span class="n_title">Anotaciones</span>
 					<ol>
+						<li>Pide lo que puede consumir. Si ha quedado mucho, tendrá que cobrar para su comida restante.</li>
+						<li>Los niños menores de 3 años no hacen falta pagar como un buffet. Los niños de 3 años o mayor, que tienen una altura menor que 120cm pagan como Buffet Mediodía Niño (7.95€).</li>
+						<li>Los niños menores de 3 años no hacen falta pagar como un buffet. Los niños de 3 años o mayor, que tienen una altura menor que 120cm pagan como Buffet Noche Niño (8.95€).</li>
 						<li>El Menú mediodía incluye varias bebidas, pero no todas. Véase la página de Bebidas para saber cuales bebidas están incluidas, y cuales no.</li>
 						<li>El Menú mediodía incluye varios postres, pero no todos. Si no ha pedido ningún postre que está incluido y quiere pedir 1 que sea fuera de los incluidos, le haremos un descuento de 1,5€. Véase la página de Postres para saber cuales postres están incluidos, y cuales no.</li>
 						<li>Los platos sueltos se cobran por plato. El precio es dependiente del plato que elija.</li>
+						<li>OBLIGATORIAMENTE, 1 bebida por cada Buffet o persona.</li>
+						<li>Si quiere pedir el Buffet Mediodía y además quiere platos fuera de su Buffet, se cobrará 2€ por cada plato que pida.</li>
 					</ol>
 				</div>
 			</div>
@@ -447,6 +452,15 @@
 						<span class="g_desc">TERMINADO</span>
 					</div>
 				</div>
+			</div>
+		</div>
+
+		<div id="menu_no_included_notif">
+			<span class="top_title">Aviso</span>
+			<span class="desc">El menú/buffet que acaba de escoger no se encuentra pedible para ahora. Puede clicar en "No pasa nada" si sólo quiere ver las informaciones, y no irá a pedirlo. Si no, clica en "Volver".</span>
+			<div class="btn_container">
+				<button>Volver</button>
+				<button>No pasa nada</button>
 			</div>
 		</div>
 
