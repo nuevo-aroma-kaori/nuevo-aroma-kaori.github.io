@@ -10,12 +10,17 @@ const user_allergen_data_list = [
 var all_dish_info = null;
 var user_allergen_info = [];
 var current_chosen_menu_index = 1;
+var current_time_info = { day : 0, hour : 0 };
+
+/* opens a page */
+function goto_page(url) {
+	window.location = url;
+}
 
 /* opening : bool */
 function page_menu_FX(opening) {
 	var main_elem = document.getElementById("nav_menu");
 	var container_elem = document.getElementById("nav_menu_cnt");
-	
 
 	if (opening) {
 		main_elem.style.width = "100%";
@@ -83,6 +88,7 @@ function request_necessary_information() {
 			page_change_to(1);
 
 			show_drinks();
+			init_menu_current_time();
 		}
 	);
 }
@@ -474,11 +480,9 @@ function set_chosen_menu(index) {
 	}
 
 	change_plan_menu_hide(true);
-
 	document.getElementById("main_all_dishes_no_included").style.display = "block";
 	show_dishes(index);
 	show_desserts(index);
-
 	current_chosen_menu_index = index;
 }
 
@@ -679,4 +683,59 @@ function modify_user_allergen_hide(wait) {
 
 	document.getElementById("main_all_dishes_no_included").style.display = "block";
 	show_dishes(current_chosen_menu_index);
+}
+
+
+function init_menu_current_time() {
+	var elem = document.getElementById("opt_desc_time");
+	var out_str = "";
+	var date_obj = new Date();
+
+	current_time_info.day = date_obj.getDay();
+	switch (date_obj.getDay()) {
+	case 1:	out_str += "Lunes";		break;
+	case 2:	out_str += "Martes";	break;
+	case 3:	out_str += "Miércoles";	break;
+	case 4:	out_str += "Jueves";	break;
+	case 5:	out_str += "Viernes";	break;
+	case 6:	out_str += "Sábado";	break;
+	case 7:	out_str += "Domingo";	break;
+	}
+
+	out_str += ", ";
+
+	var current_hour = date_obj.getHours();
+	if (current_hour >= 12 && current_hour <= 17) {
+		out_str += "Mediodía";
+		current_time_info.hour = 0;
+	} else if (current_hour >= 20 && current_hour <= 24) {
+		out_str += "Noche";
+		current_time_info.hour = 1;
+	} else {
+		out_str += "No abierto";
+		current_time_info.hour = 2;
+	}
+
+	elem.innerText = out_str;
+
+	// SET NO AVAILABLE ONES
+	// CHECK IF CURRENT TIME IS IN MENU TIME
+	for (var index = 0; index < all_dish_info.menu_info.all_menus.length; ++index) {
+		var time_is_allowed = false;
+		var time_info = all_dish_info.menu_info.all_menus[index].menu_time_info;
+		for (var i = 0; i < time_info.length; ++i) {
+			if (time_info[i].day == current_time_info.day) {
+				if (time_info[i].hour == current_time_info.hour) {
+					time_is_allowed = true;
+					break;
+				}
+			}
+		}
+
+		if (time_is_allowed) {
+			document.getElementsByClassName("option_page_option_menu_available")[index].style.display = "none";
+		} else {
+			document.getElementsByClassName("option_page_option_menu_available")[index].style.display = "block";
+		}
+	}
 }
