@@ -592,12 +592,14 @@
 								<td 
 									class="dishes_sight_choose_elem chosen"
 									onclick="
+										dish_sight_mode = 0;
 										document.getElementsByClassName('dishes_sight_choose_elem')[0].setAttribute('class', 'dishes_sight_choose_elem chosen');
 										document.getElementsByClassName('dishes_sight_choose_elem')[1].setAttribute('class', 'dishes_sight_choose_elem');
 										show_dishes(current_chosen_menu_index);">VISTA DETALLADA</td>
 								<td
 									class="dishes_sight_choose_elem"
 									onclick="
+										dish_sight_mode = 1;
 										document.getElementsByClassName('dishes_sight_choose_elem')[0].setAttribute('class', 'dishes_sight_choose_elem');
 										document.getElementsByClassName('dishes_sight_choose_elem')[1].setAttribute('class', 'dishes_sight_choose_elem chosen');
 										show_dishes_min(current_chosen_menu_index);">VISTA ÁMPLIA</td>
