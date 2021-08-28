@@ -12,6 +12,8 @@ var user_allergen_info = [];
 var current_chosen_menu_index = 1;
 var current_time_info = { day : 0, hour : 0 };
 
+var dish_sight_mode = 0;
+
 /* opens a page */
 function goto_page(url) {
 	window.location = url;
@@ -670,7 +672,12 @@ function set_chosen_menu(index) {
 	}
 
 	change_plan_menu_hide(true);
-	show_dishes(index);
+
+	switch (dish_sight_mode) {
+		case 0:	show_dishes(index);	break;
+		case 1:	show_dishes_min(index); break;
+	}
+
 	show_desserts(index);
 	current_chosen_menu_index = index;
 }
@@ -836,7 +843,7 @@ function set_chosen_allergen(index) {
 	} else if (user_allergen_info.length == 1) {
 		elems_show[0].innerText = "Hay 1 alergénico seleccionado";
 	} else {
-		elems_show[0].innerText = "Hay" + user_allergen_info.length + "alergénicos seleccionados";
+		elems_show[0].innerText = "Hay " + user_allergen_info.length + " alergénicos seleccionados";
 	}
 }
 
@@ -872,7 +879,10 @@ function modify_user_allergen_hide(wait) {
 	}
 
 	document.getElementById("main_all_dishes_no_included").style.display = "block";
-	show_dishes(current_chosen_menu_index);
+	switch (dish_sight_mode) {
+		case 0:	show_dishes(current_chosen_menu_index);	break;
+		case 1:	show_dishes_min(current_chosen_menu_index); break;
+	}
 }
 
 
