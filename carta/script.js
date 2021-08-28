@@ -878,6 +878,8 @@ function dish_description_floating_window_Show(dish_index, bigger = false) {
 
 	if (no_allergens) {
 		allergen_elems[14].style.display = "list-item";
+	} else {
+		allergen_elems[14].style.display = "none";
 	}
 
 	// SHOW WINDOW
