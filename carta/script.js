@@ -97,6 +97,7 @@ function request_necessary_information() {
 
 function show_dishes(menu_plan_index = 1) {
 	const all_dishes_quantity = all_dish_info.dish_info.all_dishes.length;
+	document.getElementById("main_all_dishes_no_included").style.display = "block";
 
 	var original_table_element = document.getElementById("main_all_dishes_table");
 	var no_included_table_element = document.getElementById("main_all_dishes_no_included_table");
@@ -400,6 +401,7 @@ function create_drink_cnt_element_drinks(proc_element, alcohol) {
 
 function show_desserts(menu_plan_index = 1) {
 	const all_desserts_quantity = all_dish_info.dessert_info.all_desserts.length;
+	document.getElementById("main_all_dishes_dessert_no_included").style.display = "block";
 
 	var original_table_element = document.getElementById("main_all_dishes_dessert_table");
 	var no_included_table_element = document.getElementById("main_all_dishes_dessert_no_included_table");
@@ -442,6 +444,8 @@ function show_desserts(menu_plan_index = 1) {
 
 	if (!exist_no_included_desserts) {
 		document.getElementById("main_all_dishes_dessert_no_included").style.display = "none";
+	} else {
+		document.getElementById("main_all_dishes_dessert_no_included").style.display = "block";
 	}
 }
 
@@ -567,7 +571,6 @@ function set_chosen_menu(index) {
 	}
 
 	change_plan_menu_hide(true);
-	document.getElementById("main_all_dishes_no_included").style.display = "block";
 	show_dishes(index);
 	show_desserts(index);
 	current_chosen_menu_index = index;
@@ -613,6 +616,7 @@ function show_dish_varieties(proc_elem_index) {
 	var varieties_page_elem = document.getElementById("dish_varieties_option_page");
 	varieties_page_elem.style.display = "block";
 	setTimeout(function() { varieties_page_elem.style.top = "0%"; }, 50);
+	varieties_page_elem.scrollTop = 0;
 
 	/* SET CONTENTS */
 	var proc_infos = all_dish_info.dessert_info.all_desserts[proc_elem_index];
@@ -792,6 +796,7 @@ function init_menu_current_time() {
 	out_str += ", ";
 
 	var current_hour = date_obj.getHours();
+	
 	if (current_hour >= 12 && current_hour <= 17) {
 		out_str += "Mediodía";
 		current_time_info.hour = 0;
@@ -800,7 +805,7 @@ function init_menu_current_time() {
 		current_time_info.hour = 1;
 	} else {
 		out_str += "No abierto";
-		current_time_info.hour = 1;
+		current_time_info.hour = 2;
 	}
 
 	elem.innerText = out_str;
@@ -820,7 +825,7 @@ function init_menu_current_time() {
 			}
 		}
 
-		if (!time_is_allowed) {
+		if (time_is_allowed) {
 			document.getElementsByClassName("option_page_option_menu_available")[index].style.display = "none";
 		} else {
 			document.getElementsByClassName("option_page_option_menu_available")[index].style.display = "block";

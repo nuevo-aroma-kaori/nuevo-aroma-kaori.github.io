@@ -334,6 +334,17 @@ div.option_page div.option_page_container div.option_page_option div.option_page
 	display: block;
 }
 
+div.option_page div.option_page_container div.option_page_option div.option_page_option_container span.option_page_option_menu_time {
+	font-size: 1em;
+	font-weight: 600;
+	user-select: none;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
+	font-style: italic;
+	color: #4F4F4F;
+	display: block;
+	margin-top: 10px;
+}
+
 div.option_page div.option_page_container div.option_page_option div.option_page_option_container div table {
 	width: 100%;
 }
