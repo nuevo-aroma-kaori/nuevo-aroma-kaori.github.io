@@ -303,6 +303,97 @@ function create_dish_cnt_element_dishes_alg1(proc_index) {
 	return elem_td_container;
 }
 
+// NEW SHOW DISHES
+function show_dishes_min(menu_plan_index = 1) {
+	const all_dishes_quantity = all_dish_info.dish_info.all_dishes.length;
+	document.getElementById("main_all_dishes_no_included").style.display = "block";
+
+	var original_table_element = document.getElementById("main_all_dishes_table");
+	var no_included_table_element = document.getElementById("main_all_dishes_no_included_table");
+	original_table_element.innerHTML = "";
+	no_included_table_element.innerHTML = "";
+
+	var original_table_row_count = 0,
+		no_included_table_row_count = 0;
+	var original_table_tr_elem = document.createElement("tr"),
+		no_included_table_tr_elem = document.createElement("tr");
+
+	var exist_no_included_dishes = false;
+
+	for (var proc_index = 0; proc_index < all_dishes_quantity; ++proc_index) {
+		if (original_table_row_count == 3) {
+			original_table_row_count = 0;
+			original_table_element.appendChild(original_table_tr_elem);
+			original_table_tr_elem = document.createElement("tr");
+		}
+		if (no_included_table_row_count == 3) {
+			no_included_table_row_count = 0;
+			no_included_table_element.appendChild(no_included_table_tr_elem);
+			no_included_table_tr_elem = document.createElement("tr");
+		}
+
+		var elem = create_dish_cnt_element_dishes_min(proc_index);
+		
+		// IF THE DISH IS INCLUDED
+		if (all_dish_info.menu_info.all_menus[menu_plan_index].included_dishes.indexOf(all_dish_info.dish_info.all_dishes[proc_index].number) != -1) {
+			original_table_tr_elem.appendChild(elem);
+			++original_table_row_count;
+		} else {
+			no_included_table_tr_elem.appendChild(elem);
+			++no_included_table_row_count;
+			exist_no_included_dishes = true;
+		}
+	}
+
+	if (original_table_row_count > 0) { original_table_element.appendChild(original_table_tr_elem); }
+	if (no_included_table_row_count > 0) { no_included_table_element.appendChild(no_included_table_tr_elem); }
+
+	if (!exist_no_included_dishes) {
+		document.getElementById("main_all_dishes_no_included").style.display = "none";
+	}
+}
+
+function create_dish_cnt_element_dishes_min(proc_index) {
+	const allergen_array = all_dish_info.dish_info.all_dishes[proc_index].allergen;
+	var allergic_for_user = false;
+
+	var elem_td_container = document.createElement("td");
+	elem_td_container.setAttribute("id", "main_all_dishes_dish_" + proc_index.toString() + "_min");
+	elem_td_container.style.width = (100.0 / 3).toString() + "%";
+	elem_td_container.setAttribute("onclick", "dish_description_floating_window_Show(" + proc_index.toString() + ");");
+
+	var elem_div_everything_container = document.createElement("div");
+	elem_div_everything_container.setAttribute("class", "main_all_dishes_dish_container_min");
+	
+	for (var i_allergen_list = 0; i_allergen_list < user_allergen_info.length; ++i_allergen_list) {
+		if (allergen_array.indexOf(user_allergen_info[i_allergen_list]) != -1) {
+			allergic_for_user = true;
+			break;
+		}
+	}
+
+	if (allergic_for_user) {
+		elem_div_everything_container.style.background = "#FFE0E0";
+	}
+
+	var elem_preview_image = document.createElement("img");
+	elem_preview_image.setAttribute("class", "main_dish_image");
+	elem_preview_image.setAttribute("src", "https://nuevoaromakaori.com/resources/dish_img/" + all_dish_info.dish_info.all_dishes[proc_index].number.toString() + ".png");
+
+	var elem_dish_number = document.createElement("div");
+	elem_dish_number.setAttribute("class", "main_dish_number");
+	elem_dish_number.innerText = "n. " + all_dish_info.dish_info.all_dishes[proc_index].number.toString();
+
+	/* APPEND CHILD */
+	elem_div_everything_container.appendChild(elem_preview_image);
+	elem_div_everything_container.appendChild(elem_dish_number);
+
+	elem_td_container.appendChild(elem_div_everything_container);
+
+	/* FINAL ELEMENT */
+	return elem_td_container;
+}
+
 function show_drinks() {
 	const all_drinks_sections = all_dish_info.drink_info.all_drinks;
 

@@ -684,6 +684,43 @@ div#main_container div#selection_table div#selection_table_container table tr td
 	font-weight: 600;
 }
 
+div#main_container div#dishes_sight_choose {
+	text-align: center;
+}
+
+div#main_container div#dishes_sight_choose div#dishes_sight_choose_container {
+	display: inline-block;
+	border-radius: 200px;
+	background: #F0F0F0;
+	padding: 4px;
+}
+
+div#main_container div#dishes_sight_choose div#dishes_sight_choose_container div table {
+	border-spacing: 0;
+	width: 100%;
+}
+
+div#main_container div#dishes_sight_choose div#dishes_sight_choose_container div table tr td.dishes_sight_choose_elem {
+	padding: 10px 12px;
+	color: #000000;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
+	font-weight: 600;
+	font-size: 1em;
+	background: rgba(0, 0, 0, 0);
+	border-radius: 200px;
+	transition-duration: 0.2s;
+}
+
+div#main_container div#dishes_sight_choose div#dishes_sight_choose_container div table tr td.dishes_sight_choose_elem.chosen {
+	padding: 10px 12px;
+	color: #FFFFFF;
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
+	font-weight: 600;
+	font-size: 1em;
+	background: rgba(0, 0, 0, 1);
+	border-radius: 200px;
+}
+
 div#main_container div.main_all_table_div div.main_all_table_div_container {
 	margin: 0px 10px 10px 10px;
 }
@@ -691,6 +728,7 @@ div#main_container div.main_all_table_div div.main_all_table_div_container {
 div#main_container div.main_all_table_div div.main_all_table_div_container table.main_all_table_div_table {
 	width: 100%;
 	border: none;
+	border-spacing: 0;
 }
 
 div#main_container div.main_all_table_div div.main_all_table_div_container table.main_all_table_div_table tr td {
@@ -705,7 +743,21 @@ div#main_container div.main_all_table_div div.main_all_table_div_container table
 	text-align: center;
 }
 
+div#main_container div.main_all_table_div div.main_all_table_div_container table.main_all_table_div_table tr td div.main_all_dishes_dish_container_min {
+	border-radius: 0px;
+	border: 2px solid #F6F6F6;
+	background: #FFFFFF;
+	text-align: center;
+}
+
 div#main_container div.main_all_table_div div.main_all_table_div_container table.main_all_table_div_table tr td div.main_all_dishes_dish_container img.main_dish_image {
+	max-width: 100%;
+	box-sizing: border-box;
+	max-height: 200px;
+	display: inline-block;
+}
+
+div#main_container div.main_all_table_div div.main_all_table_div_container table.main_all_table_div_table tr td div.main_all_dishes_dish_container_min img.main_dish_image {
 	max-width: 100%;
 	box-sizing: border-box;
 	max-height: 200px;
@@ -715,6 +767,17 @@ div#main_container div.main_all_table_div div.main_all_table_div_container table
 div#main_container div.main_all_table_div div.main_all_table_div_container table.main_all_table_div_table tr td div.main_all_dishes_dish_container div.main_dish_number {
 	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
 	font-weight: 600;
+	text-align: center;
+	color: #000000;
+	font-size: 1em;
+	border: none;
+	margin: 0;
+	display: block;
+}
+
+div#main_container div.main_all_table_div div.main_all_table_div_container table.main_all_table_div_table tr td div.main_all_dishes_dish_container_min div.main_dish_number {
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
+	font-weight: 400;
 	text-align: center;
 	color: #000000;
 	font-size: 1em;
@@ -816,6 +879,7 @@ div#main_container div.main_all_table_div div.main_all_table_div_container div#m
     text-align: center;
     background: #000000;
     border-radius: 10px;
+	border-spacing: 0;
 }
 
 div#main_container div#main_all_dishes_drink div#main_all_dishes_drink_container span.main_all_dishes_drink_container_section_title {

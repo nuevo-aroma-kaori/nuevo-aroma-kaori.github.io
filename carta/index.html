@@ -584,6 +584,29 @@
 				</div>
 			</div>
 
+			<div id="dishes_sight_choose">
+				<div id="dishes_sight_choose_container">
+					<div>
+						<table>
+							<tr>
+								<td 
+									class="dishes_sight_choose_elem chosen"
+									onclick="
+										document.getElementsByClassName('dishes_sight_choose_elem')[0].setAttribute('class', 'dishes_sight_choose_elem chosen');
+										document.getElementsByClassName('dishes_sight_choose_elem')[1].setAttribute('class', 'dishes_sight_choose_elem');
+										show_dishes(current_chosen_menu_index);">VISTA DETALLADA</td>
+								<td
+									class="dishes_sight_choose_elem"
+									onclick="
+										document.getElementsByClassName('dishes_sight_choose_elem')[0].setAttribute('class', 'dishes_sight_choose_elem');
+										document.getElementsByClassName('dishes_sight_choose_elem')[1].setAttribute('class', 'dishes_sight_choose_elem chosen');
+										show_dishes_min(current_chosen_menu_index);">VISTA ÁMPLIA</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+
 			<div id="loading_information">
 				<div>
 					<img src="https://nuevoaromakaori.com/resources/loading.gif" />
