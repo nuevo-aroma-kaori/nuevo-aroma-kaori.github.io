@@ -2412,7 +2412,7 @@ Allergen
 					"es" : "Nigiri Arroz frito y aguacate",
 					"ca" : "Nigiri Arr\u00f2s fregit i alvocat"
 				},
-				"allergen" : ["gs", "sj"],
+				"allergen" : ["gl", "gs", "sj"],
 				"desc" : {
 					"es" : "",
 					"ca" : ""
@@ -2430,7 +2430,7 @@ Allergen
 					"es" : "Nigiri Salm\u00f3n, queso y arroz frito",
 					"ca" : "Nigiri Salm\u00f3, formatge i arr\u00f2s fregit"
 				},
-				"allergen" : ["ps", "lt", "gs", "sj"],
+				"allergen" : ["gl", "ps", "lt", "gs", "sj"],
 				"desc" : {
 					"es" : "",
 					"ca" : ""

@@ -271,7 +271,7 @@ function create_dish_cnt_element_dishes_alg1(proc_index) {
 	var elem_dish_options_info = document.createElement("button");
 	elem_dish_options_info.setAttribute("class", "main_dish_info");
 	elem_dish_options_info.innerText = "Ver detalles";
-	elem_dish_options_info.setAttribute("onclick", "dish_description_floating_window_Show(" + proc_index.toString() + ");");
+	elem_dish_options_info.setAttribute("onclick", "dish_description_floating_window_Show(" + proc_index.toString() + ", true);");
 
 	/* APPEND CHILD */
 	elem_dish_options.appendChild(elem_dish_options_info);
@@ -319,23 +319,25 @@ function show_drinks() {
 			new_section_title.innerHTML += "<span class='age_18'>18+</span>";
 		}
 
-		for (var proc_index = 0; proc_index < all_drinks_sections[section_index].child_list.length; ) {
-			var new_tr_elem = document.createElement("tr");
-	
-			for (var proc_limit_count = 0; proc_limit_count < 2; ++proc_limit_count, ++proc_index) {
-				if (all_drinks_sections[section_index].child_list[proc_index] != undefined) {
-					var elem = create_drink_cnt_element_drinks(
-						all_drinks_sections[section_index].child_list[proc_index],
-						all_drinks_sections[section_index].type_notes.indexOf("age_18") != -1
-					);
-
-					/* APPEAR */
-					new_tr_elem.appendChild(elem);
-				}
+		var new_tr_elem = document.createElement("tr");
+		var table_row_count = 0;
+		for (var proc_index = 0; proc_index < all_drinks_sections[section_index].child_list.length; ++proc_index) {
+			if (table_row_count == 2) {
+				table_row_count = 0;
+				new_table_element.appendChild(new_tr_elem);
+				new_tr_elem = document.createElement("tr");
 			}
-	
-			new_table_element.appendChild(new_tr_elem);
+			
+			var elem = create_drink_cnt_element_drinks(
+				all_drinks_sections[section_index].child_list[proc_index],
+				all_drinks_sections[section_index].type_notes.indexOf("age_18") != -1
+			);
+
+			new_tr_elem.appendChild(elem);
+			++table_row_count;
 		}
+	
+		if (table_row_count > 0) { new_table_element.appendChild(new_tr_elem); }
 
 		container_element.appendChild(new_section_title);
 		container_element.appendChild(new_table_element);
@@ -831,4 +833,69 @@ function init_menu_current_time() {
 			document.getElementsByClassName("option_page_option_menu_available")[index].style.display = "block";
 		}
 	}
+}
+
+function dish_description_floating_window_Show(dish_index, bigger = false) {
+	const dish_elem = all_dish_info.dish_info.all_dishes[dish_index];
+
+	// CHANGE IMAGE
+	document.getElementById("dish_description_image").setAttribute("src", "https://nuevoaromakaori.com/resources/dish_img/" + dish_elem.number + ".png");
+	// CHANGE NAME
+	document.getElementById("dish_desc_name").innerText = dish_elem.name.es;
+	// CHANGE DISH NUMBER
+	document.getElementById("dish_desc_number").innerText = dish_elem.number.toString();
+	// CHANGE DISH UNITS
+	if (!bigger) {
+		if (dish_elem.units > 1) {
+			document.getElementById("dish_desc_units").innerText = dish_elem.units.toString() + " uds.";
+		} else {
+			document.getElementById("dish_desc_units").innerText = "";
+		}
+	} else {
+		if (dish_elem.bigger_info.units > 1) {
+			document.getElementById("dish_desc_units").innerText = dish_elem.bigger_info.units.toString() + " uds.";
+		} else {
+			document.getElementById("dish_desc_units").innerText = "";
+		}
+	}
+	// CHANGE DESCRIPTION
+	if (dish_elem.desc.es != "") {
+		document.getElementById("dish_desc_text").innerText = dish_elem.desc.es;
+	} else {
+		document.getElementById("dish_desc_text").innerText = "No hay descripción para este plato.";
+	}
+	// MARK ALLERGENS
+	var allergen_elems = document.getElementsByClassName("dish_desc_allergen_li");
+	var no_allergens = true;
+	for (var i = 0; i < user_allergen_data_list.length; ++i) {
+		if (dish_elem.allergen.indexOf(user_allergen_data_list[i]) != -1) {
+			allergen_elems[i].style.display = "list-item";
+			no_allergens = false;
+		} else {
+			allergen_elems[i].style.display = "none";
+		}
+	}
+
+	if (no_allergens) {
+		allergen_elems[14].style.display = "list-item";
+	}
+
+	// SHOW WINDOW
+	var window_elem = document.getElementById("dish_description_window");
+	window_elem.style.display = "block";
+	setTimeout(function() { window_elem.style.top = "20%"; }, 50);
+
+	var bg_elem = document.getElementById("whatever_wnd_bg");
+	bg_elem.style.display = "block";
+	setTimeout(function() { bg_elem.style.opacity = "1"; }, 50);
+}
+
+function dish_description_floating_window_Hide() {
+	var window_elem = document.getElementById("dish_description_window");
+	window_elem.style.top = "100%";
+	setTimeout(function() { window_elem.style.display = "none"; }, 200);
+
+	var bg_elem = document.getElementById("whatever_wnd_bg");
+	bg_elem.style.opacity = "0";
+	setTimeout(function() { bg_elem.style.display = "none"; }, 200);
 }

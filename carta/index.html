@@ -349,6 +349,51 @@
 			</div>
 		</div>
 
+		<div id="dish_description_window">
+			<div class="desc_img_container">
+				<img id="dish_description_image" src="" />
+			</div>
+			<span id="dish_desc_name">Ensalada de la casa</span>
+			<span class="dish_desc_number_container">Número del plato: <span id="dish_desc_number">1</span></span>
+			<span id="dish_desc_units">1 uds.</span>
+			
+			<fieldset>
+				<legend>Descripción</legend>
+				<div class="dish_desc_container">
+					<span id="dish_desc_text">No hay descripción.</span>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>Alérgenos</legend>
+				<div class="dish_desc_container">
+					<ul id="dish_desc_allergen">
+						<li class="dish_desc_allergen_li">Gluten</li>
+						<li class="dish_desc_allergen_li">Crustáceos</li>
+						<li class="dish_desc_allergen_li">Huevo</li>
+						<li class="dish_desc_allergen_li">Pescado</li>
+						<li class="dish_desc_allergen_li">Cacahuete</li>
+						<li class="dish_desc_allergen_li">Soja</li>
+						<li class="dish_desc_allergen_li">Lácteo</li>
+						<li class="dish_desc_allergen_li">Frutos de cáscara</li>
+						<li class="dish_desc_allergen_li">Apio</li>
+						<li class="dish_desc_allergen_li">Mostaza</li>
+						<li class="dish_desc_allergen_li">Granos de sésamo</li>
+						<li class="dish_desc_allergen_li">Dióxido de Azufre y Sulfatos</li>
+						<li class="dish_desc_allergen_li">Moluscos</li>
+						<li class="dish_desc_allergen_li">Altramuz</li>
+						<li class="dish_desc_allergen_li">NADA</li>
+					</ul>
+				</div>
+			</fieldset>
+
+			<div class="close_btn_container">
+				<button onclick="dish_description_floating_window_Hide();">
+					<span class="material-icons">close</span>
+				</button>
+			</div>
+		</div>
+
 		<div id="dish_varieties_option_page" class="option_page">
 			<div class="option_page_container">
 				<span class="material-icons opt_top">subject</span>
@@ -424,7 +469,7 @@
 				<div class="option_page_option option_page_allergen_option" onclick="set_chosen_allergen(6);">
 					<span class="option_page_option_title option_page_allergen_option_title">APLICADO</span>
 					<div class="option_page_option_container option_page_allergen_option_container">
-						<span class="option_page_option_menu_name option_page_option_allergen_name">Lácteos</span>
+						<span class="option_page_option_menu_name option_page_option_allergen_name">Lácteo</span>
 						<span class="option_page_option_menu_desc option_page_option_allergen_desc">Queso, Nata, Helado...</span>
 					</div>
 				</div>
