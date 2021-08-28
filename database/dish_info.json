@@ -460,7 +460,7 @@ Allergen
 						"price" : 2.8,
 						"notes" : ["age_18"],
 						"desc" : {
-							"capacity" : { 
+							"capacity" : {
 								"number" : 33,
 								"unit" : "cL"
 							},
