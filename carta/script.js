@@ -54,16 +54,22 @@ function page_change_to(pageIndex) {
 		document.getElementById("main_all_dishes_drink").style.display = "block";
 		document.getElementById("main_all_dishes").style.display = "none";
 		document.getElementById("main_all_dishes_dessert").style.display = "none";
+
+		document.getElementById("dishes_sight_choose").style.display = "none";
 		break;
 	case 1:
 		document.getElementById("main_all_dishes_drink").style.display = "none";
 		document.getElementById("main_all_dishes").style.display = "block";
 		document.getElementById("main_all_dishes_dessert").style.display = "none";
+
+		document.getElementById("dishes_sight_choose").style.display = "block";
 		break;
 	case 2:
 		document.getElementById("main_all_dishes_drink").style.display = "none";
 		document.getElementById("main_all_dishes").style.display = "none";
 		document.getElementById("main_all_dishes_dessert").style.display = "block";
+
+		document.getElementById("dishes_sight_choose").style.display = "none";
 		break;
 	}
 }
