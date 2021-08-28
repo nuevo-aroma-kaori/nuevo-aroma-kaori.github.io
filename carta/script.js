@@ -93,6 +93,7 @@ function request_necessary_information() {
 			document.getElementById("loading_information").style.display = "none";
 
 			set_chosen_menu(1);
+			set_chosen_allergen(-1);
 
 			init_menu_current_time();
 
@@ -631,9 +632,9 @@ function selection_table_at_top() {
 setInterval(selection_table_at_top, 1);
 
 function set_chosen_menu(index) {
-	var elems_parent = document.getElementsByClassName("option_page_option");
-	var elems_title = document.getElementsByClassName("option_page_option_title");
-	var elems_child = document.getElementsByClassName("option_page_option_container");
+	var elems_parent = document.getElementsByClassName("option_page_dish_option");
+	var elems_title = document.getElementsByClassName("option_page_dish_option_title");
+	var elems_child = document.getElementsByClassName("option_page_dish_option_container");
 	
 	var elems_show = document.getElementsByClassName("user_choice_show_menu");
 
@@ -803,13 +804,15 @@ function set_chosen_allergen(index) {
 	
 	var elems_show = document.getElementsByClassName("user_choice_show_allergen");
 
-	var allergen_id_str = user_allergen_data_list[index];
-	var if_existing_index;
-	// IF THE ALLERGEN ALREADY EXISTS IN THE LIST
-	if ((if_existing_index = user_allergen_info.indexOf(allergen_id_str)) != -1) {
-		user_allergen_info.splice(if_existing_index, 1);
-	} else {
-		user_allergen_info.push(allergen_id_str);
+	if (index != -1) {
+		var allergen_id_str = user_allergen_data_list[index];
+		var if_existing_index;
+		// IF THE ALLERGEN ALREADY EXISTS IN THE LIST
+		if ((if_existing_index = user_allergen_info.indexOf(allergen_id_str)) != -1) {
+			user_allergen_info.splice(if_existing_index, 1);
+		} else {
+			user_allergen_info.push(allergen_id_str);
+		}
 	}
 
 	for (var i = 0; i < elems_parent.length; ++i) {
