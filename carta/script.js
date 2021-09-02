@@ -92,7 +92,9 @@ function request_necessary_information() {
 			all_dish_info = callback;
 			document.getElementById("loading_information").style.display = "none";
 
-			set_chosen_menu(1);
+			set_chosen_menu(-1);
+			change_plan_menu_show();
+
 			set_chosen_allergen(-1);
 
 			init_menu_current_time();
@@ -637,6 +639,27 @@ function set_chosen_menu(index) {
 	var elems_child = document.getElementsByClassName("option_page_dish_option_container");
 	
 	var elems_show = document.getElementsByClassName("user_choice_show_menu");
+
+	if (index == -1) {
+		for (var i = 0; i < elems_parent.length; ++i) {
+			elems_parent[i].style.background = "#E8E8E8";
+			elems_parent[i].style.padding = "2px";
+		}
+	
+		for (var i = 0; i < elems_title.length; ++i) {
+			elems_title[i].style.height = "0em";
+		}
+	
+		for (var i = 0; i < elems_child.length; ++i) {
+			elems_child[i].style.borderRadius = "18px";
+		}
+	
+		for (var i = 0; i < elems_show.length; ++i) {
+			elems_show[i].style.display = "none";
+		}
+
+		return;
+	}
 
 	for (var i = 0; i < elems_parent.length; ++i) {
 		if (i == index) {
