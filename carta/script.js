@@ -190,7 +190,7 @@ function create_dish_cnt_element_dishes(proc_index) {
 
 	var elem_preview_image = document.createElement("img");
 	elem_preview_image.setAttribute("class", "main_dish_image");
-	elem_preview_image.setAttribute("src", "https://nuevoaromakaori.com/resources/dish_img/" + all_dish_info.dish_info.all_dishes[proc_index].number.toString() + ".png");
+	elem_preview_image.setAttribute("src", "https://raw.githubusercontent.com/nuevo-aroma-kaori/nuevo-aroma-kaori.github.io/main/resources/dish_img/" + all_dish_info.dish_info.all_dishes[proc_index].number.toString() + ".png");
 
 	var elem_dish_number = document.createElement("div");
 	elem_dish_number.setAttribute("class", "main_dish_number");
@@ -259,7 +259,7 @@ function create_dish_cnt_element_dishes_alg1(proc_index) {
 
 	var elem_preview_image = document.createElement("img");
 	elem_preview_image.setAttribute("class", "main_dish_image");
-	elem_preview_image.setAttribute("src", "https://nuevoaromakaori.com/resources/dish_img/" + all_dish_info.dish_info.all_dishes[proc_index].number.toString() + ".png");
+	elem_preview_image.setAttribute("src", "https://raw.githubusercontent.com/nuevo-aroma-kaori/nuevo-aroma-kaori.github.io/main/resources/dish_img/" + all_dish_info.dish_info.all_dishes[proc_index].number.toString() + ".png");
 
 	var elem_dish_number = document.createElement("div");
 	elem_dish_number.setAttribute("class", "main_dish_number");
@@ -389,7 +389,7 @@ function create_dish_cnt_element_dishes_min(proc_index) {
 
 	var elem_preview_image = document.createElement("img");
 	elem_preview_image.setAttribute("class", "main_dish_image");
-	elem_preview_image.setAttribute("src", "https://nuevoaromakaori.com/resources/dish_img/" + all_dish_info.dish_info.all_dishes[proc_index].number.toString() + ".png");
+	elem_preview_image.setAttribute("src", "https://raw.githubusercontent.com/nuevo-aroma-kaori/nuevo-aroma-kaori.github.io/main/resources/dish_img/" + all_dish_info.dish_info.all_dishes[proc_index].number.toString() + ".png");
 
 	var elem_dish_number = document.createElement("div");
 	elem_dish_number.setAttribute("class", "main_dish_number");
@@ -461,7 +461,7 @@ function create_drink_cnt_element_drinks(proc_element, alcohol) {
 
 	var elem_preview_image = document.createElement("img");
 	elem_preview_image.setAttribute("class", "main_dish_image");
-	elem_preview_image.setAttribute("src", "https://nuevoaromakaori.com/resources/drink_img/" + proc_element.id.toString() + ".png");
+	elem_preview_image.setAttribute("src", "https://raw.githubusercontent.com/nuevo-aroma-kaori/nuevo-aroma-kaori.github.io/main/resources/drink_img/" + proc_element.id.toString() + ".png");
 
 	var elem_dish_description = document.createElement("div");
 	elem_dish_description.setAttribute("class", "main_dish_desc");
@@ -563,7 +563,7 @@ function create_dessert_cnt_element_desserts(proc_element, proc_index) {
 
 	var elem_preview_image = document.createElement("img");
 	elem_preview_image.setAttribute("class", "main_dish_image");
-	elem_preview_image.setAttribute("src", "https://nuevoaromakaori.com/resources/dish_img/" + proc_element.number.toString() + ".png");
+	elem_preview_image.setAttribute("src", "https://raw.githubusercontent.com/nuevo-aroma-kaori/nuevo-aroma-kaori.github.io/main/resources/dish_img/" + proc_element.number.toString() + ".png");
 
 	var elem_dish_number = document.createElement("div");
 	elem_dish_number.setAttribute("class", "main_dish_number");
