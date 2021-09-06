@@ -1057,6 +1057,42 @@ Allergen
 			},
 
 			{
+				"number" : "A1",
+				"name" : {
+					"es" : "Fideo de arroz con ternera",
+					"ca" : "Fideu d'arròs amb vedella"
+				},
+				"allergen" : ["gl", "cr", "hv"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				},
+				"units" : 1,
+				"bigger_info" : {
+					"units" : 1,
+					"price" : 5.95
+				}
+			},
+
+			{
+				"number" : "A2",
+				"name" : {
+					"es" : "Yakisoba con pollo",
+					"ca" : "Yakisoba amb pollastre"
+				},
+				"allergen" : ["gl", "cr", "hv"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				},
+				"units" : 1,
+				"bigger_info" : {
+					"units" : 1,
+					"price" : 5.95
+				}
+			},
+
+			{
 				"number" : 13,
 				"name" : {
 					"es" : "Ramen",
@@ -1399,6 +1435,24 @@ Allergen
 			},
 
 			{
+				"number" : "A60",
+				"name" : {
+					"es" : "Maki Tempura Salm\u00f3n",
+					"ca" : "Maki Tempura Salm\u00f3"
+				},
+				"allergen" : ["ps"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				},
+				"units" : 4,
+				"bigger_info" : {
+					"units" : 8,
+					"price" : 4.95
+				}
+			},
+
+			{
 				"number" : 32,
 				"name" : {
 					"es" : "Maki At\u00fan",
@@ -1646,6 +1700,42 @@ Allergen
 				"units" : 4,
 				"bigger_info" : {
 					"units" : 8,
+					"price" : 5.95
+				}
+			},
+
+			{
+				"number" : "A30",
+				"name" : {
+					"es" : "California Tempura Salmón aguacate",
+					"ca" : "Calofòrnia Tempura Salmó alvocat"
+				},
+				"allergen" : ["ps", "gs", "lt"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				},
+				"units" : 5,
+				"bigger_info" : {
+					"units" : 5,
+					"price" : 5.95
+				}
+			},
+
+			{
+				"number" : "A31",
+				"name" : {
+					"es" : "California Tempura Salmón aguacate con queso",
+					"ca" : "Calofòrnia Tempura Salmó alvocat amb formatge"
+				},
+				"allergen" : ["ps", "gs", "lt"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				},
+				"units" : 5,
+				"bigger_info" : {
+					"units" : 5,
 					"price" : 5.95
 				}
 			},
@@ -2169,6 +2259,24 @@ Allergen
 				"bigger_info" : {
 					"units" : 8,
 					"price" : 5.95
+				}
+			},
+
+			{
+				"number" : "A77",
+				"name" : {
+					"es" : "California Tempura Atún Aguacate",
+					"ca" : "Califòrnia Tempura Atún Alvocat"
+				},
+				"allergen" : ["gl", "hv", "lt"],
+				"desc" : {
+					"es" : "",
+					"ca" : ""
+				},
+				"units" : 5,
+				"bigger_info" : {
+					"units" : 5,
+					"price" : 4.95
 				}
 			},
 
@@ -3195,7 +3303,9 @@ Allergen
 					21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
 					31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
 					41, 42, 43, 44, 45, 46, 47, 48, 49, 50,
-					51, 52, 53, 54, 55
+					51, 52, 53, 54, 55,
+
+					"A1", "A2", "A30", "A31"
 				],
 				"included_drinks" : [],
 				"included_desserts" : [],
@@ -3221,7 +3331,9 @@ Allergen
 					61, 62, 63, 64,     66, 67, 68, 69, 70,
 					71, 72, 73, 74, 75, 76, 77, 78,
 					81, 82, 83,
-					91, 92, 93, 94, 95, 96,     98, 99, 100
+					91, 92, 93, 94, 95, 96,     98, 99, 100,
+
+					"A1", "A2", "A30", "A31", "A60", "A77"
 				],
 				"included_drinks" : [],
 				"included_desserts" : [],
@@ -3252,7 +3364,9 @@ Allergen
 					21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
 					31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
 					41, 42, 43, 44, 45, 46, 47, 48, 49, 50,
-					51, 52, 53, 54, 55, 56, 57, 58, 59
+					51, 52, 53, 54, 55, 56, 57, 58, 59,
+
+					"A1", "A2", "A30", "A31"
 				],
 				"included_drinks" : [
 					26, 27, 28, 29, 30,
@@ -3286,7 +3400,9 @@ Allergen
 					61, 62, 63, 64,     66,     68, 69, 70,
 					71, 72,     74, 75, 76, 77, 78,
 					81, 82, 83,
-					91, 92, 93, 94, 95, 96,     98, 99, 100
+					91, 92, 93, 94, 95, 96,     98, 99, 100,
+
+					"A1", "A2", "A30", "A31", "A60", "A77"
 				],
 				"included_drinks" : [],
 				"included_desserts" : [],
@@ -3321,7 +3437,9 @@ Allergen
 					61, 62, 63, 64,     66,     68, 69, 70,
 					71, 72,     74, 75, 76, 77, 78,
 					81, 82, 83,
-					91, 92, 93, 94, 95, 96,     98, 99, 100
+					91, 92, 93, 94, 95, 96,     98, 99, 100,
+
+					"A1", "A2", "A30", "A31", "A60", "A77"
 				],
 				"included_drinks" : [],
 				"included_desserts" : [],
