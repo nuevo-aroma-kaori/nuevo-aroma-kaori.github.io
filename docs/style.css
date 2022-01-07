@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+}
+
+.sans {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.serif {
+    font-family: 'Playfair Display', serif;
+}
+
+div#header {
+    margin: 0;
+    padding: 20px;
+    background: #F0F0F0;
+}
+
+div#header div#logo {
+    text-align: center;
+    margin: 40px 20px;
+
+}
+
+div#header div#logo img {
+    display: inline-block;
+    max-width: 100%;
+    width: auto;
+    height: 60px;
+}
+
+div#header div#doc_info {
+    text-align: center;
+}
+
+div#header div#doc_info div {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 14px 30px 0px rgba(0, 0, 0, 0.18);
+}
+
+div#txt_space {
+    margin-top: 80px;
+    margin: 80px 20px 20px 20px;
+}
+
+div#txt_space h1,
+div#txt_space h2,
+div#txt_space h3,
+div#txt_space h4,
+div#txt_space h5,
+div#txt_space h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+div#txt_space h1 {
+    display: block;
+    text-align: center;
+}
+
+div#txt_space h3 {
+    margin-top: 3.5em;
+}
+
+div#txt_space p {
+    font-family: 'Work Sans', sans-serif;
+}
+
+div#footer {
+	background: #F0F0F0;
+	padding: 40px 0px;
+}
+
+div#footer div#footer_the_logo {
+	padding: 20px;
+	text-align: center;
+}
+
+div#footer div#footer_the_logo img.footer_the_logo_img {
+	display: inline-block;
+	height: 40px;
+}
+
+div#footer div#footer_social_media {
+	padding: 20px;
+	text-align: center;
+}
+
+div#footer div span.title {
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
+	font-weight: 300;
+	color: #4F4F4F;
+	letter-spacing: 2px;
+	display: inline-block;
+	margin: 10px;
+}
+
+div#footer div#footer_social_media div#footer_social_media_choices {
+	border: none;
+}
+
+div#footer div#footer_social_media div#footer_social_media_choices div.social_media_option {
+	border: 1px solid #4F4F4F;
+	border-radius: 50%;
+	display: inline-block;
+	padding: 20px;
+	margin: 10px;
+}
+
+div#footer div#footer_social_media div#footer_social_media_choices div.social_media_option img.social_media_option_img {
+	width: 28px;
+	height: auto;
+	display: block;
+}
+
+div#footer div#footer_contact {
+	text-align: center;
+}
+
+div#footer div#footer_contact span.telephone_number {
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
+	font-weight: 600;
+	color: #2F2F2F;
+}
+
+div#footer div#footer_contact span.others {
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
+	font-weight: 400;
+	color: #4F4F4F;
+}
+
+div#footer div#footer_copyright {
+	padding: 20px;
+	text-align: center;
+}
+
+div#footer div#footer_copyright span.others {
+	font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
+	font-weight: 400;
+	color: #6F6F6F;
+}
