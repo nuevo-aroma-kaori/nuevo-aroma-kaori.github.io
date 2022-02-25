@@ -1106,7 +1106,7 @@ Allergen
 				"units" : 1,
 				"bigger_info" : {
 					"units" : 1,
-					"price" : 5.95
+					"price" : 6.5
 				}
 			},
 
@@ -1448,7 +1448,7 @@ Allergen
 				"units" : 4,
 				"bigger_info" : {
 					"units" : 8,
-					"price" : 4.95
+					"price" : 5.95
 				}
 			},
 
@@ -1717,7 +1717,7 @@ Allergen
 				},
 				"units" : 5,
 				"bigger_info" : {
-					"units" : 5,
+					"units" : 8,
 					"price" : 5.95
 				}
 			},
@@ -1735,7 +1735,7 @@ Allergen
 				},
 				"units" : 5,
 				"bigger_info" : {
-					"units" : 5,
+					"units" : 8,
 					"price" : 5.95
 				}
 			},
@@ -2173,24 +2173,6 @@ Allergen
 			},
 
 			{
-				"number" : 71,
-				"name" : {
-					"es" : "Ensalada de marisco",
-					"ca" : "Amanida de marisc"
-				},
-				"allergen" : ["cr", "sj"],
-				"desc" : {
-					"es" : "",
-					"ca" : ""
-				},
-				"units" : 1,
-				"bigger_info" : {
-					"units" : 1,
-					"price" : 5.5
-				}
-			},
-
-			{
 				"number" : 72,
 				"name" : {
 					"es" : "Sepia",
@@ -2275,8 +2257,8 @@ Allergen
 				},
 				"units" : 5,
 				"bigger_info" : {
-					"units" : 5,
-					"price" : 4.95
+					"units" : 8,
+					"price" : 5.95
 				}
 			},
 
