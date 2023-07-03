@@ -864,7 +864,7 @@ Allergen
 					"es": "Ensalada de la casa",
 					"ca": "Amanida de la casa"
 				},
-				"allergen": [ "gs", "lt", "cr", "hv" ],
+				"allergen": [ "gs", "lt", "cr", "hv", "gl" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -972,7 +972,7 @@ Allergen
 					"es": "Yakimeshi de la casa",
 					"ca": "Yakimeshi de la casa"
 				},
-				"allergen": [ "hv", "da" ],
+				"allergen": [ "hv" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -1026,7 +1026,7 @@ Allergen
 					"es": "Yakisoba vegetal",
 					"ca": "Yakisoba vegetal"
 				},
-				"allergen": [ "gl", "gs" ],
+				"allergen": [ "gl" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -1044,7 +1044,7 @@ Allergen
 					"es": "Yakisoba Ebi",
 					"ca": "Yakisoba Ebi"
 				},
-				"allergen": [ "gl", "cr", "hv" ],
+				"allergen": [ "gl" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -1062,7 +1062,7 @@ Allergen
 					"es": "Fideo de arroz con ternera",
 					"ca": "Fideu d'arròs amb vedella"
 				},
-				"allergen": [ "gl", "cr", "hv" ],
+				"allergen": [ "gl"],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -1080,7 +1080,7 @@ Allergen
 					"es": "Yakisoba con pollo",
 					"ca": "Yakisoba amb pollastre"
 				},
-				"allergen": [ "gl", "cr", "hv" ],
+				"allergen": [ "gl", "hv" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -1224,7 +1224,7 @@ Allergen
 					"es": "Alitas de pollo",
 					"ca": "Aletes de pollastre"
 				},
-				"allergen": [],
+				"allergen": ["gl"],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -1314,7 +1314,7 @@ Allergen
 					"es": "Champi\u00f1ones",
 					"ca": "Xampinyons"
 				},
-				"allergen": [ "gs", "sj" ],
+				"allergen": [ "gl", "sj" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -1332,7 +1332,7 @@ Allergen
 					"es": "Pollo con Teriyaki",
 					"ca": "Pollastre amb Teriyaki"
 				},
-				"allergen": [ "gs", "sj" ],
+				"allergen": [ "gl", "gs", "sj" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -1350,7 +1350,7 @@ Allergen
 					"es": "Setas a la plancha",
 					"ca": "Bolets a la planxa"
 				},
-				"allergen": [ "gs" ],
+				"allergen": [ "gl" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -1368,7 +1368,7 @@ Allergen
 					"es": "Yaki pollo",
 					"ca": "Yaki pollastre"
 				},
-				"allergen": [ "gs", "sj" ],
+				"allergen": [ "gl", "gs", "sj" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -1386,7 +1386,7 @@ Allergen
 					"es": "Yaki gambas",
 					"ca": "Yaki gambes"
 				},
-				"allergen": [ "gs", "cr" ],
+				"allergen": [ "gl", "cr" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -1404,7 +1404,7 @@ Allergen
 					"es": "Yaki ternera con queso",
 					"ca": "Yaki vedella amb formatge"
 				},
-				"allergen": [ "lt", "gs", "sj" ],
+				"allergen": [ "gl", "lt", "gs", "sj" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -1422,7 +1422,7 @@ Allergen
 					"es": "Bao pollo",
 					"ca": "Bao pollastre"
 				},
-				"allergen": [ "gs", "gl", "sj" ],
+				"allergen": [ "gl", "cr", "gs", "sj", "lt" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -1656,7 +1656,7 @@ Allergen
 					"es": "Nigiri Salm\u00f3n flameado",
 					"ca": "Nigiri Salm\u00f3 flamejat"
 				},
-				"allergen": [ "ps", "lt", "hv" ],
+				"allergen": [ "gl", "cr", "hv", "gs", "ps" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -1692,7 +1692,7 @@ Allergen
 					"es": "Gunkan Salm\u00f3n y aguacate",
 					"ca": "Gunkan Salm\u00f3 i alvocat"
 				},
-				"allergen": [ "ps", "gs", "sj" ],
+				"allergen": [ "gl", "ps", "gs", "sj" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -1710,7 +1710,7 @@ Allergen
 					"es": "Tarta de Sushi",
 					"ca": "Tarta de Sushi"
 				},
-				"allergen": [ "gs", "ps", "sj", "lt" ],
+				"allergen": [ "gl", "gs", "ps", "sj", "hv" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -1728,7 +1728,7 @@ Allergen
 					"es": "Temaki Salm\u00f3n",
 					"ca": "Temaki Salm\u00f3"
 				},
-				"allergen": [ "hv", "gs", "ps", "sj", "lt" ],
+				"allergen": [ "gl", "hv", "gs", "ps", "sj", "lt" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -1746,7 +1746,7 @@ Allergen
 					"es": "Futomaki",
 					"ca": "Futomaki"
 				},
-				"allergen": [ "ml", "hv" ],
+				"allergen": [ "gl", "hv", "ml" ],
 				"desc": {
 					"es": "Sushi de tipo Maki. Rodeado por la alga seca para Sushi a la parte exterior, luego el arroz rellenado dentro y al mismo tiempo rodeando una combinación de alimentos: pepino crudo fresco, aguacate fresco, palo de cangrejo, y salsa de anguila (no contiene huevo).",
 					"ca": ""
@@ -1764,7 +1764,7 @@ Allergen
 					"es": "Uramaki Tempura de langostino",
 					"ca": "Uramaki Tempura de llagost\u00ed"
 				},
-				"allergen": [ "gl", "hv", "cr", "gs" ],
+				"allergen": [ "gl", "cr", "hv", "gs" ],
 				"desc": {
 					"es": "Sushi de tipo Uramaki. Usa simplemente el arroz como la parte exterior del Sushi, y por dentro una hoja de alga seca para Sushi para rodear el relleno y estabilizar la estructura. Contiene langostino frito con harina de tempura en el centro, y unos pocos sésamos encima para decorar la vista y el gusto.",
 					"ca": ""
@@ -1800,7 +1800,7 @@ Allergen
 					"es": "Uramaki At\u00fan aguacate",
 					"ca": "Uramaki Tonyina alvocat"
 				},
-				"allergen": [ "ps", "gs", "da", "hv" ],
+				"allergen": [ "gl", "ps", "gs", "hv" ],
 				"desc": {
 					"es": "Sushi de tipo Uramaki. Usa simplemente el arroz como la parte exterior del Sushi, y por dentro una hoja de alga seca para Sushi para rodear el relleno y estabilizar la estructura. Contiene atún crudo procesado y aguacate fresco en el centro, y unos pocos sésamos encima para decorar la vista y el gusto.",
 					"ca": ""
@@ -1836,7 +1836,7 @@ Allergen
 					"es": "Uramaki California masago",
 					"ca": "Uramaki Calif\u00f2rnia masago"
 				},
-				"allergen": [ "ps" ],
+				"allergen": [ "gl", "ps" ],
 				"desc": {
 					"es": "Sushi de tipo Uramaki. Usa simplemente el arroz como la parte exterior del Sushi, y por dentro una hoja de alga seca para Sushi para rodear el relleno y estabilizar la estructura. Contiene salmón crudo procesado y aguacate fresco en el centro, y unos pocos masagos encima para decorar la vista y el gusto.",
 					"ca": ""
@@ -1854,7 +1854,7 @@ Allergen
 					"es": "Uramaki California flameado",
 					"ca": "Uramaki Calif\u00f2rnia flamejat"
 				},
-				"allergen": [ "ps", "cr", "gs", "lt", "sj" ],
+				"allergen": [ "gl", "ps", "cr", "lt", "sj" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -1944,7 +1944,7 @@ Allergen
 					"es": "Uramaki California Tempura pollo",
 					"ca": "Uramaki Calif\u00f2rnia Tempura pollastre"
 				},
-				"allergen": [ "gl", "gs", "hv", "lt" ],
+				"allergen": [ "gl", "hv", "gs" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -1962,7 +1962,7 @@ Allergen
 					"es": "California Tempura Salmón Aguacate",
 					"ca": ""
 				},
-				"allergen": [],
+				"allergen": [ "gl", "ps", "gs", "lt" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -1980,7 +1980,7 @@ Allergen
 					"es": "Futo frito",
 					"ca": ""
 				},
-				"allergen": [],
+				"allergen": [ "gl", "ps", "lt", "sj" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -1998,7 +1998,7 @@ Allergen
 					"es": "Futo ebiten",
 					"ca": ""
 				},
-				"allergen": [],
+				"allergen": [ "gl", "hv", "lt", "sj" ],
 				"desc": {
 					"es": "Gambas en tempura, mayonesa, pasta kataifi y salsa teriyaki.",
 					"ca": ""
@@ -2016,7 +2016,7 @@ Allergen
 					"es": "Hoso",
 					"ca": ""
 				},
-				"allergen": [],
+				"allergen": [ "gl", "ps", "lt" ],
 				"desc": {
 					"es": "Rollo frito con salmón, queso crema, fresas y salsa de fresa.",
 					"ca": ""
@@ -2034,7 +2034,7 @@ Allergen
 					"es": "Hoso mango",
 					"ca": ""
 				},
-				"allergen": [],
+				"allergen": [ "gl", "ps", "lt" ],
 				"desc": {
 					"es": "Rollo frito con salmón, queso crema, mango y salsa de mango.",
 					"ca": ""
@@ -2052,7 +2052,7 @@ Allergen
 					"es": "Uramaki Tempura pollo queso fresa",
 					"ca": ""
 				},
-				"allergen": [],
+				"allergen": [ "gl", "lt" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -2070,7 +2070,7 @@ Allergen
 					"es": "California Tempura Salmón aguacate con queso",
 					"ca": ""
 				},
-				"allergen": [],
+				"allergen": [ "gl", "ps", "gs", "lt" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -2106,7 +2106,7 @@ Allergen
 					"es": "Shumai",
 					"ca": "Shumai"
 				},
-				"allergen": [],
+				"allergen": [ "gl" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -2178,7 +2178,7 @@ Allergen
 					"es": "At\u00fan a la plancha",
 					"ca": "Tonyina a la planxa"
 				},
-				"allergen": [ "gs", "ps" ],
+				"allergen": [ "gl", "ps" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -2196,7 +2196,7 @@ Allergen
 					"es": "Ternera con Teriyaki",
 					"ca": "Vedella amb Teriyaki"
 				},
-				"allergen": [ "gs" ],
+				"allergen": [ "gl", "gs" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -2214,7 +2214,7 @@ Allergen
 					"es": "Langostino con almendras",
 					"ca": "Llagost\u00ed amb ametlles"
 				},
-				"allergen": [ "cr", "fc", "gs" ],
+				"allergen": [ "gl", "cr", "fc", "gs" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -2269,7 +2269,7 @@ Allergen
 					"es": "Salm\u00f3n a la plancha",
 					"ca": "Salm\u00f3 a la planxa"
 				},
-				"allergen": [ "ps", "gs" ],
+				"allergen": [ "gl", "ps", "gs" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -2287,7 +2287,7 @@ Allergen
 					"es": "Almejas a la plancha",
 					"ca": "Clo\u00efsses a la planxa"
 				},
-				"allergen": [ "ml", "sj" ],
+				"allergen": [ "gl", "ml", "sj" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -2305,7 +2305,7 @@ Allergen
 					"es": "Gambas con verduras",
 					"ca": "Gambes amb verdures"
 				},
-				"allergen": [ "cr", "sj" ],
+				"allergen": [ "gl", "cr", "sj" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -2323,7 +2323,7 @@ Allergen
 					"es": "Sepia",
 					"ca": "S\u00edpia"
 				},
-				"allergen": [ "gs" ],
+				"allergen": [ "ps", "gs", "cr", "sj" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -2341,7 +2341,7 @@ Allergen
 					"es": "Navaja",
 					"ca": "Navalla"
 				},
-				"allergen": [ "sj", "ml" ],
+				"allergen": [ "gl", "sj", "ml" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -2359,7 +2359,7 @@ Allergen
 					"es": "Entrecot",
 					"ca": "Entrecot"
 				},
-				"allergen": [ "gs", "sj" ],
+				"allergen": [ "gl", "gs" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -2377,7 +2377,7 @@ Allergen
 					"es": "Langostinos a la plancha",
 					"ca": "Llagostins a la planxa"
 				},
-				"allergen": [ "cr", "sj" ],
+				"allergen": [ "gl", "cr", "sj" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -2395,7 +2395,7 @@ Allergen
 					"es": "Vieiras",
 					"ca": "Vieires"
 				},
-				"allergen": [ "ml" ],
+				"allergen": [ "gl", "ml" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -2413,7 +2413,7 @@ Allergen
 					"es": "Nigiri salmón style",
 					"ca": ""
 				},
-				"allergen": [],
+				"allergen": [ "gl", "ps", "lt", "hv" ],
 				"desc": {
 					"es": "Nigiri de salmón flameado con queso crema y pasta kataifi.",
 					"ca": ""
@@ -2449,7 +2449,7 @@ Allergen
 					"es": "Gunkan At\u00fan y aguacate",
 					"ca": "Gunkan Tonyina i alvocat"
 				},
-				"allergen": [ "ps" ],
+				"allergen": [ "gl", "ps" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -2467,7 +2467,7 @@ Allergen
 					"es": "Gunkan Anguila y aguacate",
 					"ca": "Gunkan Anguila i alvocat"
 				},
-				"allergen": [ "ps" ],
+				"allergen": [ "gl", "ps", "sj", "gs" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -2503,7 +2503,7 @@ Allergen
 					"es": "Nigiri Anguila",
 					"ca": "Nigiri Anguila"
 				},
-				"allergen": [ "gs", "ps", "sj" ],
+				"allergen": [ "gl", "gs", "ps", "sj" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -2557,7 +2557,7 @@ Allergen
 					"es": "Uramaki California aguacate",
 					"ca": "Uramaki Calif\u00f2rnia alvocat"
 				},
-				"allergen": [ "ps" ],
+				"allergen": [ "gl", "ps" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -2575,7 +2575,7 @@ Allergen
 					"es": "Uramaki At\u00fan con aguacate picante",
 					"ca": "Uramaki Tonyina amb alvocat picant"
 				},
-				"allergen": [ "ps", "gs" ],
+				"allergen": [ "gl", "ps", "gs" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -2611,7 +2611,7 @@ Allergen
 					"es" : "Nigiri Arroz frito y aguacate",
 					"ca" : "Nigiri Arr\u00f2s fregit i alvocat"
 				},
-				"allergen" : ["gl", "gs", "sj"],
+				"allergen" : [ "gl", "gs", "sj" ],
 				"desc" : {
 					"es" : "",
 					"ca" : ""
@@ -2629,7 +2629,7 @@ Allergen
 					"es" : "Nigiri Salm\u00f3n, queso y arroz frito",
 					"ca" : "Nigiri Salm\u00f3, formatge i arr\u00f2s fregit"
 				},
-				"allergen" : ["gl", "ps", "lt", "gs", "sj"],
+				"allergen" : ["gl", "ps", "lt", "sj"],
 				"desc" : {
 					"es" : "",
 					"ca" : ""
@@ -2647,7 +2647,7 @@ Allergen
 					"es" : "Tartar Aroma Kaori",
 					"ca" : ""
 				},
-				"allergen" : [],
+				"allergen": [ "gl", "hv", "ps" ],
 				"desc" : {
 					"es" : "Arroz frito con tartar de salmón y mayonesa picante.",
 					"ca" : ""
@@ -2665,7 +2665,7 @@ Allergen
 					"es": "Rollo de gambas en tempura + Doritos + Salsa picante",
 					"ca": ""
 				},
-				"allergen": [],
+				"allergen": [ "gl", "cr", "hv", "lt" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -2683,7 +2683,7 @@ Allergen
 					"es": "Rollo de gambas en tempura + plátano + queso",
 					"ca": ""
 				},
-				"allergen": [],
+				"allergen": [ "gl", "cr", "hv", "lt" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -2701,7 +2701,7 @@ Allergen
 					"es": "Rollo de surimi + tartar + fideos crujientes",
 					"ca": ""
 				},
-				"allergen": [],
+				"allergen": [ "gl", "hv", "lt" ],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -2719,7 +2719,7 @@ Allergen
 					"es": "Rollo tigre",
 					"ca": ""
 				},
-				"allergen": [],
+				"allergen": [ "gl", "cr", "hv", "sj", "ps" ],
 				"desc": {
 					"es": "Gambas en tempura con mayonesa, cubiertas de salmón y salsa teriyaki.",
 					"ca": ""
@@ -2737,7 +2737,7 @@ Allergen
 					"es": "Rollo de salmón",
 					"ca": ""
 				},
-				"allergen": [],
+				"allergen": [ "gl", "ps", "lt", "sj" ],
 				"desc": {
 					"es": "Queso crema envuelto de salmón y pasta kataifi con salsa teriyaki.",
 					"ca": ""
