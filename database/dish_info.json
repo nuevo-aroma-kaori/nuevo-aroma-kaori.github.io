@@ -2654,8 +2654,8 @@ Allergen
 				},
 				"units" : 2,
 				"bigger_info": {
-					"units": 8,
-					"price": 6.5
+					"units": 2,
+					"price": 3.5
 				}
 			},
 
@@ -2744,8 +2744,8 @@ Allergen
 				},
 				"units": 2,
 				"bigger_info": {
-					"units": 6.5,
-					"price": 8
+					"units": 2,
+					"price": 3.5
 				}
 			},
 
