@@ -859,6 +859,168 @@ Allergen
 
 		"all_dishes": [
 			{
+				"number": "W1",
+				"name": {
+					"es": "Ensalada de salmón",
+					"ca": "Amanida de salmó"
+				},
+				"allergen": [ ],
+				"desc": {
+					"es": "",
+					"ca": ""
+				},
+				"units": 1,
+				"bigger_info": {
+					"units": 1,
+					"price": 0
+				}
+			},
+
+			{
+				"number": "W2",
+				"name": {
+					"es": "Filete de ternera con patatas fritas",
+					"ca": "Filet de vedella amb patates fregides"
+				},
+				"allergen": [ ],
+				"desc": {
+					"es": "",
+					"ca": ""
+				},
+				"units": 1,
+				"bigger_info": {
+					"units": 1,
+					"price": 0
+				}
+			},
+
+			{
+				"number": "W3",
+				"name": {
+					"es": "Carne marinada a la plancha",
+					"ca": "Carn marinada a la planxa"
+				},
+				"allergen": [ ],
+				"desc": {
+					"es": "",
+					"ca": ""
+				},
+				"units": 1,
+				"bigger_info": {
+					"units": 1,
+					"price": 0
+				}
+			},
+
+			{
+				"number": "W4",
+				"name": {
+					"es": "Temaki de langostino",
+					"ca": "Temaki de llagostí"
+				},
+				"allergen": [ ],
+				"desc": {
+					"es": "",
+					"ca": ""
+				},
+				"units": 1,
+				"bigger_info": {
+					"units": 1,
+					"price": 0
+				}
+			},
+
+			{
+				"number": "W5",
+				"name": {
+					"es": "Temaki de pollo",
+					"ca": "Temaki de pollastre"
+				},
+				"allergen": [ ],
+				"desc": {
+					"es": "",
+					"ca": ""
+				},
+				"units": 1,
+				"bigger_info": {
+					"units": 1,
+					"price": 0
+				}
+			},
+
+			{
+				"number": "W6",
+				"name": {
+					"es": "Onigiri de salmón cocido",
+					"ca": "Onigiri de salmó cuit"
+				},
+				"allergen": [ ],
+				"desc": {
+					"es": "",
+					"ca": ""
+				},
+				"units": 1,
+				"bigger_info": {
+					"units": 1,
+					"price": 0
+				}
+			},
+
+			{
+				"number": "W7",
+				"name": {
+					"es": "Triángulo especial de Surimi y Ebi",
+					"ca": "Triangle especial de Surimi i Ebi"
+				},
+				"allergen": [ ],
+				"desc": {
+					"es": "",
+					"ca": ""
+				},
+				"units": 1,
+				"bigger_info": {
+					"units": 1,
+					"price": 0
+				}
+			},
+
+			{
+				"number": "W8",
+				"name": {
+					"es": "Bao pato",
+					"ca": "Bao ànec"
+				},
+				"allergen": [ ],
+				"desc": {
+					"es": "",
+					"ca": ""
+				},
+				"units": 1,
+				"bigger_info": {
+					"units": 1,
+					"price": 0
+				}
+			},
+
+			{
+				"number": "W9",
+				"name": {
+					"es": "Tarta de salmón",
+					"ca": "Tarta de salmó"
+				},
+				"allergen": [ ],
+				"desc": {
+					"es": "",
+					"ca": ""
+				},
+				"units": 1,
+				"bigger_info": {
+					"units": 1,
+					"price": 0
+				}
+			},
+
+			{
 				"number": 1,
 				"name": {
 					"es": "Ensalada de la casa",
@@ -1470,24 +1632,6 @@ Allergen
 				}
 			},
 
-			/*{
-				"number" : "A60",
-				"name" : {
-					"es" : "Maki Tempura Salm\u00f3n",
-					"ca" : "Maki Tempura Salm\u00f3"
-				},
-				"allergen" : ["ps"],
-				"desc" : {
-					"es" : "",
-					"ca" : ""
-				},
-				"units" : 4,
-				"bigger_info" : {
-					"units" : 8,
-					"price" : 5.95
-				}
-			},*/
-
 			{
 				"number": 32,
 				"name": {
@@ -1884,42 +2028,6 @@ Allergen
 				}
 			},
 
-			/*{
-				"number" : "A30",
-				"name" : {
-					"es" : "California Tempura Salmón aguacate",
-					"ca" : "Calofòrnia Tempura Salmó alvocat"
-				},
-				"allergen" : ["ps", "gs", "lt"],
-				"desc" : {
-					"es" : "",
-					"ca" : ""
-				},
-				"units" : 5,
-				"bigger_info" : {
-					"units" : 8,
-					"price" : 5.95
-				}
-			},
-
-			{
-				"number" : "A31",
-				"name" : {
-					"es" : "California Tempura Salmón aguacate con queso",
-					"ca" : "Calofòrnia Tempura Salmó alvocat amb formatge"
-				},
-				"allergen" : ["ps", "gs", "lt"],
-				"desc" : {
-					"es" : "",
-					"ca" : ""
-				},
-				"units" : 5,
-				"bigger_info" : {
-					"units" : 8,
-					"price" : 5.95
-				}
-			},*/
-
 			{
 				"number": 46,
 				"name": {
@@ -2244,25 +2352,6 @@ Allergen
 				}
 			},
 
-			/*
-			{
-				"number" : 67,
-				"name" : {
-					"es" : "Churrasco",
-					"ca" : "Xurrasco"
-				},
-				"allergen" : ["sj"],
-				"desc" : {
-					"es" : "",
-					"ca" : ""
-				},
-				"units" : 1,
-				"bigger_info" : {
-					"units" : 0,
-					"price" : 0.0
-				}
-			},*/
-
 			{
 				"number": 68,
 				"name": {
@@ -2479,24 +2568,6 @@ Allergen
 				}
 			},
 
-			/*{
-				"number" : 94,
-				"name" : {
-					"es" : "Gunkan Cangrejo y aguacate",
-					"ca" : "Gunkan Cranc i alvocat"
-				},
-				"allergen" : ["gs", "cr"],
-				"desc" : {
-					"es" : "",
-					"ca" : ""
-				},
-				"units" : 2,
-				"bigger_info" : {
-					"units" : 2,
-					"price" : 2.4
-				}
-			},*/
-
 			{
 				"number": 95,
 				"name": {
@@ -2533,24 +2604,6 @@ Allergen
 				}
 			},
 
-			/*{
-				"number" : "A77",
-				"name" : {
-					"es" : "California Tempura Atún Aguacate",
-					"ca" : "Califòrnia Tempura Atún Alvocat"
-				},
-				"allergen" : ["gl", "hv", "lt"],
-				"desc" : {
-					"es" : "",
-					"ca" : ""
-				},
-				"units" : 5,
-				"bigger_info" : {
-					"units" : 8,
-					"price" : 5.95
-				}
-			},*/
-
 			{
 				"number": 76,
 				"name": {
@@ -2586,24 +2639,6 @@ Allergen
 					"price": 6.5
 				}
 			},
-
-			/*{
-				"number" : 81,
-				"name" : {
-					"es" : "Cigala",
-					"ca" : "Escamarl\u00e0"
-				},
-				"allergen" : ["cr"],
-				"desc" : {
-					"es" : "",
-					"ca" : ""
-				},
-				"units" : 2,
-				"bigger_info" : {
-					"units" : 6,
-					"price" : 6.95
-				}
-			},*/
 
 			{
 				"number" : 99,
@@ -3544,6 +3579,7 @@ Allergen
 
 					"A1", "A2"
 				],
+				"included_monthly_special" : [],
 				"included_drinks" : [],
 				"included_desserts" : [],
 				"menu_alg_type" : 0,
@@ -3574,6 +3610,7 @@ Allergen
 
 					"A1", "A2"
 				],
+				"included_monthly_special" : ["W1", "W2", "W3", "W4", "W5", "W6", "W7", "W8", "W9"],
 				"included_drinks" : [],
 				"included_desserts" : [],
 				"menu_alg_type" : 0,
@@ -3605,8 +3642,9 @@ Allergen
 					41, 42, 43, 44, 45, 46, 47, 48, 49, 50,
 					51, 52, 53, 54, 55,
 
-					"A1", "A2", "A30", "A31"
+					"A1", "A2"
 				],
+				"included_monthly_special" : [],
 				"included_drinks" : [
 					26, 27, 28, 29, 30,
 					31, 32, 33, 34, 35,
@@ -3638,11 +3676,12 @@ Allergen
 					51, 52, 53, 54, 55, 56, 57, 58, 59, 60,
 					61, 62, 63, 64,     66,     68, 69, 70,
 					71, 72,     74, 75, 76, 77, 78,
-					82, 83,             87, 88, 89,
+					    82, 83,             87, 88, 89,
 					91, 92, 93, 94, 95, 96,     98, 99, 100,
 
-					"A1", "A2", "A30", "A31", "A60"
+					"A1", "A2"
 				],
+				"included_monthly_special" : [],
 				"included_drinks" : [],
 				"included_desserts" : [],
 				"menu_alg_type" : 0,
@@ -3680,8 +3719,9 @@ Allergen
 
 					300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310,
 
-					"A1", "A2", "A30", "A31", "A60"
+					"A1", "A2"
 				],
+				"included_monthly_special" : [],
 				"included_drinks" : [],
 				"included_desserts" : [],
 				"menu_alg_type" : 1,
