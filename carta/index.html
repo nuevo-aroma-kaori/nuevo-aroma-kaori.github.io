@@ -19,8 +19,8 @@
 			<div id="nav_bar_logo">
 				<img id="nav_bar_logo_img" src="https://nuevoaromakaori.com/resources/logo_character.png" />
 			</div>
-			<div id="nav_search">
-				<span class="material-icons">search</span>
+			<div id="nav_search" onclick="change_plan_menu_show();">
+				<span class="material-icons">menu_book</span>
 			</div>
 		</div>
  
@@ -624,6 +624,13 @@
 
 			<!-- MOST MAIN SPACE -->
 			<div id="main_all_dishes" class="main_all_table_div" style="display: block;">
+				<div id="main_all_dishes_container_monthlySpecial" class="main_all_table_div_container">
+					<div class="monthlySpecial_extra_info">
+						<span class="title">Platos del mes</span>
+						<span class="subtitle">Sección exclusiva para Buffet Noche, Fin de semana y Festivo.</span>
+					</div>
+					<table id="main_all_dishes_monthlySpecial_table" class="main_all_table_div_table"></table>
+				</div>
 				<div id="main_all_dishes_container" class="main_all_table_div_container">
 					<table id="main_all_dishes_table" class="main_all_table_div_table"></table>
 					<div id="main_all_dishes_no_included" style="display: none;">

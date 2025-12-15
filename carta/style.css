@@ -725,6 +725,33 @@ div#main_container div.main_all_table_div div.main_all_table_div_container {
 	margin: 0px 10px 10px 10px;
 }
 
+div#main_container div.main_all_table_div div.main_all_table_div_container#main_all_dishes_container_monthlySpecial {
+	outline: 3px solid rgb(168, 207, 229);
+	border-radius: 20px;
+}
+
+div#main_container div.main_all_table_div div.main_all_table_div_container#main_all_dishes_container_monthlySpecial div.monthlySpecial_extra_info {
+	padding: 10px;
+}
+
+div#main_container div.main_all_table_div div.main_all_table_div_container#main_all_dishes_container_monthlySpecial span.title {
+	font-size: 1.4em;
+    font-weight: 600;
+    display: block;
+    user-select: none;
+    color: rgb(25, 25, 76);
+    font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
+}
+
+div#main_container div.main_all_table_div div.main_all_table_div_container#main_all_dishes_container_monthlySpecial span.subtitle {
+	font-size: 1em;
+    font-weight: 400;
+    display: block;
+    user-select: none;
+    color: rgb(49, 117, 184);
+    font-family: 'Work Sans', 'Noto Sans SC', sans-serif;
+}
+
 div#main_container div.main_all_table_div div.main_all_table_div_container table.main_all_table_div_table {
 	width: 100%;
 	border: none;

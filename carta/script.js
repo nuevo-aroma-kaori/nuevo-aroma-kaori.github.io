@@ -85,7 +85,7 @@ function request_necessary_information() {
 		"https://nuevoaromakaori.com/database/dish_info_min.json",
 		function (callback, status) {
 			if (status != "success") {
-				alert("Estado inesperado de respuesta: '" + status + "'. Recargue la página o contacte con el administrador.").
+				alert("Estado inesperado de respuesta: '" + status + "'. Recarga la página o contacta con el administrador.").
 				return;
 			}
 
@@ -119,6 +119,12 @@ function show_dishes(menu_plan_index = 1) {
 		no_included_table_row_count = 0;
 	var original_table_tr_elem = document.createElement("tr"),
 		no_included_table_tr_elem = document.createElement("tr");
+	
+	// Monthly special
+	var monthly_special_table_element = document.getElementById("main_all_dishes_monthlySpecial_table");
+	monthly_special_table_element.innerHTML = "";
+	var monthly_special_table_row_count = 0;
+	var monthly_special_table_tr_elem = document.createElement("tr");
 
 	var exist_no_included_dishes = false;
 
@@ -132,6 +138,11 @@ function show_dishes(menu_plan_index = 1) {
 			no_included_table_row_count = 0;
 			no_included_table_element.appendChild(no_included_table_tr_elem);
 			no_included_table_tr_elem = document.createElement("tr");
+		}
+		if (monthly_special_table_row_count == 2) {
+			monthly_special_table_row_count = 0;
+			monthly_special_table_element.appendChild(monthly_special_table_tr_elem);
+			monthly_special_table_tr_elem = document.createElement("tr");
 		}
 
 		// SEPARATE THE "PLATOS SUELTOS" GENERATING ALGORITHM
@@ -147,8 +158,13 @@ function show_dishes(menu_plan_index = 1) {
 		
 		// IF THE DISH IS INCLUDED
 		if (all_dish_info.menu_info.all_menus[menu_plan_index].included_dishes.indexOf(all_dish_info.dish_info.all_dishes[proc_index].number) != -1) {
+			// big table
 			original_table_tr_elem.appendChild(elem);
 			++original_table_row_count;
+		} else if (all_dish_info.menu_info.all_menus[menu_plan_index].included_monthly_special.indexOf(all_dish_info.dish_info.all_dishes[proc_index].number) != -1) {
+			// Monthly special table
+			monthly_special_table_tr_elem.appendChild(elem);
+			++monthly_special_table_row_count;
 		} else {
 			no_included_table_tr_elem.appendChild(elem);
 			++no_included_table_row_count;
@@ -158,6 +174,7 @@ function show_dishes(menu_plan_index = 1) {
 
 	if (original_table_row_count > 0) { original_table_element.appendChild(original_table_tr_elem); }
 	if (no_included_table_row_count > 0) { no_included_table_element.appendChild(no_included_table_tr_elem); }
+	if (monthly_special_table_row_count > 0) { monthly_special_table_element.appendChild(monthly_special_table_tr_elem); }
 
 	if (!exist_no_included_dishes) {
 		document.getElementById("main_all_dishes_no_included").style.display = "none";
@@ -329,6 +346,12 @@ function show_dishes_min(menu_plan_index = 1) {
 	var original_table_tr_elem = document.createElement("tr"),
 		no_included_table_tr_elem = document.createElement("tr");
 
+	// Monthly special
+	var monthly_special_table_element = document.getElementById("main_all_dishes_monthlySpecial_table");
+	monthly_special_table_element.innerHTML = "";
+	var monthly_special_table_row_count = 0;
+	var monthly_special_table_tr_elem = document.createElement("tr");
+
 	var exist_no_included_dishes = false;
 
 	for (var proc_index = 0; proc_index < all_dishes_quantity; ++proc_index) {
@@ -342,6 +365,11 @@ function show_dishes_min(menu_plan_index = 1) {
 			no_included_table_element.appendChild(no_included_table_tr_elem);
 			no_included_table_tr_elem = document.createElement("tr");
 		}
+		if (monthly_special_table_row_count == 3) {
+			monthly_special_table_row_count = 0;
+			monthly_special_table_element.appendChild(monthly_special_table_tr_elem);
+			monthly_special_table_tr_elem = document.createElement("tr");
+		}
 
 		var elem = create_dish_cnt_element_dishes_min(proc_index);
 		
@@ -349,6 +377,10 @@ function show_dishes_min(menu_plan_index = 1) {
 		if (all_dish_info.menu_info.all_menus[menu_plan_index].included_dishes.indexOf(all_dish_info.dish_info.all_dishes[proc_index].number) != -1) {
 			original_table_tr_elem.appendChild(elem);
 			++original_table_row_count;
+		} else if (all_dish_info.menu_info.all_menus[menu_plan_index].included_monthly_special.indexOf(all_dish_info.dish_info.all_dishes[proc_index].number) != -1) {
+			// Monthly special table
+			monthly_special_table_tr_elem.appendChild(elem);
+			++monthly_special_table_row_count;
 		} else {
 			no_included_table_tr_elem.appendChild(elem);
 			++no_included_table_row_count;
@@ -358,6 +390,7 @@ function show_dishes_min(menu_plan_index = 1) {
 
 	if (original_table_row_count > 0) { original_table_element.appendChild(original_table_tr_elem); }
 	if (no_included_table_row_count > 0) { no_included_table_element.appendChild(no_included_table_tr_elem); }
+	if (monthly_special_table_row_count > 0) { monthly_special_table_element.appendChild(monthly_special_table_tr_elem); }
 
 	if (!exist_no_included_dishes) {
 		document.getElementById("main_all_dishes_no_included").style.display = "none";
