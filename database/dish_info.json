@@ -859,12 +859,12 @@ Allergen
 
 		"all_dishes": [
 			{
-				"number": "W1",
+				"number": "A6",
 				"name": {
-					"es": "Ensalada de salmón",
-					"ca": "Amanida de salmó"
+					"es": "Ensalada especial",
+					"ca": "Amanida especial"
 				},
-				"allergen": [ ],
+				"allergen": ["gl", "hv", "ps", "lt", "gs"],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -877,12 +877,12 @@ Allergen
 			},
 
 			{
-				"number": "W2",
+				"number": "A7",
 				"name": {
 					"es": "Filete de ternera con patatas fritas",
 					"ca": "Filet de vedella amb patates fregides"
 				},
-				"allergen": [ ],
+				"allergen": ["gl", "gs"],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -895,15 +895,15 @@ Allergen
 			},
 
 			{
-				"number": "W3",
+				"number": "A8",
 				"name": {
 					"es": "Carne marinada a la plancha",
 					"ca": "Carn marinada a la planxa"
 				},
-				"allergen": [ ],
+				"allergen": ["gl", "hv", "sj", "lt", "fc", "ap", "gs"],
 				"desc": {
-					"es": "",
-					"ca": ""
+					"es": "Consulte la disponibilidad.",
+					"ca": "Consulteu la disponibilitat."
 				},
 				"units": 1,
 				"bigger_info": {
@@ -913,12 +913,12 @@ Allergen
 			},
 
 			{
-				"number": "W4",
+				"number": "A9",
 				"name": {
-					"es": "Temaki de langostino",
-					"ca": "Temaki de llagostí"
+					"es": "Temaki de langostino con queso crema y salsa sésamo dulce",
+					"ca": "Temaki de llagostí amb formatge crema i salsa sèsam dolça"
 				},
-				"allergen": [ ],
+				"allergen": ["gl", "cr", "hv", "sj", "lt", "gs"],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -931,12 +931,12 @@ Allergen
 			},
 
 			{
-				"number": "W5",
+				"number": "A10",
 				"name": {
-					"es": "Temaki de pollo",
-					"ca": "Temaki de pollastre"
+					"es": "Temaki de pollo con aguacate y salsa anguila",
+					"ca": "Temaki de pollastre amb alvocat i salsa anguila"
 				},
-				"allergen": [ ],
+				"allergen": ["gl", "hv", "sj", "lt", "gs"],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -949,12 +949,12 @@ Allergen
 			},
 
 			{
-				"number": "W6",
+				"number": "A11",
 				"name": {
 					"es": "Onigiri de salmón cocido",
 					"ca": "Onigiri de salmó cuit"
 				},
-				"allergen": [ ],
+				"allergen": ["gl", "ps", "sj", "lt", "gs"],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -967,12 +967,12 @@ Allergen
 			},
 
 			{
-				"number": "W7",
+				"number": "A12",
 				"name": {
 					"es": "Triángulo especial de Surimi y Ebi",
 					"ca": "Triangle especial de Surimi i Ebi"
 				},
-				"allergen": [ ],
+				"allergen": ["gl", "cr", "sj", "gs"],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -985,12 +985,12 @@ Allergen
 			},
 
 			{
-				"number": "W8",
+				"number": "A13",
 				"name": {
 					"es": "Bao pato",
 					"ca": "Bao ànec"
 				},
-				"allergen": [ ],
+				"allergen": ["gl", "hv", "sj", "lt", "gs"],
 				"desc": {
 					"es": "",
 					"ca": ""
@@ -1003,12 +1003,30 @@ Allergen
 			},
 
 			{
-				"number": "W9",
+				"number": "A14",
 				"name": {
-					"es": "Tarta de salmón",
-					"ca": "Tarta de salmó"
+					"es": "Tarta de salmón con salsa mango y fideo",
+					"ca": "Tarta de salmó amb salsa mango i fideu"
 				},
-				"allergen": [ ],
+				"allergen": ["gl", "hv", "ps", "sj", "gs"],
+				"desc": {
+					"es": "",
+					"ca": ""
+				},
+				"units": 1,
+				"bigger_info": {
+					"units": 1,
+					"price": 0
+				}
+			},
+
+			{
+				"number": "A15",
+				"name": {
+					"es": "Tira de pollo frito con salsa Teriyaki",
+					"ca": "Tira de pollastre fregit amb salsa Teriyaki"
+				},
+				"allergen": ["gl", "hv", "sj", "gs"],
 				"desc": {
 					"es": "",
 					"ca": ""
