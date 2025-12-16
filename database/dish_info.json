@@ -3628,7 +3628,7 @@ Allergen
 
 					"A1", "A2"
 				],
-				"included_monthly_special" : ["W1", "W2", "W3", "W4", "W5", "W6", "W7", "W8", "W9"],
+				"included_monthly_special" : ["A6", "A7", "A8", "A9", "A10", "A11", "A12", "A13", "A14", "A15"],
 				"included_drinks" : [],
 				"included_desserts" : [],
 				"menu_alg_type" : 0,
