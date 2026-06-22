@@ -14,6 +14,22 @@ var current_time_info = { day : 0, hour : 0 };
 
 var dish_sight_mode = 0;
 
+function get_dish_image_src(dish_elem) {
+	if (dish_elem.image_src) {
+		return dish_elem.image_src;
+	}
+
+	return "https://raw.githubusercontent.com/nuevo-aroma-kaori/nuevo-aroma-kaori.github.io/main/resources/dish_img/" + dish_elem.number.toString() + ".png";
+}
+
+function get_dish_description_image_src(dish_elem) {
+	if (dish_elem.image_src) {
+		return dish_elem.image_src;
+	}
+
+	return "https://nuevoaromakaori.com/resources/dish_img/" + dish_elem.number + ".png";
+}
+
 /* opens a page */
 function goto_page(url) {
 	window.location = url;
@@ -207,7 +223,7 @@ function create_dish_cnt_element_dishes(proc_index) {
 
 	var elem_preview_image = document.createElement("img");
 	elem_preview_image.setAttribute("class", "main_dish_image");
-	elem_preview_image.setAttribute("src", "https://raw.githubusercontent.com/nuevo-aroma-kaori/nuevo-aroma-kaori.github.io/main/resources/dish_img/" + all_dish_info.dish_info.all_dishes[proc_index].number.toString() + ".png");
+	elem_preview_image.setAttribute("src", get_dish_image_src(all_dish_info.dish_info.all_dishes[proc_index]));
 
 	var elem_dish_number = document.createElement("div");
 	elem_dish_number.setAttribute("class", "main_dish_number");
@@ -276,7 +292,7 @@ function create_dish_cnt_element_dishes_alg1(proc_index) {
 
 	var elem_preview_image = document.createElement("img");
 	elem_preview_image.setAttribute("class", "main_dish_image");
-	elem_preview_image.setAttribute("src", "https://raw.githubusercontent.com/nuevo-aroma-kaori/nuevo-aroma-kaori.github.io/main/resources/dish_img/" + all_dish_info.dish_info.all_dishes[proc_index].number.toString() + ".png");
+	elem_preview_image.setAttribute("src", get_dish_image_src(all_dish_info.dish_info.all_dishes[proc_index]));
 
 	var elem_dish_number = document.createElement("div");
 	elem_dish_number.setAttribute("class", "main_dish_number");
@@ -422,7 +438,7 @@ function create_dish_cnt_element_dishes_min(proc_index) {
 
 	var elem_preview_image = document.createElement("img");
 	elem_preview_image.setAttribute("class", "main_dish_image");
-	elem_preview_image.setAttribute("src", "https://raw.githubusercontent.com/nuevo-aroma-kaori/nuevo-aroma-kaori.github.io/main/resources/dish_img/" + all_dish_info.dish_info.all_dishes[proc_index].number.toString() + ".png");
+	elem_preview_image.setAttribute("src", get_dish_image_src(all_dish_info.dish_info.all_dishes[proc_index]));
 
 	var elem_dish_number = document.createElement("div");
 	elem_dish_number.setAttribute("class", "main_dish_number");
@@ -1005,7 +1021,7 @@ function dish_description_floating_window_Show(dish_index, bigger = false) {
 	const dish_elem = all_dish_info.dish_info.all_dishes[dish_index];
 
 	// CHANGE IMAGE
-	document.getElementById("dish_description_image").setAttribute("src", "https://nuevoaromakaori.com/resources/dish_img/" + dish_elem.number + ".png");
+	document.getElementById("dish_description_image").setAttribute("src", get_dish_description_image_src(dish_elem));
 	// CHANGE NAME
 	document.getElementById("dish_desc_name").innerText = dish_elem.name.es;
 	// CHANGE DISH NUMBER

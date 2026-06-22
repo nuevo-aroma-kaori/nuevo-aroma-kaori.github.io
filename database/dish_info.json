@@ -858,59 +858,8 @@ Allergen
 		],
 
 		"all_dishes": [
-			{
-				"number": "A6",
-				"name": {
-					"es": "Ensalada especial",
-					"ca": "Amanida especial"
-				},
-				"allergen": ["gl", "hv", "ps", "lt", "gs"],
-				"desc": {
-					"es": "",
-					"ca": ""
-				},
-				"units": 1,
-				"bigger_info": {
-					"units": 1,
-					"price": 0
-				}
-			},
 
-			{
-				"number": "A7",
-				"name": {
-					"es": "Filete de ternera con patatas fritas",
-					"ca": "Filet de vedella amb patates fregides"
-				},
-				"allergen": ["gl", "gs"],
-				"desc": {
-					"es": "",
-					"ca": ""
-				},
-				"units": 1,
-				"bigger_info": {
-					"units": 1,
-					"price": 0
-				}
-			},
 
-			{
-				"number": "A8",
-				"name": {
-					"es": "Carne marinada a la plancha",
-					"ca": "Carn marinada a la planxa"
-				},
-				"allergen": ["gl", "hv", "sj", "lt", "fc", "ap", "gs"],
-				"desc": {
-					"es": "Consulte la disponibilidad.",
-					"ca": "Consulteu la disponibilitat."
-				},
-				"units": 1,
-				"bigger_info": {
-					"units": 1,
-					"price": 0
-				}
-			},
 
 			{
 				"number": "A9",
@@ -948,77 +897,9 @@ Allergen
 				}
 			},
 
-			{
-				"number": "A11",
-				"name": {
-					"es": "Onigiri de salmón cocido",
-					"ca": "Onigiri de salmó cuit"
-				},
-				"allergen": ["gl", "ps", "sj", "lt", "gs"],
-				"desc": {
-					"es": "",
-					"ca": ""
-				},
-				"units": 1,
-				"bigger_info": {
-					"units": 1,
-					"price": 0
-				}
-			},
 
-			{
-				"number": "A12",
-				"name": {
-					"es": "Triángulo especial de Surimi y Ebi",
-					"ca": "Triangle especial de Surimi i Ebi"
-				},
-				"allergen": ["gl", "cr", "sj", "gs"],
-				"desc": {
-					"es": "",
-					"ca": ""
-				},
-				"units": 1,
-				"bigger_info": {
-					"units": 1,
-					"price": 0
-				}
-			},
 
-			{
-				"number": "A13",
-				"name": {
-					"es": "Bao pato",
-					"ca": "Bao ànec"
-				},
-				"allergen": ["gl", "hv", "sj", "lt", "gs"],
-				"desc": {
-					"es": "",
-					"ca": ""
-				},
-				"units": 1,
-				"bigger_info": {
-					"units": 1,
-					"price": 0
-				}
-			},
 
-			{
-				"number": "A14",
-				"name": {
-					"es": "Tarta de salmón con salsa mango y fideo",
-					"ca": "Tarta de salmó amb salsa mango i fideu"
-				},
-				"allergen": ["gl", "hv", "ps", "sj", "gs"],
-				"desc": {
-					"es": "",
-					"ca": ""
-				},
-				"units": 1,
-				"bigger_info": {
-					"units": 1,
-					"price": 0
-				}
-			},
 
 			{
 				"number": "A15",
@@ -1053,14 +934,15 @@ Allergen
 				"bigger_info": {
 					"units": 1,
 					"price": 4.5
-				}
+				},
+				"image_src": "https://raw.githubusercontent.com/nuevo-aroma-kaori/nuevo-aroma-kaori.github.io/main/resources/dish_img/A6.png"
 			},
 
 			{
 				"number": 2,
 				"name": {
-					"es": "Ensalada de alga",
-					"ca": "Amanida d'alga"
+					"es": "Batata Frita",
+					"ca": "Batata Frita"
 				},
 				"allergen": [ "gs" ],
 				"desc": {
@@ -1071,7 +953,8 @@ Allergen
 				"bigger_info": {
 					"units": 1,
 					"price": 3.5
-				}
+				},
+				"image_src": "./batata-frita.png"
 			},
 
 			{
@@ -3628,7 +3511,7 @@ Allergen
 
 					"A1", "A2"
 				],
-				"included_monthly_special" : ["A6", "A7", "A8", "A9", "A10", "A11", "A12", "A13", "A14", "A15"],
+				"included_monthly_special" : ["A9", "A10", "A15"],
 				"included_drinks" : [],
 				"included_desserts" : [],
 				"menu_alg_type" : 0,
